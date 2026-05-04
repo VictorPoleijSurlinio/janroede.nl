@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<?= STATIC_URL ?>js/min/application.min.js"></script>

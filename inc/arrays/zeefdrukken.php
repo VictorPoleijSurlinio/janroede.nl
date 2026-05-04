@@ -1,0 +1,172 @@
+<?php
+
+$zeefdrukken = [
+	'meta' => [
+		'count' => 25,
+		'size_categories' => [
+			'G' => 'groot',
+			'M' => 'medium',
+			'K' => 'klein',
+			'MINI' => 'mini',
+		],
+		'notes' => [
+			'Nummer is het inventarisnummer en correspondeert met de naam van het fotobestand.',
+			'Z11 is beschikbaar als medium (1 exemplaar).',
+			'Voor Z43 is nog geen formaat opgegeven.',
+		],
+	],
+	'items' => [
+		[
+			'inventory_number' => 'Z04',
+			'image_name' => 'Z04',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z05',
+			'image_name' => 'Z05',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z06',
+			'image_name' => 'Z06',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z10',
+			'image_name' => 'Z10',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z11',
+			'image_name' => 'Z11',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+			'edition_note' => '1 exemplaar',
+		],
+		[
+			'inventory_number' => 'Z12',
+			'image_name' => 'Z12',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z13',
+			'image_name' => 'Z13',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z14',
+			'image_name' => 'Z14',
+			'format_code' => 'K',
+			'format_label' => 'klein',
+		],
+		[
+			'inventory_number' => 'Z15',
+			'image_name' => 'Z15',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z16',
+			'image_name' => 'Z16',
+			'format_code' => 'K',
+			'format_label' => 'klein',
+		],
+		[
+			'inventory_number' => 'Z17',
+			'image_name' => 'Z17',
+			'format_code' => 'K',
+			'format_label' => 'klein',
+		],
+		[
+			'inventory_number' => 'Z18',
+			'image_name' => 'Z18',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z19',
+			'image_name' => 'Z19',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z21',
+			'image_name' => 'Z21',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z23',
+			'image_name' => 'Z23',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z24',
+			'image_name' => 'Z24',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z25',
+			'image_name' => 'Z25',
+			'format_code' => 'M',
+			'format_label' => 'medium',
+		],
+		[
+			'inventory_number' => 'Z26',
+			'image_name' => 'Z26',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z27',
+			'image_name' => 'Z27',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z28',
+			'image_name' => 'Z28',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z38',
+			'image_name' => 'Z38',
+			'format_code' => 'MINI',
+			'format_label' => 'mini',
+		],
+		[
+			'inventory_number' => 'Z39',
+			'image_name' => 'Z39',
+			'format_code' => 'MINI',
+			'format_label' => 'mini',
+		],
+		[
+			'inventory_number' => 'Z40',
+			'image_name' => 'Z40',
+			'format_code' => 'MINI',
+			'format_label' => 'mini',
+		],
+		[
+			'inventory_number' => 'Z42',
+			'image_name' => 'Z42',
+			'format_code' => 'G',
+			'format_label' => 'groot',
+		],
+		[
+			'inventory_number' => 'Z43',
+			'image_name' => 'Z43',
+			'format_code' => null,
+			'format_label' => null,
+			'note' => 'formaat nog niet opgegeven',
+		],
+	],
+];

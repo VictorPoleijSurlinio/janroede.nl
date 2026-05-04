@@ -1,0 +1,162 @@
+
+.btn {
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+.btn-client {
+    color: white;
+    background-color: $secondary-color;
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    border: 0px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        color: white;
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+.btn-client-secondary {
+    color:  white;
+    background-color: $secondary-color;
+    font-size: 16px;
+    padding-top: 6px;
+   /* font-family: 'Lato', sans-serif;*/
+    padding-bottom: 6px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px ;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        color: white;
+    }
+}
+
+.btn-client-outline {
+    color:  $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    font-size: 17px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: 'Judson', serif;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        color: $primary-color;
+    }
+}
+
+.btn-previous{
+    color: $primary-color;
+    background-color: white;
+    font-size: 18px;
+    padding:8px 25px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        color: $primary-color;
+        background-color: darken(white, 5%);
+    }
+}
+.btn-next{
+    color: white;
+    background-color: $primary-color;
+    font-size: 18px;
+    padding:8px 25px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        color: white;
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.btn-client-rounded{
+    color: $primary-color;
+    background-color: white;
+    font-size: 18px;
+    padding:10px 25px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        color: $primary-color;
+        background-color: darken(white, 10%);
+    }
+}
+
+.btn-client-rounded-purple{
+    color: white;
+    background-color:$primary-color;
+    font-size: 18px;
+    padding:10px 25px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        color: $primary-color;
+        background-color: white;
+    }
+}
+
+.btn-side-icon{
+    color: $primary-color;
+    background-color: $secondary-color;
+    font-size: 18px;
+    padding:10px 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+        transform: scale(1.1);
+
+    }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  30% { transform: translateY(-6px);}
+  50% { transform: translateY(0);}
+  70% { transform: translateY(-3px);}
+}
+
+.btn-client-rounded:hover + .btn-side-icon {
+  animation: bounce 0.5s;
+}
+
+
+

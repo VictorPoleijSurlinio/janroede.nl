@@ -1,0 +1,14 @@
+.toast-client{
+	position: fixed;
+	z-index: 1100;
+	.toast{
+		.toast-header{
+			font-size: 18px;
+
+		}
+		.toast-body{
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+}

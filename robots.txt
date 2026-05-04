@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /inc/
+Disallow: /static/scss/
+Disallow: /vendor/
+Disallow: /app/

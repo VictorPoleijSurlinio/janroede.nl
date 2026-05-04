@@ -1,0 +1,29 @@
+// PAGINATION
+.pagination-div{
+    margin-top: 20px;
+    .pagination{
+        .page-item{
+            .page-link{
+                border: 0px;
+                color: $secondary-color !important;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        }
+        .page-item.disabled{
+            .page-link{
+                color: lighten($text-color, 40%) !important;
+
+            }
+        }
+        .page-item.active{
+            .page-link{
+                background-color: transparent;
+                color: $primary-color !important;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+
+    }
+}

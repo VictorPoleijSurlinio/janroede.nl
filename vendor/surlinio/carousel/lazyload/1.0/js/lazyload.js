@@ -1,0 +1,10 @@
+// SD Lazy load carousel
+$(function() {
+  return $('.carousel.lazy').on("slide.bs.carousel", function(ev) {
+    var lazy;
+    lazy = $(ev.relatedTarget).find("img[data-src]");
+    console.log(lazy);
+    lazy.attr("src", lazy.data('src'));
+    lazy.removeAttr("data-src");
+  });
+});

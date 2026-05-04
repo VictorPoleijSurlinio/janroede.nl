@@ -1,0 +1,51 @@
+// Client variables
+// $primary-color:						#1d3557; // Dark navy
+// $secondary-color:					#c49a3c; // Warm gold
+
+$primary-color:						#3d1a4a; // Deep aubergine
+$secondary-color:					#2abcb8; // Vivid turquoise
+
+$third-color:						#f5eee1; // Beige
+
+$client-light-gray-color:			#f0f0f0; // Gray color
+$client-gray-color:					#555555; // Gray color
+$client-dark-gray-color:			#333333; // Gray color
+$client-text-color:					#161616; // Dark Gray
+
+
+// Bootstrap overrides
+$link-color:						darken($primary-color,10%);
+$link-decoration:          			none;
+$link-hover-color:					darken($link-color, 10%);
+$link-hover-decoration:     		underline;
+
+//Fonts
+$font-family-base:					"Montserrat", sans-serif;
+$headings-font-family:  	  		"Montserrat", sans-serif;
+$headings-color:					black;
+
+$font-size-base:					1rem;
+
+// Navbar
+$navbar-padding-y: 					0px;
+$navbar-height:						84px;
+$topbar-height:						0px;
+
+
+// Tables
+$table-striped-color: #f9f9f9;
+
+
+
+//FAQ
+$accordion-color:                         $secondary-color;
+$accordion-bg:                            #EEEEEE;
+$accordion-button-bg:                     $secondary-color;
+$accordion-button-color:                  white;
+$accordion-button-active-bg:              $primary-color;
+$accordion-button-active-color:           white;
+
+$accordion-button-focus-box-shadow:      none;
+
+$accordion-icon-color:                    white;
+$accordion-icon-active-color:             $secondary-color;

@@ -1,0 +1,509 @@
+
+@import "client/client-variables.scss";
+@import "../../../packages/bootstrap/5.1.3/scss/bootstrap.scss";
+
+// Font Awesome 6.0.0
+$fa-font-path: "../fonts/fontawesome-pro/6.0.0";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/fontawesome.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/brands.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/light.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/regular.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/solid.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/duotone.scss";
+@import "../../../packages/fontawesome-pro/6.0.0-alpha1/scss/thin.scss";
+
+// Bootstrap select 1.13.14
+@import "../../../packages/bootstrap-select/1.13.14/scss/bootstrap-select.scss";
+
+// Cookie consent 3.0
+@import "../../../packages/cookieconsent/3.0/scss/cookieconsent.scss";
+
+// SLIM Image Cropper
+@import "../../../packages/slim/5.5.1/scss/slim.scss";
+
+// Animation on scroll
+@import "../../../packages/aos/2.0/scss/aos.scss";
+@import "../../../packages/aos/2.0/scss/animations.scss";
+
+@import "client/accordion.scss";
+@import "client/typography.scss";
+@import "client/navbar.scss";
+@import "client/headers.scss";
+@import "client/footer.scss";
+@import "client/forms.scss";
+@import "client/buttons.scss";
+
+// Animation on scroll
+
+// GENERAL
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: 500px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+section.less-padding-top {
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.intro-tekst {
+  text-align: center;
+}
+
+.logos {
+  img {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      transition: 0.2s ease-in-out;
+    }
+  }
+  .horeca-zaak {
+    border: 2px solid $primary-color;
+    background-color: #dbd2bb;
+    padding: 30px;
+  }
+}
+
+#multiStepForm {
+  color: $primary-color;
+  h1,
+  h3 {
+    color: $primary-color !important;
+  }
+  .slim {
+    background-color: transparent !important;
+    border: 2px solid $primary-color !important;
+    height: 225px !important;
+    width: 375px !important;
+    cursor: pointer !important;
+    @media (max-width: 767px) {
+      height: 180px !important;
+      width: 300px !important;
+      .slim-status {
+        padding: 2em 1em !important;
+      }
+      @media (max-width: 767px) {
+        height: 180px !important;
+        width: 300px !important;
+        .slim-status {
+          padding: 1.5em 0.75em !important;
+        }
+      }
+    }
+    @media (max-width: 376px) {
+      height: 144px !important;
+      width: 240px !important;
+    }
+  }
+  .slim-label {
+    font-weight: 700 !important;
+    font-size: 22px !important;
+  }
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 0px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+  }
+  .btn-file:hover {
+    color: white;
+    background-color: darken($primary-color, 10%);
+    border: 1px solid $primary-color;
+  }
+
+  .btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+  }
+  input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+    color: $primary-color;
+  }
+  input[readonly]:focus {
+    box-shadow: 0 0 3px 2px lighten($primary-color, 20%);
+  }
+
+  .input-group {
+    position: relative;
+  }
+
+  .clear-file-btn {
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  #cvupload_text {
+    padding-right: 15px;
+  }
+  .form-group-inline {
+    padding: 6px 0px;
+    .form-control {
+      border-radius: 6px;
+      border-color: $primary-color !important;
+      color: $primary-color !important;
+      background-color: white;
+    }
+    .form-control:focus {
+      box-shadow: 0 0 3px 2px lighten($primary-color, 20%);
+    }
+
+    .form-control:-webkit-autofill {
+      color: $primary-color !important;
+    }
+    .form-control:-webkit-autofill::first-line {
+      color: $primary-color !important;
+    }
+
+    input[type="radio"] {
+      accent-color: $primary-color;
+    }
+    input[type="checkbox"] {
+      accent-color: $primary-color;
+    }
+    input[type="date"] {
+      accent-color: $primary-color;
+      color: $primary-color;
+      width: 250px;
+      border: 1px solid $primary-color;
+    }
+
+    input[type="date"]::-webkit-datetime-edit {
+      color: $primary-color;
+    }
+
+    label {
+      font-weight: 700;
+      margin-left: 8px;
+      font-size: 0.9rem;
+    }
+    div {
+      margin-left: 27px;
+    }
+  }
+  .step {
+    display: none;
+    h3 {
+      padding-top: 0 !important;
+    }
+  }
+
+  .step.active {
+    display: block;
+    height: 325px;
+    overflow-y: auto;
+  }
+
+  .step.active::-webkit-scrollbar {
+    background-color: #e9ecef;
+    width: 8px;
+  }
+
+  .step.active::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 4px;
+  }
+}
+#step-counter,
+#estimated-time {
+  font-size: 1em;
+  color: $primary-color;
+}
+
+#hotelgasten-form {
+  input[type="radio"] {
+    accent-color: $primary-color;
+    transform: scale(1.6);
+  }
+  .form-control {
+    border-radius: 25px;
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+    background-color: white;
+  }
+  .form-control:focus {
+    box-shadow: 0 0 3px 2px lighten($primary-color, 20%);
+  }
+
+  .form-control:-webkit-autofill {
+    color: $primary-color !important;
+  }
+  .form-control:-webkit-autofill::first-line {
+    color: $primary-color !important;
+  }
+}
+
+.primary-color {
+  color: $primary-color !important;
+}
+.secondary-color {
+  color: $secondary-color !important;
+}
+
+
+#mainCarousel .carousel-item img {
+  max-height: 1200px;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  @media (max-width: 768px) {
+    min-height: 380px;
+  }
+}
+
+#mainCarousel .carousel-indicators {
+  width: 100%;
+  max-width: 250px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 2em;
+  scroll-behavior: smooth;
+  margin-bottom: calc(10px + 6vw);
+  justify-content: flex-start;
+}
+
+#mainCarousel .carousel-indicators::-webkit-scrollbar {
+  display: none;
+}
+
+#mainCarousel .carousel-indicators [data-bs-target] {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+  flex: 0 0 auto;
+}
+#mainCarousel .carousel-indicators .active {
+  background-color: $secondary-color;
+  scale: 1.2;
+  transition: transform 0.3s;
+}
+.floating-text {
+  border-radius: 25px;
+  background-color: #f1f2f3;
+  text-align: center;
+  padding: calc(10px + 2vw);
+  margin: calc(-1 * (5px + 5vw)) calc(5px + 5vw) calc(-1 * (5px + 5vw))
+    calc(5px + 5vw);
+  position: relative;
+  width: calc(100% - calc(10px + 10vw));
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.logo-same-height {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#locations {
+  padding-top: calc(20px + 5vw);
+  position: relative;
+  background: none;
+
+}
+
+#locations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: url("../img/content/bg-vogels-1920x1080.webp") center top/contain
+    repeat;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    height: 100% !important;
+    background-attachment: fixed !important;
+    background: url("../img/content/bg-vogels-1920x1080.webp") center top/cover
+      no-repeat;
+  }
+}
+
+#locations > * {
+  position: relative;
+  z-index: 2;
+}
+
+.primary-bg {
+  background-color: $primary-color !important;
+}
+.secondary-bg {
+  background-color: $secondary-color !important;
+}
+
+.newsletter-socials {
+  background-color: #f1f2f3;
+  padding: 25px 0px;
+  .social-icons {
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: $primary-color;
+    border: 2px solid;
+    margin: 0px 10px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-icons i {
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+  }
+}
+
+#locatie-tip {
+  input {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: 2px solid $primary-color;
+    outline: none;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: none;
+  }
+}
+
+#maps-route {
+  height: 625px;
+  @media (max-width: 1600px) {
+    height: 575px;
+  }
+  @media (max-width: 1200px) {
+    height: 525px;
+  }
+  @media (max-width: 992px) {
+    height: 475px;
+  }
+}
+
+#hotelgasten {
+  position: relative;
+  background: none;
+}
+#hotelgasten::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: url("../img/content/bg-vogels-1920x1080.webp") center top/contain
+    repeat;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    height: 100% !important;
+    background-attachment: fixed !important;
+    background: url("../img/content/bg-vogels-1920x1080.webp") center
+      center/cover no-repeat;
+  }
+}
+#hotelgasten > * {
+  position: relative;
+  z-index: 2;
+}
+.card {
+  border-radius: 20px;
+}
+.lang-shadow {
+  text-shadow: 0 1px 4px rgba(0,0,0,0.25), 0 0px 1px #000;
+}
+
+// Pulse/breath animation
+@keyframes pulse-breath {
+  0%, 100% { transform: scale(1); }
+  40% { transform: scale(1.045); }
+  60% { transform: scale(0.98); }
+}
+.pulse-breath {
+  animation: pulse-breath 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+.vacature-card {
+  transition: transform 0.4s cubic-bezier(0.4,0.2,0.2,1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+@keyframes flip-in-left {
+  0% {
+    transform: perspective(800px) rotateY(-90deg) scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: perspective(800px) rotateY(10deg) scale(1.02);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(800px) rotateY(-2deg) scale(1.01);
+  }
+  100% {
+    transform: perspective(800px) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+.flip-in-left {
+  animation: flip-in-left 0.7s cubic-bezier(0.4,0.2,0.2,1) both;
+}
+#vacature-restaurant-filter{
+  border-radius: 25px;
+  padding:8px 25px;
+  font-weight:600;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px lighten($primary-color, 20%), 0 0 8px 2px $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.form#hotelgasten-form .row > div > label {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  display: block;
+}
+.form#hotelgasten-form .row > div > label input[type="radio"]:checked + * {
+  /* This selector won't work because + only selects the next sibling, but the label wraps the input. Use :has instead. */
+}
+.form#hotelgasten-form .row > div > label:has(input[type="radio"]:checked) {
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.25);
+}
+.white-box {
+	background-color: white;
+	padding:50px;
+	border-radius:25px;
+}

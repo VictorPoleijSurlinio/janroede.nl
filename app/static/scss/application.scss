@@ -1,0 +1,377 @@
+// Client Variables
+@import "client/client-variables.scss";
+@import "../../../../packages/bootstrap/5.3.0/scss/bootstrap.scss";
+
+// Font Awesome 6.0.0
+$fa-font-path: "../../../static/fonts/fontawesome-pro/6.0.0";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/fontawesome.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/brands.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/light.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/regular.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/solid.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/thin.scss";
+@import "../../../../packages/fontawesome-pro/6.0.0-alpha1/scss/duotone.scss";
+
+// Bootstrap select 1.13.9
+@import "../../../../packages/bootstrap-select/1.14.0-beta3/scss/bootstrap-select.scss";
+
+// Lightbox 2.10.0
+$lightbox-img-path: "../img/lightbox/2.10.0";
+@import "../../../../packages/lightbox/2.10.0/scss/lightbox.scss";
+
+// SLIM Image Cropper
+@import "../../../../packages/slim/5.5.1/scss/slim.scss";
+
+// Summernote
+@import "../../../../packages/summernote/0.8.18/scss/summernote-lite.scss";
+// @import "../../../../packages/summernote/0.8.19/scss/bs5/summernote-bs5.scss";
+// @import "summernote/summernote-lite-default.min.scss";
+
+
+// Custom CSS styles
+@import "client/typography.scss";
+@import "client/buttons.scss";
+@import "client/cards.scss";
+@import "client/forms.scss";
+@import "client/navbar.scss";
+@import "client/pagination.scss";
+@import "client/tables.scss";
+@import "client/toasts.scss";
+
+
+
+// // General
+main, footer {
+	padding-left: calc(#{$sidenav-width} + 0px);
+	padding-right: 0px;
+	@media (max-width : 767px) {
+		padding-left: 0px;
+	}
+}
+main{
+	margin-top: calc(#{$navbar-height} + 12px);
+}
+
+main.main_zoeken{
+	padding-left: 0px;
+}
+
+
+
+// TEXT COLORS
+.text-color{
+	color: $text-color !important;
+}
+.white-color{
+	color: white !important;
+}
+.primary-color{
+	color: $primary-color !important;
+}
+.secondary-color{
+	color: $secondary-color !important;
+}
+.view-color{
+	color: $color-view !important;
+}
+.save-color{
+	color: $color-save !important;
+}
+.edit-color{
+	color: $color-edit !important;
+}
+.delete-color{
+	color: $color-delete !important;
+}
+.check-color{
+	color: $color-check !important;
+}
+.cross-color{
+	color: $color-cross !important;
+}
+
+
+// BG COLORS
+.text-bg{
+	background-color: $text-color !important;
+}
+.primary-bg{
+	background-color: $primary-color !important;
+}
+.secondary-bg{
+	background-color: $secondary-color !important;
+}
+.view-bg{
+	background-color: $color-view !important;
+}
+.save-bg{
+	background-color: $color-save !important;
+}
+.edit-bg{
+	background-color: $color-edit !important;
+}
+.delete-bg{
+	background-color: $color-delete !important;
+}
+.beantwoord-bg{
+	background-color: lighten($primary-color, 38%);
+}
+
+
+// BORDER COLORS
+.text-border{
+	border: 2px solid $text-color !important;
+}
+.primary-border{
+	border: 2px solid $primary-color !important;
+}
+.secondary-border{
+	border: 2px solid $secondary-color !important;
+}
+.view-border{
+	border: 2px solid $color-view !important;
+}
+.save-border{
+	border: 2px solid $color-save !important;
+}
+.edit-border{
+	border: 2px solid $color-edit !important;
+}
+.delete-border{
+	border: 2px solid $color-delete !important;
+}
+.gray-border{
+	border: 2px solid $gray-color !important;
+}
+.light-gray-border{
+	border: 2px solid $light-gray-color !important;
+}
+
+
+
+// MIN-WIDTHS
+.min-width-50{
+	min-width: 50px;
+}
+.min-width-75{
+	min-width: 75px;
+}
+.min-width-100{
+	min-width: 100px;
+}
+.min-width-125{
+	min-width: 125px;
+}
+.min-width-150{
+	min-width: 150px;
+}
+.min-width-175{
+	min-width: 175px;
+}
+.min-width-200{
+	min-width: 200px;
+}
+.min-width-225{
+	min-width: 225px;
+}
+.min-width-250{
+	min-width: 250px;
+}
+.min-width-300{
+	min-width: 300px;
+}
+
+
+// CHECKLIST
+// LIST ITEMS
+.customlistcheck, .customlistcheck_opdrachten_model {
+	list-style: none;
+	padding: 0;
+	li {
+		padding-left: 1.6em;
+		padding-bottom: 10px;
+		a{
+			color: $secondary-color;
+			font-weight: 700;
+		}
+		a:hover{
+			color: lighten($secondary-color, 10%);
+		}
+	}
+	li:before {
+        content: "\f00c"; /* FontAwesome Unicode */
+        font-family: 'Font Awesome 6 Pro';
+        display: inline-block;
+        margin-left: -1.6em; /* same as padding-left set on li */
+        width: 1.6em; /* same as padding-left set on li */
+        margin-right: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $primary-color;
+    }
+}
+
+.customlistdot {
+	list-style: none;
+	padding: 0;
+	li {
+		padding-left: 12px;
+		// padding-bottom: 10px;
+		a{
+			color: $link-color;
+			font-weight: 400;
+		}
+		a:hover{
+			color: darken($link-color, 10%);
+		}
+	}
+	li:before {
+        content: "\f068"; /* FontAwesome Unicode */
+        font-family: 'Font Awesome 6 Pro';
+        display: inline-block;
+        margin-left: -12px; /* same as padding-left set on li */
+        width: 12px; /* same as padding-left set on li */
+        margin-right: 0px;
+        font-size: 0.9rem;
+        font-weight: 200;
+        color: $primary-color;
+    }
+}
+
+.customlistcheck_opdrachten_model{
+	margin-bottom: 0px;
+}
+
+
+.optionele_attributen{
+	.optioneel_attribuut_row:nth-child(odd){
+		background-color: #f6f6f6;
+	}
+}
+
+
+.divider {
+	height: 1px;
+	overflow: hidden;
+	background-color: #e0e0e0;
+}
+
+.searchfield{
+	position: relative;
+	overflow: hidden;
+	.card-body{
+		position: relative;
+		height: 400px;
+		overflow: auto;
+		@media(min-width: 576px){
+			height: calc(100vh - 80px - 21px);
+			// overflow-y: auto;
+		}
+		padding-bottom: 70px;
+		.row{
+			margin-bottom: 8px;
+		}
+		p{
+			color: $primary-color;
+			margin-bottom: 0px;
+			.fa-chevron-right{
+				transition: all .2s ease-in-out;
+			}
+		}
+		p.label_open{
+			.fa-chevron-right{
+				transform: rotate(90deg);
+				transition: all .2s ease-in-out;
+			}
+		}
+		.divider{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+	.card-action{
+		position: absolute;
+		z-index: 900;
+		width: 100%;
+		bottom: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: white;
+		.row{
+			margin-bottom: 0px;
+			.btn-client{
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+.downloadbutton-in-image{
+	position: relative;
+	.downloadbutton{
+		position: absolute;
+		z-index: 100;
+		left: 5px;
+		top: 5px;
+		border-radius: 50%;
+	}
+}
+
+
+// BESCHIKBAAR CHECKS
+.beschikbaarheidsicons{
+	text-align: center;
+	font-size: 26px;
+	.kan_wel_checked, .kan_wel_unchecked, .kan_niet_checked, .kan_niet_unchecked{
+		color: lighten($text-color, 10%);
+		width: 50px;
+		cursor: pointer;
+		font-weight: 700;
+		border: 1px solid darken($light-gray-color, 10%);
+		margin-left: 4px;
+		margin-right: 4px;
+		border-radius: 5px;
+	}
+}
+
+
+// PROJECTEN - BEWERKEN
+.fixed-size-form-image{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+	label{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		img{
+			position: absolute;
+			width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+.fixed-size-form-image:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+
+.modal-backdrop {
+	z-index: 10999;
+}
+.modal {
+	z-index: 11055;
+}
+
+.primary-color {
+	color:$primary-color;
+}
+.secondary-color {
+	color:$secondary-color;
+}

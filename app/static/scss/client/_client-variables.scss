@@ -1,0 +1,50 @@
+// Colors
+$primary-color:					#683392; // Purple
+$secondary-color:				#5eb5be; // blue
+
+$light-gray-color:				#f0f0f0;	// Gray color
+$gray-color:					#555555;	// Gray color
+$dark-gray-color:				#333333;	// Gray color
+$text-color:					#333333;	// Dark Gray
+$bg-color: 						#eeeeee;	// Light Gray
+
+
+$color-view:					#2196F3; 	// BLUE
+$color-save:					#4CAF50; 	// GREEN
+$color-edit:					#194B65; 	// DONKERBLAUW
+// $color-delete:				#ed2262; 	// RED
+$color-delete:					#ff0000; 	// RED
+
+
+$color-check:					#4CAF50; 	// GREEN
+$color-cross:					#ed2262; 	// RED
+
+
+// Bootstrap overrides
+$link-color:					$secondary-color;
+$link-decoration:				none;
+$link-hover-color:				darken($link-color, 10%);
+$link-hover-decoration:			underline;
+
+
+
+// //Fonts
+$font-family-base:				'Lato', sans-serif;
+$headings-font-family:  	  	'Lato', sans-serif;
+$headings-color:				$primary-color;
+
+
+$font-size-base:				0.9rem;
+
+// Navbar
+$navbar-padding-y: 				0px;
+$navbar-height:					60px;
+$topbar-height:					0px;
+$sidenav-width: 				200px;
+// $sidenav-width: 				185px !default;
+
+
+// Tables
+$table-striped-color: 			#f0f0f0;
+
+

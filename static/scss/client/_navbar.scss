@@ -1,0 +1,150 @@
+#mainNavigation {
+  z-index: 123;
+}
+.navbar-shape{
+  background-color: $primary-color;
+  border-radius: 0px 0px 25px 25px;
+  margin: 0px calc(5px + 5vw);
+  padding: 15px calc(5px + 2vw);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10), 0 1.5px 4px 0 rgba(0,0,0,0.08);
+}
+#mainNavigation li {
+  padding: 0 clamp(10px, 2vw, 30px);
+  font-size: clamp(0.95rem, 0.85rem + 0.35vw, 1.1rem);
+}
+.dropdown-menu {
+  background: white;
+}
+.dropdown-menu li {
+  padding: 20px 0px !important;
+}
+a.dropdown-toggle {
+  color: white;
+}
+a.dropdown-item:hover {
+  color: white;
+}
+
+.nav-item a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight:500;
+  letter-spacing: 0.1em;
+
+}
+.nav-link.active {
+  position: relative;
+  color: $secondary-color !important;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: $secondary-color;
+  transition: width 0.6s ease;
+}
+.nav-item a:hover::after {
+  width: 100%;
+}
+.nav-item a:hover {
+  transition: 0.6s ease;
+  color:white;
+
+}
+
+.name-logo {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.name-logo:hover,
+.name-logo:focus {
+  color: #ffffff !important;
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+#mainNavigation {
+  width: 100%;
+  z-index: 123;
+  position: fixed;
+}
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav {
+  background: $primary-color;
+  padding: 8px;
+}
+
+@media screen and (max-width: 992px) {
+  #mainNavigation li {
+    padding: 12px 0px;
+  }
+  .dropdown-menu li {
+    padding: 12px 0px !important;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  position: relative;
+  right: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  margin-top: 5px;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  margin-top: 5px;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  margin-top: 5px;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+  margin-top: 5px;
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  margin-top: 5px;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+  margin-top: 5px;
+}
+.icon-bar {
+  background-color: white;
+  width: 34px;
+  height: 4px;
+  display: block;
+  transition: all 0.25s;
+  margin-top: 6px;
+}
+.navbar-toggler {
+  border-color: transparent !important;
+  color: black !important;
+  font-size: 35px;
+  height: 40px;
+  max-height: 40px;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}

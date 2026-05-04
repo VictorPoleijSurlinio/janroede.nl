@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.1",
+        "vlucas/phpdotenv": "^4.1",
+        "soundasleep/html2text": "^1.1",
+        "fire015/flintstone": "^2.3",
+        "tommyknocker/pdo-database-class": "^1.1"
+    }
+}

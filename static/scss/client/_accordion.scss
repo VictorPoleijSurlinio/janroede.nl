@@ -1,0 +1,33 @@
+
+.accordion-item {
+    border-radius: 15px !important;
+    border: none;
+}
+.accordion-button {
+    border-radius:15px;
+    border: none;
+    &::before {
+        content: "\f055";
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 500;
+        position: absolute;
+        right: 1rem;
+        font-size:2rem;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+        transition: transform 0.3s ease;
+      }
+      &[aria-expanded="true"]::before {
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      &::after {
+        content: none; //disable bootstrap chevorn
+      }
+      &.active::after {
+        transform: translateY(-50%) rotate(45deg);
+      }
+}
+.accordion-header{
+  background-color: white;
+}

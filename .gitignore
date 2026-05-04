@@ -1,0 +1,39 @@
+### Mac ###
+.DS_Store
+.DS_Store?
+
+### Windows
+Thumbs.db
+Desktop.ini
+
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+config.codekit3
+
+### CodeKit Patch ###
+*/codekit-config.json
+.codekit-cache
+
+### Prepos
+prepros-6.config
+*.code-workspace
+
+### Sublime
+*.sublime-workspace
+*.sublime-project
+
+### Windows image file caches
+Thumbs.db
+
+### Windows folder config file
+Desktop.ini
+
+### Databases ###
+*.db
+*.sqlite
+*.sqlite3
+
+## Logfiles ##
+**/logs
+

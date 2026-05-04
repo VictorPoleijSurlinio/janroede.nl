@@ -1,0 +1,62 @@
+// Typography
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+    padding-top:15px;
+    margin-bottom: 0px;
+    // font-weight: 700;
+}
+
+
+h1 {
+    font-size:28px;
+    font-weight: 600;
+}
+h2 {
+    font-size:24px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    // color: $secondary-color;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    // color: $secondary-color;
+}
+h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: $secondary-color;
+}
+
+hr {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+strong{
+    font-weight: 700;
+}
+.large{
+    font-size: 150%;
+}
+section p a:not(.btn), section h2 a:not(.btn), section h3 a:not(.btn), section ul li a {
+    color: $secondary-color;
+    // text-decoration: none;
+    text-decoration: underline;
+}
+section p a:hover:not(.btn), section h2 a:hover:not(.btn), section h3 a:hover:not(.btn), section p a:active:not(.btn), section h2 a:active:not(.btn), section h3 a:active:not(.btn) {
+    color: $secondary-color;
+    text-decoration: underline;
+}
+
+// section a{
+//     position: relative;
+// }
