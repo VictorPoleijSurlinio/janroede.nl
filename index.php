@@ -138,7 +138,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 				if ($heightCm && $widthCm)              $captionParts[] = $heightCm . ' × ' . $widthCm . ' cm';
 				if ($signed)                            $captionParts[] = 'gesigneerd';
 				$caption = implode(' | ', $captionParts);
-				$contactUrl = SITE_URL . 'contact/?category=schilderijen&amp;item=' . urlencode($inv) . '#contact';
+				$contactUrl = SITE_URL . 'contact/?category=schilderijen&amp;item=' . urlencode($inv) . '#contact-form';
 				$captionHtml = htmlspecialchars($caption, ENT_QUOTES, 'UTF-8')
 					. ' <br><a href=\'' . $contactUrl . '\' class=\'btn btn-client-rounded primary-color my-2\' style=\'font-size:0.75rem\'>Beschikbaarheid van dit werk opvragen</a>';
 

@@ -56,6 +56,6 @@ include __DIR__ . '/arrays/faq.inc.php';
                 </div>
 
             </div>
-            <small>Staat uw vraag er niet tussen? Neem gerust contact op via ons <a  class="fw-bold" href="<?= SITE_URL ?>contact">contactformulier</a> of bel ons op <a class="fw-bold" href="tel:<?= $COMPANY_PHONE_LINK ?>"><?= $COMPANY_PHONE ?></a>.</small>
+            <small>Staat uw vraag er niet tussen? Neem gerust contact op via ons <a class="fw-bold" href="<?= SITE_URL ?>contact#contact-form">contactformulier</a> of bel ons op <a class="fw-bold" href="tel:<?= $COMPANY_PHONE_LINK ?>"><?= $COMPANY_PHONE ?></a>.</small>
         </div>
 </section>

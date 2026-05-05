@@ -129,7 +129,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
     </div>
 </section>
 
-<section class="primary-bg">
+<section class="primary-bg" id="contact-form">
     <div class="container">
         <div class="row align-items-start g-4 justify-content-between">
             <div class="col-lg-6 col-xl-7">

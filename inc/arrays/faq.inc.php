@@ -14,14 +14,14 @@ $questions_general = array(
     ),
     array(
         'question' => "Organiseert de stichting tentoonstellingen?",
-        'answer' => "Ja. De stichting stelt zich actief op om het werk van Jan Roëde tentoon te stellen. Actuele en komende tentoonstellingen worden bekendgemaakt via deze website.",
+        'answer' => "Ja. De stichting stelt zich actief op om het werk van Jan Roëde tentoon te stellen en heeft in de afgelopen jaren tentoonstellingen georganiseerd of laten organiseren op verschillende locaties in Nederland.",
     ),
 );
 
 $questions_anbi = array(
     array(
         'question' => "Wat is de ANBI-status van de stichting?",
-        'answer' => "De Jan Roëde Stichting heeft sinds 1 januari 2010 de ANBI-status (Algemeen Nut Beogende Instelling) en is sinds 1 januari 2012 aangemerkt als culturele ANBI. Dit betekent dat giften aan de stichting fiscaal aftrekbaar kunnen zijn.",
+        'answer' => "De Jan Roëde Stichting heeft sinds 1 januari 2010 de ANBI-status (Algemeen Nut Beogende Instelling) en is sinds 1 januari 2012 aangemerkt als culturele ANBI.",
     ),
     array(
         'question' => "Hoe wordt jong kunsttalent ondersteund?",
