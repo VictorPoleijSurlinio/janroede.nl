@@ -25,10 +25,10 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="lazy">
+			<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief">
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht">
+			<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht" loading="lazy">
 		</div>
 		<div class="carousel-item">
 			<img src="<?= STATIC_URL ?>img/carousel/le-moindre-de-ses-soucis.webp" class="d-block w-100 img-fluid" alt="Le moindre de ses soucis" loading="lazy">
