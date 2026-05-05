@@ -11,6 +11,25 @@ include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
 
 $zeefdrukItems = $zeefdrukken['items'] ?? [];
+
+function jrSlugify($value)
+{
+    $value = strtolower((string) $value);
+    $value = preg_replace('/[^a-z0-9]+/', '-', $value);
+    return trim($value ?? '', '-');
+}
+
+$filterFormatOptions = [];
+
+foreach ($zeefdrukItems as $filterItem) {
+    $formatLabel = $filterItem['format_label'] ?? 'onbekend';
+    $formatKey = jrSlugify($formatLabel);
+    if ($formatKey !== '') {
+        $filterFormatOptions[$formatKey] = ucfirst((string) $formatLabel);
+    }
+}
+
+ksort($filterFormatOptions, SORT_NATURAL);
 ?>
 
 <section class="single-header single-header--zeefdrukken" aria-label="Zeefdrukken header">
@@ -28,19 +47,42 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
 <section id="zeefdrukken-galerij">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10 text-center mb-4 mb-lg-5">
+            <div class="col-lg-12 text-center mb-4">
                 <h2 class="mb-3">Zeefdrukken van Jan Roede</h2>
                 <?php $brushClass = 'jr-brushstroke--primary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?>
                 <p class="mb-2">
                     De zeefdrukken van Jan Roede kenmerken zich door een speelse wisselwerking van heldere kleuren en ritmische vlakken. Elk werk is met de hand gedrukt en maakt deel uit van een genummerde oplage.
                 </p>
                 <p class="mb-0">
-                    Bent u geïnteresseerd in het aanschaffen van een werk? <a href="<?= SITE_URL ?>contact/">Neem dan contact op</a> — wij helpen u graag verder.
+                    Bent u geïnteresseerd in het aanschaffen van een werk? <a href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
                 </p>
             </div>
         </div>
 
-        <div class="jr-masonry" role="list" aria-label="Overzicht zeefdrukken">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-12">
+                <div class="jr-filter-panel">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="filter-format">Afmeting/formaat</label>
+                            <select class="form-select" id="filter-format">
+                                <option value="">Alle formaten</option>
+                                <?php foreach ($filterFormatOptions as $formatValue => $formatLabel): ?>
+                                    <option value="<?= htmlspecialchars($formatValue, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($formatLabel, ENT_QUOTES, 'UTF-8') ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3 jr-filter-meta">
+                        <small id="filter-results-count"></small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="reset-filters">Reset filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jr-masonry" role="list" aria-label="Overzicht zeefdrukken" id="zeefdrukken-grid">
             <?php foreach ($zeefdrukItems as $item): ?>
                 <?php
                 $inventoryNumber = $item['inventory_number'] ?? '';
@@ -48,6 +90,8 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
                 $formatLabel = $item['format_label'] ?? 'onbekend';
                 $editionNote = $item['edition_note'] ?? '';
                 $note = $item['note'] ?? '';
+
+                $formatFilter = jrSlugify($formatLabel);
 
                 $fullImageUrl = STATIC_URL . 'img/zeefdrukken/' . $imageName . '.webp';
                 $thumbImageUrl = STATIC_URL . 'img/zeefdrukken/thumbnails/' . $imageName . '.webp';
@@ -71,7 +115,11 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
                     . ' <br><a href=\'' . $contactUrl . '\' class=\'btn btn-client-rounded primary-color my-2\' style=\'font-size:0.75rem\'>Beschikbaarheid van dit werk opvragen</a>';
                 ?>
 
-                <article class="jr-masonry-item" role="listitem">
+                <article
+                    class="jr-masonry-item js-zeefdruk-item"
+                    role="listitem"
+                    data-format="<?= htmlspecialchars($formatFilter, ENT_QUOTES, 'UTF-8') ?>"
+                >
                     <a
                         href="<?= htmlspecialchars($fullImageUrl, ENT_QUOTES, 'UTF-8') ?>"
                         data-lightbox="zeefdrukken"
@@ -96,6 +144,56 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var formatFilter = document.getElementById('filter-format');
+    var resetButton = document.getElementById('reset-filters');
+    var countLabel = document.getElementById('filter-results-count');
+    var items = document.querySelectorAll('.js-zeefdruk-item');
+
+    if (!formatFilter || !items.length) {
+        return;
+    }
+
+    function updateCount(visibleCount, totalCount) {
+        if (!countLabel) {
+            return;
+        }
+
+        countLabel.textContent = visibleCount + ' van ' + totalCount + ' werken zichtbaar';
+    }
+
+    function applyFilters() {
+        var selectedFormat = formatFilter.value;
+        var visible = 0;
+
+        items.forEach(function (item) {
+            var formatMatch = !selectedFormat || item.dataset.format === selectedFormat;
+            var show = formatMatch;
+
+            item.style.display = show ? '' : 'none';
+
+            if (show) {
+                visible += 1;
+            }
+        });
+
+        updateCount(visible, items.length);
+    }
+
+    formatFilter.addEventListener('change', applyFilters);
+
+    if (resetButton) {
+        resetButton.addEventListener('click', function () {
+            formatFilter.value = '';
+            applyFilters();
+        });
+    }
+
+    applyFilters();
+});
+</script>
 
 <?php
 include ABS_PATH . 'inc/footer.inc.php';

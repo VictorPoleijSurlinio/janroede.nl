@@ -12,6 +12,22 @@
     &--secondary { color: $secondary-color; }
 }
 
+.jr-filter-panel {
+    padding: 1rem;
+    border-radius: 14px;
+    background: #f8f9fb;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+    }
+}
+
+.jr-filter-meta {
+    min-height: 1.5rem;
+}
+
 .jr-masonry {
     column-count: 3;
     column-gap: 1.1rem;
@@ -69,6 +85,10 @@
 }
 
 @media (max-width: 575.98px) {
+    .jr-filter-panel {
+        padding: 0.85rem;
+    }
+
     .jr-masonry {
         column-count: 1;
     }
