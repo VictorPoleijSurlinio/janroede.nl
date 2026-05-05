@@ -25,25 +25,46 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/de-brief.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/overdracht.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht" loading="lazy">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/le-moindre-de-ses-soucis.webp" class="d-block w-100 img-fluid" alt="Le moindre de ses soucis" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/le-moindre-de-ses-soucis.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/le-moindre-de-ses-soucis.webp" class="d-block w-100 img-fluid" alt="Le moindre de ses soucis" loading="lazy">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/abstracte-figuren-in-rook.webp" class="d-block w-100 img-fluid" alt="Abstracte figuren in rook" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/abstracte-figuren-in-rook.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/abstracte-figuren-in-rook.webp" class="d-block w-100 img-fluid" alt="Abstracte figuren in rook" loading="lazy">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/phantome-discutant-la-verite.webp" class="d-block w-100 img-fluid" alt="Phantome discutant la vérité" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/phantome-discutant-la-verite.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/phantome-discutant-la-verite.webp" class="d-block w-100 img-fluid" alt="Phantome discutant la vérité" loading="lazy">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/androgyn.webp" class="d-block w-100 img-fluid" alt="Androgyn" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/androgyn.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/androgyn.webp" class="d-block w-100 img-fluid" alt="Androgyn" loading="lazy">
+			</picture>
 		</div>
 		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/voortaan.webp" class="d-block w-100 img-fluid" alt="Voortaan" loading="lazy">
+			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/voortaan.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/voortaan.webp" class="d-block w-100 img-fluid" alt="Voortaan" loading="lazy">
+			</picture>
 		</div>
 	</div>
 </div>
@@ -77,7 +98,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 			<div class="col-lg-5 mb-5 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<img
-						src="<?= STATIC_URL ?>img/headers/schilderijen-header.webp"
+						src="<?= STATIC_URL ?>img/headers/mobile/schilderijen-header.webp"
 						alt="Schilderijen header preview"
 						loading="lazy"
 						decoding="async"
@@ -98,7 +119,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 			<div class="col-lg-5">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<img
-						src="<?= STATIC_URL ?>img/headers/zeefdrukken-header.webp"
+						src="<?= STATIC_URL ?>img/headers/mobile/zeefdrukken-header.webp"
 						alt="Zeefdrukken header preview"
 						loading="lazy"
 						decoding="async"

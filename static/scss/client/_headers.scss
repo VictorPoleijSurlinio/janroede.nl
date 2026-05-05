@@ -35,18 +35,33 @@
 
 .single-header--de-stichting {
     background-image: url('../img/headers/de-stichting-header.webp');
-        background-position: center top;
+    background-position: center top;
 
+    @media (max-width: 768px) {
+        background-image: url('../img/headers/mobile/de-stichting-header.webp');
+    }
 }
 .single-header--contact {
     background-image: url('../img/headers/contact-header.webp');
     background-position: center top;
+
+    @media (max-width: 768px) {
+        background-image: url('../img/headers/mobile/contact-header.webp');
+    }
 }
 .single-header--schilderijen {
     background-image: url('../img/headers/schilderijen-header.webp');
     background-position: center center;
+
+    @media (max-width: 768px) {
+        background-image: url('../img/headers/mobile/schilderijen-header.webp');
+    }
 }
 .single-header--zeefdrukken {
     background-image: url('../img/headers/zeefdrukken-header.webp');
     background-position: center center;
+
+    @media (max-width: 768px) {
+        background-image: url('../img/headers/mobile/zeefdrukken-header.webp');
+    }
 }
