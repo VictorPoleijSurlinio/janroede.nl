@@ -3,6 +3,7 @@
 		<div class="navbar-dark d-flex align-items-center justify-content-between">
 			<a href="<?= SITE_URL ?>" aria-label="Logo, navigate to home page" class="d-xxl-none name-logo">
 				Jan Roëde Stichting
+				<div><?php $brushClass = 'jr-brushstroke--secondary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
 			</a>
 			<div style="width: 75px;" class="d-flex justify-content-end">
 				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Menu">
@@ -17,7 +18,8 @@
 		<div class="text-center collapse navbar-collapse d-flex-xxl justify-content-xxl-between" id="navbarNavDropdown">
 
 			<a class="d-none d-xxl-block name-logo" href="<?= SITE_URL ?>" aria-label="Logo, navigate to home page">
-				Jan Roëde Stichting
+				Jan Roëde Stichting 
+				<div><?php $brushClass = 'jr-brushstroke--secondary';include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
 			</a>
 
 			<ul class="navbar-nav">
