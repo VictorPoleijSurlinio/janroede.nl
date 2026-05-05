@@ -22,6 +22,16 @@ $COMPANY_INSTAGRAM      = "";
 $COMPANY_LINKEDIN       = "";
 $COMPANY_TWITTER        = "";
 
+$COMPANY_OPENING_HOURS = [
+    'Maandag'    => '09:00 – 17:00',
+    'Dinsdag'    => '09:00 – 17:00',
+    'Woensdag'   => '09:00 – 17:00',
+    'Donderdag'  => '09:00 – 17:00',
+    'Vrijdag'    => '09:00 – 17:00',
+    'Zaterdag'   => 'Gesloten',
+    'Zondag'     => 'Gesloten',
+];
+
 $MAIL_CLIENT_FROM = "info@janroede.nl";
 $MAIL_CLIENT_ALGEMEEN = "info@janroede.nl";
 $MAIL_CLIENT_SIGNATURE = "Jan Roede Stichting";

@@ -38,9 +38,9 @@ $table-striped-color: #f9f9f9;
 
 
 //FAQ
-$accordion-color:                         $secondary-color;
+$accordion-color:                         darken($secondary-color, 10%);
 $accordion-bg:                            #EEEEEE;
-$accordion-button-bg:                     $secondary-color;
+$accordion-button-bg:                     darken($secondary-color, 10%);
 $accordion-button-color:                  white;
 $accordion-button-active-bg:              $primary-color;
 $accordion-button-active-color:           white;
