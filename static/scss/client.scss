@@ -241,8 +241,8 @@ section.less-padding-top {
 // Pulse/breath animation
 @keyframes pulse-breath {
   0%, 100% { transform: scale(1); }
-  40% { transform: scale(1.02); }
-  60% { transform: scale(0.99); }
+  40% { transform: scale(1.045); }
+  60% { transform: scale(0.98); }
 }
 .pulse-breath {
   animation: pulse-breath 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
