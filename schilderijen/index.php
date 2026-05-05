@@ -153,7 +153,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
 
                     <div class="d-flex justify-content-between align-items-center mt-3 jr-filter-meta">
                         <small id="filter-results-count"></small>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="reset-filters">Reset filters</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="reset-filters" aria-label="Reset filters voor schilderijen">Reset filters</button>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ include __DIR__ . '/arrays/faq.inc.php';
                     ?>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="question-algemeen-<?= $i ?>">
-                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-algemeen-<?= $i ?>" aria-expanded="false" aria-controls="answer-algemeen-<?= $i ?>">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-algemeen-<?= $i ?>" aria-expanded="false" aria-controls="answer-algemeen-<?= $i ?>" aria-label="Toon antwoord: <?= htmlspecialchars($question['question'], ENT_QUOTES, 'UTF-8') ?>">
                                     <?= $question['question'] ?>
                                 </button>
                             </h2>
@@ -39,7 +39,7 @@ include __DIR__ . '/arrays/faq.inc.php';
                     ?>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="question-anbi-<?= $i ?>">
-                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-anbi-<?= $i ?>" aria-expanded="false" aria-controls="answer-anbi-<?= $i ?>">
+                                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-anbi-<?= $i ?>" aria-expanded="false" aria-controls="answer-anbi-<?= $i ?>" aria-label="Toon antwoord: <?= htmlspecialchars($question['question'], ENT_QUOTES, 'UTF-8') ?>">
                                     <?= $question['question'] ?>
                                 </button>
                             </h2>

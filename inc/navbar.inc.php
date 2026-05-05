@@ -35,8 +35,10 @@
 			</ul>
 			<div class="d-flex justify-content-center">
 				<a class="btn-client-rounded" href="<?= SITE_URL ?>contact">CONTACT</a>
-				<a class="btn-side-icon" href="<?= SITE_URL ?>contact"><i class="fa-solid fa-arrow-right"></i></a>
+				<a class="btn-side-icon" href="<?= SITE_URL ?>contact" aria-label="Ga naar contactpagina"><i class="fa-solid fa-arrow-right"></i></a>
 			</div>
 		</div>
 	</div>
 </div>
+
+<main id="main-content">

@@ -90,7 +90,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
 					<a class="btn-client-rounded" href="<?= SITE_URL ?>schilderijen/">SCHILDERIJEN</a>
-						<a class="btn-side-icon" href="<?= SITE_URL ?>schilderijen/"><i class="fa-solid fa-arrow-right"></i></a>
+						<a class="btn-side-icon" href="<?= SITE_URL ?>schilderijen/" aria-label="Ga naar schilderijen"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
 					<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">ZEEFDRUKKEN</a>
-						<a class="btn-side-icon" href="<?= SITE_URL ?>zeefdrukken/"><i class="fa-solid fa-arrow-right"></i></a>
+						<a class="btn-side-icon" href="<?= SITE_URL ?>zeefdrukken/" aria-label="Ga naar zeefdrukken"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>

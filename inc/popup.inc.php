@@ -34,7 +34,7 @@ if (!empty($SITE_POPUP_ENABLED)) {
 					<p class="mb-0">Test</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-client" data-bs-dismiss="modal">Sluiten</button>
+					<button type="button" class="btn btn-client" data-bs-dismiss="modal" aria-label="Sluit popup">Sluiten</button>
 				</div>
 			</div>
 		</div>

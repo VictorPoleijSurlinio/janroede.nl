@@ -187,7 +187,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
                     </div>
 
                     <p class="mt-3">
-                        <button id="btn-contact-submit" type="submit" class="btn btn-client-rounded">Verzenden</button>
+                        <button id="btn-contact-submit" type="submit" class="btn btn-client-rounded" aria-label="Verzend contactformulier">Verzenden</button>
                     </p>
                     <input type="text" name="robo" class="robo hidden d-none">
 
