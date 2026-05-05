@@ -78,6 +78,9 @@ $schilderijenItems = $schilderijen['items'] ?? [];
                 }
 
                 $caption = implode(' | ', $captionParts);
+                $contactUrl = SITE_URL . 'contact/?category=schilderijen&amp;item=' . urlencode($inventoryNumber) . '#contact';
+                $captionHtml = htmlspecialchars($caption, ENT_QUOTES, 'UTF-8')
+                    . ' <br><a href=\'' . $contactUrl . '\' class=\'btn btn-client-rounded primary-color my-2\' style=\'font-size:0.75rem\'>Beschikbaarheid van dit werk opvragen</a>';
 
                 $displayTitle = $title_work ?? $inventoryNumber;
                 ?>
@@ -86,7 +89,7 @@ $schilderijenItems = $schilderijen['items'] ?? [];
                     <a
                         href="<?= htmlspecialchars($fullImageUrl, ENT_QUOTES, 'UTF-8') ?>"
                         data-lightbox="schilderijen"
-                        data-title="<?= htmlspecialchars($caption, ENT_QUOTES, 'UTF-8') ?>"
+                        data-title="<?= $captionHtml ?>"
                         class="jr-art-link"
                         aria-label="Open schilderij <?= htmlspecialchars($displayTitle, ENT_QUOTES, 'UTF-8') ?> in lightbox"
                     >

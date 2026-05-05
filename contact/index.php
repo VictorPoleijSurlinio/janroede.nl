@@ -9,6 +9,9 @@ $title = 'Contact | ' . $COMPANY_FULLNAME;
 $description  = 'Neem contact op met Westlandse Glashandel voor advies, inmeten en glasvervanging.';
 $page = "contact";
 
+$preselectedCategory = in_array($_GET['category'] ?? '', ['schilderijen', 'zeefdrukken']) ? $_GET['category'] : '';
+$preselectedItem = isset($_GET['item']) ? preg_replace('/[^A-Za-z0-9_\-]/', '', $_GET['item']) : '';
+
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
 
@@ -130,7 +133,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
     <div class="container">
         <div class="row align-items-start g-4 justify-content-between">
             <div class="col-lg-6 col-xl-7">
-                <h1 class="text-white">Heb je een <strong class="secondary-color">vraag</strong>? Neem gerust <strong class="secondary-color">contact</strong> op.</h1>
+                <h1 class="text-white">Interesse in een <strong class="secondary-color">werk</strong>, of heb je een <strong class="secondary-color">vraag</strong>? Neem gerust <strong class="secondary-color">contact</strong> op.</h1>
                 <form class="form mt-4" data-ajaxurl="<?= SITE_URL ?>ajax/process_contactform.php">
 
                     <div class="form-check-inline">
@@ -205,31 +208,24 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
         var previewCard = document.getElementById('contact-art-preview');
         var previewImage = document.getElementById('contact-art-preview-image');
         var interestOptions = <?= json_encode($interestOptions, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>;
+        var preselectedCategory = <?= json_encode($preselectedCategory) ?>;
+        var preselectedItem = <?= json_encode($preselectedItem) ?>;
 
         if (!interestCategory || !interestItem || !previewCard || !previewImage) {
             return;
-        }
-
-        function getAllItems() {
-            var all = [];
-            Object.keys(interestOptions).forEach(function (cat) {
-                (interestOptions[cat] || []).forEach(function (item) {
-                    all.push({ item: item, category: cat });
-                });
-            });
-            return all;
         }
 
         function randomAngle() {
             return (Math.random() * 10 - 5).toFixed(1) + 'deg';
         }
 
-        function showRandomPreview() {
-            var all = getAllItems();
-            if (!all.length) return;
-            var rand = all[Math.floor(Math.random() * all.length)];
-            previewImage.src = rand.item.preview;
-            previewImage.alt = rand.item.title;
+        function showDefaultPreview() {
+            var defaultItem = (interestOptions['schilderijen'] || []).find(function (item) {
+                return item.value === 'JRD203';
+            });
+            if (!defaultItem) return;
+            previewImage.src = defaultItem.preview;
+            previewImage.alt = defaultItem.title;
             previewCard.style.transform = 'rotate(' + randomAngle() + ')';
             previewCard.hidden = false;
         }
@@ -282,8 +278,16 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
 
         interestCategory.addEventListener('change', populateInterestItems);
         interestItem.addEventListener('change', updatePreview);
-        populateInterestItems();
-        showRandomPreview();
+
+        if (preselectedCategory && preselectedItem) {
+            interestCategory.value = preselectedCategory;
+            populateInterestItems();
+            interestItem.value = preselectedItem;
+            updatePreview();
+        } else {
+            populateInterestItems();
+            showDefaultPreview();
+        }
     });
 </script>
 
