@@ -27,10 +27,10 @@
 					<a class="nav-link" href="<?= SITE_URL ?>de-stichting">DE STICHTING</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?= SITE_URL ?>schilderijen" data-section="jobs">SCHILDERIJEN</a>
+					<a class="nav-link" href="<?= SITE_URL ?>schilderijen">SCHILDERIJEN</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?= SITE_URL ?>zeefdrukken" data-section="jobs">ZEEFDRUKKEN</a>
+					<a class="nav-link" href="<?= SITE_URL ?>zeefdrukken" >ZEEFDRUKKEN</a>
 				</li>
 			</ul>
 			<div class="d-flex justify-content-center">

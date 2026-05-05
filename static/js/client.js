@@ -1,13 +1,10 @@
 
 // @prepros-prepend "../../../packages/jquery/3.6.0/min/jquery.min.js"
 // @prepros-prepend "../../../packages/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
-// @prepros-prepend "../../../packages/cookieconsent/3.0/js/cookieconsent.min.js"
 // @prepros-prepend "../../../packages/lightbox/2.10.0/js/lightbox.min.js"
-// @prepros-prepend "../../../packages/slick/1.8-2.1/js/slick.min.js"
 //@prepros-prepend "../../vendor/surlinio/smoothscroll/1.1/js/smoothscroll.js"
 // @prepros-prepend "../../../packages/masonry/4.2.2/js/masonry.pkgd.min.js"
 // @prepros-prepend "../../../packages/imagesloaded/4.1.4/js/imagesloaded.pkgd.min.js"
-// @prepros-prepend "../../../packages/slim/5.5.1/js/slim.jquery.min.js"
 // @prepros-prepend "../../../packages/aos/2.0/js/aos.js"
 
 
@@ -165,40 +162,6 @@ $(window).scroll(function(){
 });
 
 
-// SLICK SLIDER
-// $(document).ready(function () {
-//     $('.slides').slick({
-//         dots: false,
-//         infinite: true,
-//         speed: 4000,
-//         autoplaySpeed: 0,
-//         pauseOnHover: false,
-//         slidesToShow: 5,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         fade: false,
-//         arrows: false,
-//         cssEase: 'linear',
-//         responsive: [
-//         {
-//             breakpoint: 992,
-//             settings: {
-//                 slidesToShow: 2
-//             }
-//         }]
-//     });
-// });
-//END SLICK SLIDER
-
-document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link[data-section]');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      navLinks.forEach(l => l.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-});
 
 
 // Center Carousel thumbnails
@@ -241,29 +204,6 @@ if (carousel) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-	var filter = document.getElementById('vacature-restaurant-filter');
-	var cards = document.querySelectorAll('.vacature-card');
-	filter.addEventListener('change', function() {
-		var value = filter.value;
-		cards.forEach(function(card) {
-			// Always remove the animation class first
-			card.classList.remove('flip-in-left');
-			if (!value || card.getAttribute('data-restaurant') === value) {
-				card.style.display = '';
-				// Force reflow to restart animation
-				void card.offsetWidth;
-				card.classList.add('flip-in-left');
-			} else {
-				card.style.display = 'none';
-			}
-		});
-	});
-	// Optionally, trigger animation on first load
-	cards.forEach(function(card) {
-		card.classList.add('flip-in-left');
-	});
-});
 
 // Animate on scroll
 $(document).ready(function(){
