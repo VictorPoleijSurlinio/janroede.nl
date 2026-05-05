@@ -37,7 +37,7 @@
 
 		</div>
 		<div class="row">
-			<div class="mb-3"><?php $brushClass = 'jr-brushstroke--secondary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
+			<div><?php $brushClass = 'jr-brushstroke--secondary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
 			<div class="text-center">
 				<p class="mb-0">©<?= date("Y"); ?> <a href="<?= $COMPANY_WEBSITE ?>" target="_blank"><?= $COMPANY_NAME ?> </a> | <a href="https://surlinio.com/" target="_blank">Surlinio<i class="fa-solid fa-code ms-1"></i> </a><br>
 				</p>
