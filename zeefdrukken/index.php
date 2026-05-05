@@ -127,9 +127,14 @@ ksort($filterFormatOptions, SORT_NATURAL);
                         class="jr-art-link"
                         aria-label="Open zeefdruk <?= htmlspecialchars($inventoryNumber, ENT_QUOTES, 'UTF-8') ?> in lightbox"
                     >
+                        <?php
+                        $altParts = ['Jan Roëde – zeefdruk ' . $inventoryNumber];
+                        if ($formatLabel !== null && $formatLabel !== 'onbekend') $altParts[] = ucfirst($formatLabel) . ' formaat';
+                        $altText = implode(', ', $altParts);
+                        ?>
                         <img
                             src="<?= htmlspecialchars($thumbImageUrl, ENT_QUOTES, 'UTF-8') ?>"
-                            alt="Zeefdruk <?= htmlspecialchars($inventoryNumber, ENT_QUOTES, 'UTF-8') ?>"
+                            alt="<?= htmlspecialchars($altText, ENT_QUOTES, 'UTF-8') ?>"
                             loading="lazy"
                             decoding="async"
                             class="img-fluid"

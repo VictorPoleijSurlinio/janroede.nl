@@ -227,9 +227,15 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                         class="jr-art-link"
                         aria-label="Open schilderij <?= htmlspecialchars($displayTitle, ENT_QUOTES, 'UTF-8') ?> in lightbox"
                     >
+                        <?php
+                        $altParts = ['Jan Roëde – ' . $displayTitle];
+                        if ($material !== null) $altParts[] = $material;
+                        if ($year !== null)     $altParts[] = $year;
+                        $altText = implode(', ', $altParts);
+                        ?>
                         <img
                             src="<?= htmlspecialchars($thumbImageUrl, ENT_QUOTES, 'UTF-8') ?>"
-                            alt="<?= htmlspecialchars($displayTitle, ENT_QUOTES, 'UTF-8') ?>"
+                            alt="<?= htmlspecialchars($altText, ENT_QUOTES, 'UTF-8') ?>"
                             loading="lazy"
                             decoding="async"
                             class="img-fluid"
