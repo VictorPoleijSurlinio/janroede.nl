@@ -28,6 +28,7 @@
 			</div>
 			<div class="col-lg-4 text-lg-end">
 				<h3 class="footer-heading">Links</h3>
+				<a href="<?= SITE_URL ?>">Home</a><br>
 				<a href="<?= SITE_URL ?>de-stichting">De Stichting</a><br>
 				<a href="<?= SITE_URL ?>schilderijen">Schilderijen</a><br>
 				<a href="<?= SITE_URL ?>zeefdrukken">Zeefdrukken</a><br>

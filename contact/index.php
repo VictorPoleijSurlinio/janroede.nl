@@ -32,8 +32,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <div class="white-box shadow-sm h-100 text-center" data-aos="flip-left" data-aos-duration="1250" data-aos-offset="50">
                     <div>
                         <i class="far fa-phone secondary-color fa-2x mb-2" aria-hidden="true"></i>
-                        <h4 class="secondary-color my-2">Telefoon:</h4>
-                        <a href="tel:<?= $COMPANY_PHONE_LINK ?>"></i><?= $COMPANY_PHONE ?></a><br>
+                        <h4 class="secondary-color my-2">Telefoon</h4>
+                        <a class="fw-bold" href="tel:<?= $COMPANY_PHONE_LINK ?>"></i><?= $COMPANY_PHONE ?></a><br>
 
                     </div>
                 </div>
@@ -43,8 +43,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <div class="white-box shadow-sm h-100 text-center" data-aos="flip-left" data-aos-duration="950" data-aos-offset="50">
                     <div>
                         <i class="fa fa-envelope secondary-color fa-2x mb-2" aria-hidden="true"></i>
-                        <h4 class="secondary-color my-2">Email:</h4>
-                        <a style="word-break: break-all;" href="mailto:<?= $COMPANY_EMAIL ?>" aria-label="<?= $COMPANY_EMAIL ?>"></i> <?= $COMPANY_EMAIL ?></a><br><br>
+                        <h4 class="secondary-color my-2">Email</h4>
+                        <a style="word-break: break-all;" class="fw-bold" href="mailto:<?= $COMPANY_EMAIL ?>" aria-label="<?= $COMPANY_EMAIL ?>"></i> <?= $COMPANY_EMAIL ?></a><br><br>
 
                     </div>
                 </div>
@@ -54,8 +54,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <div class="white-box shadow-sm h-100 text-center" data-aos="flip-left" data-aos-duration="1250" data-aos-offset="50">
                     <div>
                         <i class="fa fa-map-marker-alt secondary-color fa-2x mb-2" aria-hidden="true"></i>
-                        <h4 class="secondary-color my-2">Bezoekadres:</h4>
-                        <a target="blank" href="https://www.google.com/maps/dir/?api=1&destination=<?= $COMPANY_STREET . "," . $COMPANY_CITY ?>">
+                        <h4 class="secondary-color my-2">Bezoekadres</h4>
+                        <a class="fw-bold" target="blank" href="https://www.google.com/maps/dir/?api=1&destination=<?= $COMPANY_STREET . "," . $COMPANY_CITY ?>">
                             <span><?= $COMPANY_NAME ?></span><br>
                             <?= $COMPANY_STREET ?><br>
                             <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?>
