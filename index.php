@@ -5,6 +5,7 @@ $title = "Jan Roëde Stichting | Kunstenaar Jan Roëde – schilderijen, tekenin
 $description = "De Jan Roëde Stichting beheert de artistieke nalatenschap van Jan Roëde (1932–2007). Ontdek zijn schilderijen, tekeningen, gouaches en grafiek en lees meer over de stichting en haar activiteiten.";
 $nav_page = "home";
 $language =  "nl";
+$og_image = STATIC_URL . 'img/carousel/de-brief.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
@@ -24,6 +25,9 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 	<div class="carousel-inner">
 		<div class="carousel-item active">
+			<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="lazy">
+		</div>
+		<div class="carousel-item">
 			<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht">
 		</div>
 		<div class="carousel-item">
@@ -31,9 +35,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
 		</div>
 		<div class="carousel-item">
 			<img src="<?= STATIC_URL ?>img/carousel/abstracte-figuren-in-rook.webp" class="d-block w-100 img-fluid" alt="Abstracte figuren in rook" loading="lazy">
-		</div>
-		<div class="carousel-item">
-			<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="lazy">
 		</div>
 		<div class="carousel-item">
 			<img src="<?= STATIC_URL ?>img/carousel/phantome-discutant-la-verite.webp" class="d-block w-100 img-fluid" alt="Phantome discutant la vérité" loading="lazy">
@@ -75,7 +76,14 @@ include ABS_PATH . 'inc/navbar.inc.php';
 		<div class="row justify-content-center">
 			<div class="col-lg-5 mb-5 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
-					<i class="fal fa-paint-brush fa-3x mb-3"></i>
+					<img
+						src="<?= STATIC_URL ?>img/headers/schilderijen-header.webp"
+						alt="Schilderijen header preview"
+						loading="lazy"
+						decoding="async"
+						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
+						style="max-width: 360px; width: 100%;"
+					>
 					<h3 class="text-white">Schilderijen</h3>
 					<p class="my-4">
 						<strong>Een overzicht van de schilderijen uit de nalatenschap van Jan Roëde. Van intieme figuurstudies tot grootse composities — werk dat raakt en blijft hangen.</strong>
@@ -89,7 +97,14 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 			<div class="col-lg-5">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
-					<i class="fal fa-layer-group fa-3x mb-3"></i>
+					<img
+						src="<?= STATIC_URL ?>img/headers/zeefdrukken-header.webp"
+						alt="Zeefdrukken header preview"
+						loading="lazy"
+						decoding="async"
+						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
+						style="max-width: 360px; width: 100%;"
+					>
 					<h3 class="text-white">Zeefdrukken</h3>
 					<p class="my-4">
 						<strong>De zeefdrukken van Jan Roëde tonen zijn grafische kracht. Gelaagd, kleurrijk en met een eigen karakter dat los staat van zijn geschilderd werk.</strong>

@@ -4,6 +4,7 @@ include __DIR__ . '/../inc/arrays/schilderijen.php';
 
 $title = 'Schilderijen | Jan Roede Stichting';
 $description = 'Overzicht van de schilderijen van Jan Roede. Bekijk thumbnails in masonry layout en open elke afbeelding in lightbox op volledig formaat.';
+$og_image = STATIC_URL . 'img/headers/schilderijen-header.webp';
 $page = 'schilderijen';
 
 include ABS_PATH . 'inc/head.inc.php';

@@ -5,6 +5,7 @@ $title = "De Stichting | Jan Roëde Stichting";
 $description = "Informatie over de Jan Roëde Stichting: oprichting, doelstelling, bestuur, beleidsplan, jaarverslagen, activiteiten en verkoop van werken uit de nalatenschap.";
 $nav_page = "de-stichting";
 $language = "nl";
+$og_image = STATIC_URL . 'img/headers/de-stichting-header.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';

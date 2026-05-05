@@ -7,6 +7,7 @@ include __DIR__ . '/../inc/arrays/zeefdrukken.php';
 // HEAD AND NAV VARIABLES
 $title = 'Contact | ' . $COMPANY_FULLNAME;
 $description  = 'Neem contact op met Westlandse Glashandel voor advies, inmeten en glasvervanging.';
+$og_image = STATIC_URL . 'img/headers/contact-header.webp';
 $page = "contact";
 
 $preselectedCategory = in_array($_GET['category'] ?? '', ['schilderijen', 'zeefdrukken']) ? $_GET['category'] : '';

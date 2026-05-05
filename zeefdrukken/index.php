@@ -4,6 +4,7 @@ include __DIR__ . '/../inc/arrays/zeefdrukken.php';
 
 $title = 'Zeefdrukken | Jan Roede Stichting';
 $description = 'Overzicht van de zeefdrukken van Jan Roede. Bekijk thumbnails in masonry layout en open elke afbeelding in lightbox op volledig formaat.';
+$og_image = STATIC_URL . 'img/headers/zeefdrukken-header.webp';
 $page = 'zeefdrukken';
 
 include ABS_PATH . 'inc/head.inc.php';
