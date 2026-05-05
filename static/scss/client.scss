@@ -25,6 +25,11 @@ $fa-font-path: "../fonts/fontawesome-pro/6.0.0";
 @import "../../../packages/aos/2.0/scss/aos.scss";
 @import "../../../packages/aos/2.0/scss/animations.scss";
 
+// Lightbox 2.10.0
+$lightbox-img-path: "../img/lightbox/2.10.0";
+@import "../../../packages/lightbox/2.10.0/scss/lightbox.scss";
+
+
 @import "client/accordion.scss";
 @import "client/typography.scss";
 @import "client/navbar.scss";

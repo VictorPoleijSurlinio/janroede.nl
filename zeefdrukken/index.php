@@ -28,10 +28,12 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-4 mb-lg-5">
-                <h2 class="mb-3">Grafiek in kleur en ritme</h2>
+                <h2 class="mb-3">Zeefdrukken van Jan Roede</h2>
+                <p class="mb-2">
+                    De zeefdrukken van Jan Roede kenmerken zich door een speelse wisselwerking van heldere kleuren en ritmische vlakken. Elk werk is met de hand gedrukt en maakt deel uit van een genummerde oplage.
+                </p>
                 <p class="mb-0">
-                    Klik op een werk om de afbeelding op volledig formaat te openen. De pagina gebruikt thumbnails uit
-                    <strong>static/img/zeefdrukken/thumbnails</strong> zodra die beschikbaar zijn.
+                    Bent u geïnteresseerd in het aanschaffen van een werk? <a href="<?= SITE_URL ?>contact/">Neem dan contact op</a> — wij helpen u graag verder.
                 </p>
             </div>
         </div>
