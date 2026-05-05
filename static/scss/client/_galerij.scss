@@ -1,3 +1,17 @@
+.jr-brushstroke {
+    width: 100%;
+    margin: 0 auto 1.5rem;
+
+    svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &--primary   { color: $primary-color; }
+    &--secondary { color: $secondary-color; }
+}
+
 .jr-masonry {
     column-count: 3;
     column-gap: 1.1rem;

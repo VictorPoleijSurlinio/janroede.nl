@@ -24,11 +24,12 @@ $schilderijenItems = $schilderijen['items'] ?? [];
     </div>
 </div>
 
-<section class="bg-light" id="schilderijen-galerij">
+<section id="schilderijen-galerij">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-4 mb-lg-5">
                 <h2 class="mb-3">Schilderijen van Jan Roede</h2>
+                <div class="mb-3"><?php $brushClass = 'jr-brushstroke--primary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
                 <p class="mb-2">
                     Het schilderwerk van Jan Roede omvat een breed scala aan onderwerpen: portretten, figuurstukken en abstracte composities, uitgevoerd in olie en acryl op linnen.
                 </p>

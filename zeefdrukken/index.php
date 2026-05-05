@@ -24,11 +24,12 @@ $zeefdrukItems = $zeefdrukken['items'] ?? [];
     </div>
 </div>
 
-<section class="bg-light" id="zeefdrukken-galerij">
+<section id="zeefdrukken-galerij">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-4 mb-lg-5">
                 <h2 class="mb-3">Zeefdrukken van Jan Roede</h2>
+                <?php $brushClass = 'jr-brushstroke--primary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?>
                 <p class="mb-2">
                     De zeefdrukken van Jan Roede kenmerken zich door een speelse wisselwerking van heldere kleuren en ritmische vlakken. Elk werk is met de hand gedrukt en maakt deel uit van een genummerde oplage.
                 </p>
