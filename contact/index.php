@@ -1,6 +1,8 @@
 <?php
 include __DIR__ . '/../inc/config.inc.php';
 include __DIR__ . '/../inc/arrays/faq.inc.php';
+include __DIR__ . '/../inc/arrays/schilderijen.php';
+include __DIR__ . '/../inc/arrays/zeefdrukken.php';
 
 // HEAD AND NAV VARIABLES
 $title = 'Contact | ' . $COMPANY_FULLNAME;
@@ -9,6 +11,63 @@ $page = "contact";
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
+
+$interestOptions = [
+    'schilderijen' => [],
+    'zeefdrukken' => [],
+];
+
+foreach (($schilderijen['items'] ?? []) as $item) {
+    $inventoryNumber = $item['inventory_number'] ?? '';
+    $titleLabel = $item['title'] ?? 'zonder titel';
+    $imageName = $item['image_name'] ?? $inventoryNumber;
+    if ($inventoryNumber === '') {
+        continue;
+    }
+
+    $thumbUrl = STATIC_URL . 'img/schilderijen/thumbnails/' . $imageName . '.webp';
+    $thumbPath = ABS_PATH . 'static/img/schilderijen/thumbnails/' . $imageName . '.webp';
+    if (!file_exists($thumbPath)) {
+        $thumbUrl = STATIC_URL . 'img/schilderijen/' . $imageName . '.webp';
+    }
+
+    $interestOptions['schilderijen'][] = [
+        'value' => $inventoryNumber,
+        'label' => $titleLabel . ' (' . $inventoryNumber . ')',
+        'title' => $titleLabel,
+        'subtitle' => 'Schilderij',
+        'preview' => $thumbUrl,
+    ];
+}
+
+foreach (($zeefdrukken['items'] ?? []) as $item) {
+    $inventoryNumber = $item['inventory_number'] ?? '';
+    $formatLabel = $item['format_label'] ?? 'onbekend';
+    $editionNote = $item['edition_note'] ?? '';
+    $imageName = $item['image_name'] ?? $inventoryNumber;
+    if ($inventoryNumber === '') {
+        continue;
+    }
+
+    $thumbUrl = STATIC_URL . 'img/zeefdrukken/thumbnails/' . $imageName . '.webp';
+    $thumbPath = ABS_PATH . 'static/img/zeefdrukken/thumbnails/' . $imageName . '.webp';
+    if (!file_exists($thumbPath)) {
+        $thumbUrl = STATIC_URL . 'img/zeefdrukken/' . $imageName . '.webp';
+    }
+
+    $label = $inventoryNumber . ' - ' . ucfirst($formatLabel);
+    if ($editionNote !== '') {
+        $label .= ' - ' . $editionNote;
+    }
+
+    $interestOptions['zeefdrukken'][] = [
+        'value' => $inventoryNumber,
+        'label' => $label,
+        'title' => $inventoryNumber,
+        'subtitle' => 'Zeefdruk - ' . ucfirst($formatLabel) . ($editionNote !== '' ? ' - ' . $editionNote : ''),
+        'preview' => $thumbUrl,
+    ];
+}
 ?>
 <section class="single-header single-header--contact" aria-label="Contact">
     <div class="single-header__content">
@@ -69,8 +128,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 <section class="primary-bg">
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-lg-7">
+        <div class="row align-items-start g-4 justify-content-between">
+            <div class="col-lg-6 col-xl-7">
                 <h1 class="text-white">Heb je een <strong class="secondary-color">vraag</strong>? Neem gerust <strong class="secondary-color">contact</strong> op.</h1>
                 <form class="form mt-4" data-ajaxurl="<?= SITE_URL ?>ajax/process_contactform.php">
 
@@ -88,6 +147,20 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     </div>
                     <div class="row mt-3">
                         <div class="form-group col-md-6 pe-md-1">
+                            <label class="sr-only" for="interest_category">Interesse in</label>
+                            <select class="form-control" id="interest_category" name="interest_category">
+                                <option value="">Interesse in een specifiek werk?</option>
+                                <option value="schilderijen">Schilderijen</option>
+                                <option value="zeefdrukken">Zeefdrukken</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 ps-md-1">
+                            <label class="sr-only" for="interest_item">Specifiek werk</label>
+                            <select class="form-control" id="interest_item" name="interest_item" disabled>
+                                <option value="">Selecteer eerst een categorie</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 pe-md-1">
                             <label class="sr-only" for="firstname">Voornaam <sup>*</sup></label>
                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Voornaam*">
                         </div>
@@ -104,8 +177,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefoonnummer">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="comment">Vraag <sup>*</sup></label>
-                            <textarea class="form-control" rows="4" id="comment" name="comment" placeholder="Wat is je vraag?"></textarea>
+                            <label class="sr-only" for="comment">Opmerking <sup>*</sup></label>
+                            <textarea class="form-control" rows="4" id="comment" name="comment" placeholder="Opmerking"></textarea>
                         </div>
                     </div>
 
@@ -116,10 +189,103 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
                 </form>
             </div>
+            <div class="col-lg-6 col-xl-5">
+                <div class="contact-art-preview" id="contact-art-preview">
+                    <img src="" alt="Preview van geselecteerd werk" id="contact-art-preview-image" loading="lazy" decoding="async">
+                </div>
+            </div>
         </div>
-
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var interestCategory = document.getElementById('interest_category');
+        var interestItem = document.getElementById('interest_item');
+        var previewCard = document.getElementById('contact-art-preview');
+        var previewImage = document.getElementById('contact-art-preview-image');
+        var interestOptions = <?= json_encode($interestOptions, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>;
+
+        if (!interestCategory || !interestItem || !previewCard || !previewImage) {
+            return;
+        }
+
+        function getAllItems() {
+            var all = [];
+            Object.keys(interestOptions).forEach(function (cat) {
+                (interestOptions[cat] || []).forEach(function (item) {
+                    all.push({ item: item, category: cat });
+                });
+            });
+            return all;
+        }
+
+        function randomAngle() {
+            return (Math.random() * 10 - 5).toFixed(1) + 'deg';
+        }
+
+        function showRandomPreview() {
+            var all = getAllItems();
+            if (!all.length) return;
+            var rand = all[Math.floor(Math.random() * all.length)];
+            previewImage.src = rand.item.preview;
+            previewImage.alt = rand.item.title;
+            previewCard.style.transform = 'rotate(' + randomAngle() + ')';
+            previewCard.hidden = false;
+        }
+
+        function resetPreview() {
+            // keep existing preview as-is
+        }
+
+        function updatePreview() {
+            var category = interestCategory.value;
+            var selectedValue = interestItem.value;
+            var selectedOption = (interestOptions[category] || []).find(function (option) {
+                return option.value === selectedValue;
+            });
+
+            if (!selectedOption) {
+                resetPreview();
+                return;
+            }
+
+            previewImage.src = selectedOption.preview;
+            previewImage.alt = selectedOption.title;
+            previewCard.style.transform = 'rotate(' + randomAngle() + ')';
+            previewCard.hidden = false;
+        }
+
+        function populateInterestItems() {
+            var category = interestCategory.value;
+            var options = interestOptions[category] || [];
+
+            interestItem.innerHTML = '';
+
+            var placeholder = document.createElement('option');
+            placeholder.value = '';
+            placeholder.textContent = category === '' ? 'Selecteer eerst een categorie' : 'Selecteer een werk';
+            interestItem.appendChild(placeholder);
+
+            options.forEach(function (option) {
+                var element = document.createElement('option');
+                element.value = option.value;
+                element.textContent = option.label;
+                interestItem.appendChild(element);
+            });
+
+            interestItem.disabled = category === '';
+            interestItem.required = category !== '';
+            interestItem.value = '';
+            updatePreview();
+        }
+
+        interestCategory.addEventListener('change', populateInterestItems);
+        interestItem.addEventListener('change', updatePreview);
+        populateInterestItems();
+        showRandomPreview();
+    });
+</script>
 
 
 <?php

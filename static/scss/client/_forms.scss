@@ -185,3 +185,18 @@ form{
 	border-color: $secondary-color;
 	box-shadow: 0 0 0 0.2rem rgba($secondary-color, 0.5);
 }
+
+.contact-art-preview {
+	padding: 1.5rem 0;
+	text-align: center;
+	transition: transform 0.3s ease;
+
+	img {
+		max-width: min(100%, 360px);
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		border-radius: 10px;
+		box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+	}
+}
