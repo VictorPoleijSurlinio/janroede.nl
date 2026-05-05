@@ -1,0 +1,61 @@
+.jr-masonry {
+    column-count: 3;
+    column-gap: 1.1rem;
+}
+
+.jr-masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.1rem;
+}
+
+.jr-art-link {
+    display: block;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.jr-art-meta {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 0.8rem;
+    color: #ffffff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+    font-size: 0.95rem;
+
+    small {
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .jr-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .jr-masonry {
+        column-count: 1;
+    }
+}

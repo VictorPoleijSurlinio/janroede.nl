@@ -485,18 +485,20 @@ $schilderijen = [
 			'signed' => true,
 			'material' => 'acryl, marouflé',
 		],
-		[
-			'inventory_number' => 'JRD269',
-			'image_name' => 'JRD269',
-			'title' => 'Marie',
-			'format_code' => 'G',
-			'format_label' => 'groot',
-			'height_cm' => 146,
-			'width_cm' => 114,
-			'year' => '1990',
-			'signed' => true,
-			'material' => 'olie, linnen',
-		],
+
+		// Deze mist in WeTransfer
+		// [
+		// 	'inventory_number' => 'JRD269',
+		// 	'image_name' => 'JRD269',
+		// 	'title' => 'Marie',
+		// 	'format_code' => 'G',
+		// 	'format_label' => 'groot',
+		// 	'height_cm' => 146,
+		// 	'width_cm' => 114,
+		// 	'year' => '1990',
+		// 	'signed' => true,
+		// 	'material' => 'olie, linnen',
+		// ],
 		[
 			'inventory_number' => 'JRD271',
 			'image_name' => 'JRD271',
