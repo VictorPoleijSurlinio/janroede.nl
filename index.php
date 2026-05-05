@@ -72,7 +72,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 <section class="primary-bg text-white text-center" id="werk">
 	<div class="container">
-		<div class="row justify-content-center mt-5">
+		<div class="row justify-content-center">
 			<div class="col-lg-5 mb-5 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<i class="fal fa-paint-brush fa-3x mb-3"></i>
