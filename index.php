@@ -1,8 +1,8 @@
 <?php
 include __DIR__ . '/inc/config.inc.php';
 
-$title = "Jan Roëde Stichting | Kunstenaar Jan Roëde – schilderijen, tekeningen en grafiek";
-$description = "De Jan Roëde Stichting beheert de artistieke nalatenschap van Jan Roëde (1932–2007). Ontdek zijn schilderijen, tekeningen, gouaches en grafiek en lees meer over de stichting en haar activiteiten.";
+$title = "Jan Roëde Stichting | Kunstenaar Jan Roëde - schilderijen, tekeningen en grafiek";
+$description = "De Jan Roëde Stichting beheert de artistieke nalatenschap van Jan Roëde (1914-2007). Ontdek zijn schilderijen, tekeningen, gouaches en grafiek en lees meer over de stichting en haar activiteiten.";
 $nav_page = "home";
 $language =  "nl";
 $og_image = STATIC_URL . 'img/carousel/de-brief.webp';
@@ -53,7 +53,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-black display-2">Jan Roëde</h1>
-				<h2 class="text-black mb-4">1932 – 2007</h2>
+				<h2 class="text-black mb-4">1914 - 2007</h2>
 				<p>
 					<strong>Jan Roëde was een veelzijdig Nederlands kunstenaar wiens werk getuigt van een diepe fascinatie voor het menselijk bestaan, de psyche en de kracht van het beeld.<br>
 						Zijn schilderijen, tekeningen, gouaches en grafiek bewegen zich tussen het figuratieve en het expressieve — intens, poëtisch en altijd herkenbaar eigenhandig.
