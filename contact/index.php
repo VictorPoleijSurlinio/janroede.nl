@@ -6,7 +6,7 @@ include __DIR__ . '/../inc/arrays/zeefdrukken.php';
 
 // HEAD AND NAV VARIABLES
 $title = 'Contact | ' . $COMPANY_FULLNAME;
-$description  = 'Neem contact op met Westlandse Glashandel voor advies, inmeten en glasvervanging.';
+$description  = 'Neem contact op met de Jan Roëde Stichting. Interesse in een werk, vragen over onze activiteiten of een persoonlijk gesprek? We horen graag van je.';
 $og_image = STATIC_URL . 'img/headers/contact-header.webp';
 $page = "contact";
 

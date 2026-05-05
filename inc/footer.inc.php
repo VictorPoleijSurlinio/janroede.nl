@@ -13,6 +13,9 @@
 				</a><br>
 				<a style="word-break: break-all;" href="mailto:<?= $COMPANY_EMAIL ?>" aria-label="<?= $COMPANY_EMAIL ?>"><i class="fa fa-envelope secondary-color me-1"></i> <?= $COMPANY_EMAIL ?></a><br>
 				<a href="tel:<?= $COMPANY_PHONE_LINK ?>"><i class="fa fa-phone secondary-color me-1"></i><?= $COMPANY_PHONE ?></a><br>
+				<h3 class="footer-heading">Organisatie</h3>
+				<span class="text-white"><i class="fa-solid fa-receipt secondary-color me-1"></i>KVK: <?= $COMPANY_KVK ?></span><br>
+				<span class="text-white"><i class="fa-solid fa-university secondary-color me-1"></i>IBAN: <?= $COMPANY_IBAN ?></span><br>
 			</div>
 			<div class="col-lg-4 text-white">
 				<h3 class="footer-heading">Openingstijden</h3>

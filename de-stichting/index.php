@@ -74,30 +74,36 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 </table>
 
                 <!-- BELEIDSPLAN -->
-                <h2 id="beleidsplan" class="mt-5">Beleidsplan</h2>
-                <p>Het beleidsplan van de Jan Roëde Stichting is beschikbaar als download:</p>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <a href="<?= STATIC_URL ?>docs/Beleidsplan Jan Roëde Stichting 2026-2029.pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> Beleidsplan (PDF)</a>
-                        <a href="<?= STATIC_URL ?>docs/beleidsplan Jan Roëde Stichting 2026-2029.docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Beleidsplan (Word)</a>
-                    </li>
-                </ul>
+                <div class="row mt-5 g-4">
+                    <div class="col-lg-6">
+                        <h2 id="beleidsplan">Beleidsplan</h2>
+                        <p>Het beleidsplan van de Jan Roëde Stichting is beschikbaar als download:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="<?= STATIC_URL ?>docs/Beleidsplan Jan Roëde Stichting 2026-2029.pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> Beleidsplan (PDF)</a>
+                                <a href="<?= STATIC_URL ?>docs/beleidsplan Jan Roëde Stichting 2026-2029.docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Beleidsplan (Word)</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <!-- JAARVERSLAGEN -->
-                <h2 id="jaarverslagen" class="mt-5">Jaarverslagen</h2>
-                <p>De jaarverslagen zijn beschikbaar als download:</p>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <strong>Jaarverslag 2025</strong> &mdash;
-                        <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2025 (te publiceren op website).pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> PDF</a>
-                        <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2025 (te publiceren op website).docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Word</a>
-                    </li>
-                    <li class="mb-2">
-                        <strong>Jaarverslag 2024</strong> &mdash;
-                        <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2024 (voor publicatie).pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> PDF</a>
-                        <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2024 (voor publicatie).docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Word</a>
-                    </li>
-                </ul>
+                    <!-- JAARVERSLAGEN -->
+                    <div class="col-lg-6">
+                        <h2 id="jaarverslagen">Jaarverslagen</h2>
+                        <p>De jaarverslagen zijn beschikbaar als download:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Jaarverslag 2025</strong> &mdash;
+                                <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2025 (te publiceren op website).pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> PDF</a>
+                                <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2025 (te publiceren op website).docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Word</a>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Jaarverslag 2024</strong> &mdash;
+                                <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2024 (voor publicatie).pdf" target="_blank" class="btn btn-outline-secondary btn-sm me-2"><i class="fa-regular fa-file-pdf me-1"></i> PDF</a>
+                                <a href="<?= STATIC_URL ?>docs/Jaarverslag en jaarrekening Jan Roede Stichting 2024 (voor publicatie).docx" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-word me-1"></i> Word</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- ACTIVITEITEN -->
                 <h2 id="activiteiten" class="mt-5">Activiteiten</h2>
