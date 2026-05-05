@@ -40,27 +40,27 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     <tbody>
                         <tr>
                             <th scope="row" class="ps-0" style="width:200px;">Vestigingsadres</th>
-                            <td>Benoordenhoutseweg 262, 2596 BJ Den Haag</td>
+                            <td><?= $COMPANY_STREET ?>, <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">Website</th>
-                            <td><a href="https://www.janroede.nl">www.janroede.nl</a></td>
+                            <td><a href="<?= $COMPANY_WEBSITE ?>"><?= $COMPANY_WEBSITE ?></a></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">E-mail</th>
-                            <td><a href="mailto:info@janroede.nl">info@janroede.nl</a></td>
+                            <td><a href="mailto:<?= $COMPANY_EMAIL ?>"><?= $COMPANY_EMAIL ?></a></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">Telefoon</th>
-                            <td><a href="tel:0611067914">0611067914</a></td>
+                            <td><a href="tel:<?= $COMPANY_PHONE_LINK ?>"><?= $COMPANY_PHONE ?></a></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">Bankrekening</th>
-                            <td>NL82 SNSB 0858 5110 53</td>
+                            <td><?= $COMPANY_IBAN ?></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">KvK nummer</th>
-                            <td>27.27.64.01</td>
+                            <td><?= $COMPANY_KVK ?></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">ANBI-status</th>
