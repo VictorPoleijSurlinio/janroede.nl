@@ -82,14 +82,14 @@ include ABS_PATH . 'inc/navbar.inc.php';
 						loading="lazy"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
-						style="max-width: 360px; width: 100%;"
+						style="max-width: min(360px, 100%); width: 100%;"
 					>
 					<h3 class="text-white">Schilderijen</h3>
 					<p class="my-4">
 						<strong>Een overzicht van de schilderijen uit de nalatenschap van Jan Roëde. Van intieme figuurstudies tot grootse composities — werk dat raakt en blijft hangen.</strong>
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
-						<a class="btn-client-rounded" href="<?= SITE_URL ?>schilderijen/">BEKIJK SCHILDERIJEN</a>
+					<a class="btn-client-rounded" href="<?= SITE_URL ?>schilderijen/">SCHILDERIJEN</a>
 						<a class="btn-side-icon" href="<?= SITE_URL ?>schilderijen/"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
@@ -103,14 +103,14 @@ include ABS_PATH . 'inc/navbar.inc.php';
 						loading="lazy"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
-						style="max-width: 360px; width: 100%;"
+						style="max-width: min(360px, 100%); width: 100%;"
 					>
 					<h3 class="text-white">Zeefdrukken</h3>
 					<p class="my-4">
 						<strong>De zeefdrukken van Jan Roëde tonen zijn grafische kracht. Gelaagd, kleurrijk en met een eigen karakter dat los staat van zijn geschilderd werk.</strong>
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
-						<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">BEKIJK ZEEFDRUKKEN</a>
+					<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">ZEEFDRUKKEN</a>
 						<a class="btn-side-icon" href="<?= SITE_URL ?>zeefdrukken/"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>

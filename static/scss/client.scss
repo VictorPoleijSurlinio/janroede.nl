@@ -241,12 +241,22 @@ section.less-padding-top {
 // Pulse/breath animation
 @keyframes pulse-breath {
   0%, 100% { transform: scale(1); }
-  40% { transform: scale(1.045); }
-  60% { transform: scale(0.98); }
+  40% { transform: scale(1.02); }
+  60% { transform: scale(0.99); }
 }
 .pulse-breath {
   animation: pulse-breath 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   will-change: transform;
+  transform-origin: center;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 .vacature-card {
   transition: transform 0.4s cubic-bezier(0.4,0.2,0.2,1);

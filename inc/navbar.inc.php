@@ -34,7 +34,7 @@
 				</li>
 			</ul>
 			<div class="d-flex justify-content-center">
-				<a class="btn-client-rounded" href="<?= SITE_URL ?>contact">NEEM CONTACT OP</a>
+				<a class="btn-client-rounded" href="<?= SITE_URL ?>contact">CONTACT</a>
 				<a class="btn-side-icon" href="<?= SITE_URL ?>contact"><i class="fa-solid fa-arrow-right"></i></a>
 			</div>
 		</div>
