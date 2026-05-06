@@ -132,9 +132,9 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
 
 <section class="primary-bg" id="contact-form">
     <div class="container">
-        <div class="row align-items-start g-4 justify-content-between">
+        <div class="row align-items-start g-2 g-lg-4 justify-content-between">
             <div class="col-lg-6 col-xl-7">
-                <h1 class="text-white">Interesse in een <strong class="secondary-color">werk</strong>, of heb je een <strong class="secondary-color">vraag</strong>? Neem gerust <strong class="secondary-color">contact</strong> op.</h1>
+                <h1 class="text-white">Interesse in een <strong class="secondary-color">werk</strong>, of heb je een <strong class="secondary-color">vraag</strong>? Neem <strong class="secondary-color">contact</strong> op.</h1>
                 <form class="form mt-4" data-ajaxurl="<?= SITE_URL ?>ajax/process_contactform.php">
 
                     <div class="form-check-inline">
@@ -150,39 +150,39 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
                         </label>
                     </div>
                     <div class="row mt-3">
-                        <div class="form-group col-md-6 pe-md-1">
+                        <div class="form-group col-6 col-md-6 pe-1 pe-md-1">
                             <label class="sr-only" for="interest_category">Interesse in</label>
                             <select class="form-control" id="interest_category" name="interest_category">
-                                <option value="">Interesse in een specifiek werk?</option>
+                                <option value="">Kies categorie</option>
                                 <option value="schilderijen">Schilderijen</option>
                                 <option value="zeefdrukken">Zeefdrukken</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6 ps-md-1">
+                        <div class="form-group col-6 col-md-6 ps-1 ps-md-1">
                             <label class="sr-only" for="interest_item">Specifiek werk</label>
                             <select class="form-control" id="interest_item" name="interest_item" disabled>
-                                <option value="">Selecteer eerst een categorie</option>
+                                <option value="">Welk werk?</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6 pe-md-1">
+                        <div class="form-group col-6 col-md-6 pe-1 pe-md-1">
                             <label class="sr-only" for="firstname">Voornaam <sup>*</sup></label>
                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Voornaam*">
                         </div>
-                        <div class="form-group col-md-6 ps-md-1">
+                        <div class="form-group col-6 col-md-6 ps-1 ps-md-1">
                             <label class="sr-only" for="lastname">Achternaam <sup>*</sup></label>
                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Achternaam*">
                         </div>
-                        <div class="form-group col-md-6 pe-md-1">
+                        <div class="form-group col-6 col-md-6 pe-1 pe-md-1">
                             <label class="sr-only" for="email">E-mailadres <sup>*</sup></label>
                             <input type="text" class="form-control" id="email" name="email" placeholder="E-mailadres*">
                         </div>
-                        <div class="form-group col-md-6 ps-md-1">
+                        <div class="form-group col-6 col-md-6 ps-1 ps-md-1">
                             <label class="sr-only" for="phone">Telefoonnummer</label>
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefoonnummer">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="comment">Opmerking <sup>*</sup></label>
-                            <textarea class="form-control" rows="4" id="comment" name="comment" placeholder="Opmerking"></textarea>
+                            <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Opmerking"></textarea>
                         </div>
                     </div>
 
@@ -261,7 +261,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
 
             var placeholder = document.createElement('option');
             placeholder.value = '';
-            placeholder.textContent = category === '' ? 'Selecteer eerst een categorie' : 'Selecteer een werk';
+            placeholder.textContent = category === '' ? 'Kies werk' : 'Welk werk?';
             interestItem.appendChild(placeholder);
 
             options.forEach(function (option) {
