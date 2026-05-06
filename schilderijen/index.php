@@ -111,7 +111,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
         <div class="row justify-content-center mb-4">
             <div class="col-lg-12">
                 <div class="jr-filter-panel">
-                    <div class="row g-3 align-items-end">
+                    <div class="row align-items-end">
                         <div class="col-12 col-md-4">
                             <label class="form-label" for="filter-year-period">Jaar/periode</label>
                             <select class="form-select" id="filter-year-period">
