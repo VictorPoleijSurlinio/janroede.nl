@@ -95,6 +95,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 
 <section class="primary-bg text-white text-center" id="werk">
+	<?php /*
 	<div class="jr-werk-brush jr-werk-brush--left" aria-hidden="true">
 		<?php
 		$brushClass = 'jr-brushstroke--secondary';
@@ -119,9 +120,10 @@ include ABS_PATH . 'inc/navbar.inc.php';
 			?>
 		</div>
 	</div>
+	*/ ?>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-5 mb-5 mb-lg-0">
+			<div class="col-lg-5 mb-4 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<img
 						src="<?= STATIC_URL ?>img/headers/mobile/schilderijen-header.webp"
