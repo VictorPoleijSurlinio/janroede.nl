@@ -94,7 +94,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
             <div class="col-md-4 my-2">
                 <div class="white-box shadow-sm h-100 text-center" data-aos="flip-left" data-aos-duration="1250" data-aos-offset="50">
                     <div>
-                        <i class="far fa-phone secondary-color fa-2x mb-2" aria-hidden="true"></i>
+                        <i class="fa fa-phone secondary-color fa-2x mb-2" aria-hidden="true"></i>
                         <h4 class="secondary-color my-2">Telefoon</h4>
                         <a class="fw-bold" href="tel:<?= $COMPANY_PHONE_LINK ?>"></i><?= $COMPANY_PHONE ?></a><br>
 
