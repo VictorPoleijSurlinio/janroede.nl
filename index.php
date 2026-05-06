@@ -95,6 +95,30 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 
 <section class="primary-bg text-white text-center" id="werk">
+	<div class="jr-werk-brush jr-werk-brush--left" aria-hidden="true">
+		<?php
+		$brushClass = 'jr-brushstroke--secondary';
+		include ABS_PATH . 'inc/brushstroke-vertical.inc.php';
+		?>
+		<div class="jr-werk-brush__second">
+			<?php
+			$brushClass = 'jr-brushstroke--secondary';
+			include ABS_PATH . 'inc/brushstroke-vertical.inc.php';
+			?>
+		</div>
+	</div>
+	<div class="jr-werk-brush jr-werk-brush--right" aria-hidden="true">
+		<?php
+		$brushClass = 'jr-brushstroke--secondary';
+		include ABS_PATH . 'inc/brushstroke-vertical.inc.php';
+		?>
+		<div class="jr-werk-brush__second">
+			<?php
+			$brushClass = 'jr-brushstroke--secondary';
+			include ABS_PATH . 'inc/brushstroke-vertical.inc.php';
+			?>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-5 mb-5 mb-lg-0">
