@@ -13,19 +13,67 @@
 }
 
 .jr-filter-panel {
-    padding: 1rem;
-    border-radius: 14px;
-    background: #f8f9fb;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1.15rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, lighten($primary-color, 4%) 0%, $primary-color 100%);
+    border: 1px solid rgba($secondary-color, 0.28);
+    box-shadow: 0 18px 36px rgba($primary-color, 0.18);
 
     .form-label {
-        font-weight: 600;
-        margin-bottom: 0.35rem;
+        font-weight: 700;
+        margin-bottom: 0.45rem;
+        color: #ffffff;
+        letter-spacing: 0.02em;
+    }
+
+    .form-select {
+        min-height: 48px;
+        border-radius: 14px;
+        border: 1px solid rgba($secondary-color, 0.48);
+        background-color: rgba(255, 255, 255, 0.96);
+        color: $primary-color;
+        font-weight: 700;
+        box-shadow: 0 8px 18px rgba($primary-color, 0.12);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+            border-color: rgba($secondary-color, 0.75);
+        }
+
+        &:focus {
+            border-color: $secondary-color;
+            box-shadow: 0 0 0 0.22rem rgba($secondary-color, 0.28);
+            transform: translateY(-1px);
+        }
+    }
+
+    .btn-outline-secondary {
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        background-color: rgba($secondary-color, 0.16);
+        color: #ffffff;
+        font-weight: 700;
+        padding: 0.45rem 0.9rem;
+        transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            color: $primary-color;
+            transform: translateY(-1px);
+        }
     }
 }
 
 .jr-filter-meta {
     min-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.88);
+
+    small {
+        font-weight: 600;
+    }
 }
 
 .jr-masonry {
@@ -87,6 +135,11 @@
 @media (max-width: 575.98px) {
     .jr-filter-panel {
         padding: 0.85rem;
+
+        .form-select {
+            min-height: 44px;
+            font-size: 0.95rem;
+        }
     }
 
     .jr-masonry {

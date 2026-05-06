@@ -54,7 +54,7 @@ ksort($filterFormatOptions, SORT_NATURAL);
                     De zeefdrukken van Jan Roede kenmerken zich door een speelse wisselwerking van heldere kleuren en ritmische vlakken. Elk werk is met de hand gedrukt en maakt deel uit van een genummerde oplage.
                 </p>
                 <p class="mb-0">
-                    Bent u geïnteresseerd in het aanschaffen van een werk? <a href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
+                    Bent u geïnteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
                 </p>
             </div>
         </div>
