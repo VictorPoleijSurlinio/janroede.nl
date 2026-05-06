@@ -83,7 +83,7 @@ ksort($filterFormatOptions, SORT_NATURAL);
         </div>
 
         <div class="jr-masonry" role="list" aria-label="Overzicht zeefdrukken" id="zeefdrukken-grid">
-            <?php foreach ($zeefdrukItems as $item): ?>
+            <?php foreach ($zeefdrukItems as $index => $item): ?>
                 <?php
                 $inventoryNumber = $item['inventory_number'] ?? '';
                 $imageName = $item['image_name'] ?? $inventoryNumber;
@@ -118,6 +118,10 @@ ksort($filterFormatOptions, SORT_NATURAL);
                 <article
                     class="jr-masonry-item js-zeefdruk-item"
                     role="listitem"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-delay="<?= (int) (($index % 8) * 45) ?>"
+                    data-aos-once="true"
                     data-format="<?= htmlspecialchars($formatFilter, ENT_QUOTES, 'UTF-8') ?>"
                 >
                     <a

@@ -160,7 +160,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
         </div>
 
         <div class="jr-masonry" role="list" aria-label="Overzicht schilderijen" id="schilderijen-grid">
-            <?php foreach ($schilderijenItems as $item): ?>
+            <?php foreach ($schilderijenItems as $index => $item): ?>
                 <?php
                 $inventoryNumber = $item['inventory_number'] ?? '';
                 $imageName = $item['image_name'] ?? $inventoryNumber;
@@ -215,6 +215,10 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 <article
                     class="jr-masonry-item js-art-item"
                     role="listitem"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-delay="<?= (int) (($index % 8) * 45) ?>"
+                    data-aos-once="true"
                     data-year="<?= htmlspecialchars($yearFilter, ENT_QUOTES, 'UTF-8') ?>"
                     data-period="<?= htmlspecialchars($periodFilter, ENT_QUOTES, 'UTF-8') ?>"
                     data-size="<?= htmlspecialchars($sizeFilter, ENT_QUOTES, 'UTF-8') ?>"
