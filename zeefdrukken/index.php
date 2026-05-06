@@ -119,8 +119,8 @@ ksort($filterFormatOptions, SORT_NATURAL);
                     class="jr-masonry-item js-zeefdruk-item"
                     role="listitem"
                     data-aos="fade-up"
-                    data-aos-duration="700"
-                    data-aos-delay="<?= (int) (($index % 8) * 45) ?>"
+                    data-aos-duration="550"
+                    data-aos-delay="<?= (int) (($index % 4) * 28) ?>"
                     data-aos-once="true"
                     data-format="<?= htmlspecialchars($formatFilter, ENT_QUOTES, 'UTF-8') ?>"
                 >
