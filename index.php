@@ -6,6 +6,8 @@ $description = "De Jan Roëde Stichting beheert de artistieke nalatenschap van J
 $nav_page = "home";
 $language =  "nl";
 $og_image = STATIC_URL . 'img/carousel/de-brief.webp';
+$lcp_preload_desktop = STATIC_URL . 'img/carousel/de-brief.webp';
+$lcp_preload_mobile = STATIC_URL . 'img/carousel/mobile/de-brief.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
@@ -27,7 +29,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 		<div class="carousel-item active">
 			<picture>
 				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/de-brief.webp">
-				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief">
+				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="eager" fetchpriority="high">
 			</picture>
 		</div>
 		<div class="carousel-item">
@@ -100,7 +102,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
 					<img
 						src="<?= STATIC_URL ?>img/headers/mobile/schilderijen-header.webp"
 						alt="Schilderijen header preview"
-						loading="lazy"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
 						style="max-width: min(360px, 100%); width: 100%;"
@@ -121,7 +122,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
 					<img
 						src="<?= STATIC_URL ?>img/headers/mobile/zeefdrukken-header.webp"
 						alt="Zeefdrukken header preview"
-						loading="lazy"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
 						style="max-width: min(360px, 100%); width: 100%;"

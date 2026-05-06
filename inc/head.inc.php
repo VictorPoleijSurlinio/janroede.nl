@@ -56,6 +56,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?= STATIC_URL ?>css/client.min.css?v=<?= filemtime(__DIR__ . '/../static/css/client.min.css') ?>">
+
+    <!-- LCP Preload -->
+    <?php if (isset($lcp_preload_mobile)): ?>
+    <link rel="preload" as="image" href="<?= $lcp_preload_mobile ?>" media="(max-width: 768px)">
+    <?php endif; ?>
+    <?php if (isset($lcp_preload_desktop)): ?>
+    <link rel="preload" as="image" href="<?= $lcp_preload_desktop ?>" media="(min-width: 769px)">
+    <?php endif; ?>
+
+
 </head>
 
 <body>
