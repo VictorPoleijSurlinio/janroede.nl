@@ -30,6 +30,22 @@ a.dropdown-item:hover {
 .dropdown-toggle:after {
 display:none}
 
+.nav-link.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.nav-dropdown-icon {
+  font-size: 0.72em;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.dropdown-toggle[aria-expanded="true"] .nav-dropdown-icon {
+  transform: rotate(180deg);
+}
+
 .nav-item a {
   position: relative;
   text-decoration: none;
@@ -60,6 +76,17 @@ display:none}
   transition: 0.6s ease;
   color:white;
 
+}
+
+.nav-item a:focus,
+.nav-item a:focus-visible {
+  color: white;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus,
+.nav-link.active:focus-visible {
+  color: $secondary-color !important;
 }
 
 .name-logo {

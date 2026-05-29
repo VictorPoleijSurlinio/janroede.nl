@@ -16,7 +16,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-indicators mx-auto">
 		<?php
-		$slideCount = 8; // Set the number of slides here
+		$slideCount = 7; // Set the number of slides here
 		for ($i = 0; $i < $slideCount; $i++):
 			$active = $i === 0 ? 'active' : '';
 			$current = $i === 0 ? 'aria-current="true"' : '';
