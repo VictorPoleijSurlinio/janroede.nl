@@ -26,7 +26,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <section>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <h2 class="mt-0">Wie was Jan Roëde</h2>
                 <p>Op deze pagina vind je het hoofdonderwerp Jan Roëde met vier aparte subpagina's.</p>
                 <div class="row g-3 mt-2">

@@ -249,3 +249,60 @@ body {
 	padding:50px;
 	border-radius:25px;
 }
+
+
+.stepper-vertical {
+	position: relative;
+  }
+  
+  .stepper-vertical::before {
+	content: "";
+	position: absolute;
+	left: 45px;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	background-color: $primary-color;
+	z-index: 1;
+  }
+  
+  .step {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 50px;
+  }
+  
+  .step .icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: $primary-color;
+	z-index: 2;
+	position: relative;
+	margin-right: 25px;
+	.number{
+		width:100px;
+		text-align: center;
+		font-size:22px;
+		color:white;
+		font-weight: 600;
+	}
+  }
+  
+  .step .content {
+	margin-top: 5px;
+  font-weight: 700;
+
+  }
+  
+  .step p {
+	margin:0;
+    font-weight: 700;
+
+  }
+  
