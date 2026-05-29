@@ -23,8 +23,17 @@
 			</a>
 
 			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="<?= SITE_URL ?>leven">LEVEN</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="<?= SITE_URL ?>wie-was-jan-roede" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span>WIE WAS JAN ROËDE</span>
+						<i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/leven">LEVEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/tijdlijn">TIJDLIJN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/tentoonstellingen">TENTOONSTELLINGEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/publicaties">PUBLICATIES</a></li>
+					</ul>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?= SITE_URL ?>de-stichting">STICHTING</a>
