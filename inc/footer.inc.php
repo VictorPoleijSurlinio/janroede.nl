@@ -20,6 +20,7 @@
 				<span class="text-white"><i class="fa-solid fa-university secondary-color me-1"></i>IBAN: <?= $COMPANY_IBAN ?></span><br>
 			</div>
 			<div class="col-lg-4 text-white">
+				<? /*
 				<h3 class="footer-heading">Openingstijden</h3>
 				<?php $today = date('l');
 				$dayMap = ['Monday' => 'Maandag', 'Tuesday' => 'Dinsdag', 'Wednesday' => 'Woensdag', 'Thursday' => 'Donderdag', 'Friday' => 'Vrijdag', 'Saturday' => 'Zaterdag', 'Sunday' => 'Zondag'];
@@ -30,6 +31,7 @@
 						<span><?= htmlspecialchars($hours, ENT_QUOTES, 'UTF-8') ?></span>
 					</div>
 				<?php endforeach; ?>
+				*/ ?>
 			</div>
 			<div class="col-lg-4 text-lg-end">
 				<h3 class="footer-heading">Links</h3>

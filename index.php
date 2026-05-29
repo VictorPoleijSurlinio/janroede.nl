@@ -16,7 +16,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-indicators mx-auto">
 		<?php
-		$slideCount = 7; // Set the number of slides here
+		$slideCount = 8; // Set the number of slides here
 		for ($i = 0; $i < $slideCount; $i++):
 			$active = $i === 0 ? 'active' : '';
 			$current = $i === 0 ? 'aria-current="true"' : '';
@@ -28,20 +28,20 @@ include ABS_PATH . 'inc/navbar.inc.php';
 	<div class="carousel-inner">
 		<div class="carousel-item active">
 			<picture>
+				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/zelfportret.webp">
+				<img src="<?= STATIC_URL ?>img/carousel/zelfportret.webp" class="d-block w-100 img-fluid" alt="Zelfportret" loading="eager" fetchpriority="high">
+			</picture>
+		</div>
+		<div class="carousel-item">
+			<picture>
 				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/de-brief.webp">
-				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="eager" fetchpriority="high">
+				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="lazy">
 			</picture>
 		</div>
 		<div class="carousel-item">
 			<picture>
 				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/overdracht.webp">
 				<img src="<?= STATIC_URL ?>img/carousel/overdracht.webp" class="d-block w-100 img-fluid" alt="Overdracht" loading="lazy">
-			</picture>
-		</div>
-		<div class="carousel-item">
-			<picture>
-				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/le-moindre-de-ses-soucis.webp">
-				<img src="<?= STATIC_URL ?>img/carousel/le-moindre-de-ses-soucis.webp" class="d-block w-100 img-fluid" alt="Le moindre de ses soucis" loading="lazy">
 			</picture>
 		</div>
 		<div class="carousel-item">

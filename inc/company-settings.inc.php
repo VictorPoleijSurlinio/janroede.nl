@@ -1,7 +1,7 @@
 <?php
 // COMPANY SETTINGS - PRIVACY AND COOKIES
-$COMPANY_NAME           = "Jan Roede Stichting";
-$COMPANY_FULLNAME       = "Jan Roede Stichting";
+$COMPANY_NAME           = "Jan Roëde Stichting";
+$COMPANY_FULLNAME       = "Jan Roëde Stichting";
 $COMPANY_EXTRA          = "";
 $COMPANY_STREET         = "Benoordenhoutseweg 262";
 $COMPANY_ZIP            = "2596 BJ";
@@ -34,5 +34,5 @@ $COMPANY_OPENING_HOURS = [
 
 $MAIL_CLIENT_FROM = "info@janroede.nl";
 $MAIL_CLIENT_ALGEMEEN = "info@janroede.nl";
-$MAIL_CLIENT_SIGNATURE = "Jan Roede Stichting";
+$MAIL_CLIENT_SIGNATURE = "Jan Roëde Stichting";
 $MAIL_TEST_RECEIVER = 'info@janroede.nl';

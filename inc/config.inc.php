@@ -1,8 +1,8 @@
 <?php
 include __DIR__.'/../vendor/autoload.php';
-include __DIR__.'/../app/inc/app-settings.inc.php';
-include __DIR__.'/../app/database/config.php';
-include __DIR__.'/../app/inc/functions.inc.php';
+// include __DIR__.'/../app/inc/app-settings.inc.php';
+// include __DIR__.'/../app/database/config.php';
+// include __DIR__.'/../app/inc/functions.inc.php';
 
 date_default_timezone_set('Europe/Amsterdam');
 setlocale(LC_ALL, 'nl_NL');

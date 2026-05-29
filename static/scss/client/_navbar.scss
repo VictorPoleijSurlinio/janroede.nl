@@ -13,7 +13,7 @@
   font-size: clamp(0.95rem, 0.85rem + 0.35vw, 1.1rem);
 }
 .dropdown-menu {
-  background: white;
+  background: $primary-color !important;
 }
 .dropdown-menu li {
   padding: 20px 0px !important;
@@ -22,8 +22,13 @@ a.dropdown-toggle {
   color: white;
 }
 a.dropdown-item:hover {
-  color: white;
+  color: $secondary-color;
 }
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color:transparent !important;
+}
+.dropdown-toggle:after {
+display:none}
 
 .nav-item a {
   position: relative;
