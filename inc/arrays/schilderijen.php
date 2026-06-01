@@ -28,6 +28,7 @@ $schilderijen = [
 			'year' => '1991',
 			'signed' => true,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2500,
 		],
 		[
 			'inventory_number' => 'JRD104',
@@ -52,6 +53,7 @@ $schilderijen = [
 			'year' => null,
 			'signed' => false,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2000,
 		],
 		[
 			'inventory_number' => 'JRD116',
@@ -184,6 +186,7 @@ $schilderijen = [
 			'year' => '1993',
 			'signed' => true,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2400,
 		],
 		[
 			'inventory_number' => 'JRD160',
@@ -196,6 +199,7 @@ $schilderijen = [
 			'year' => '1976',
 			'signed' => true,
 			'material' => 'olie, linnen',
+			'sale_price_eur' => 2400,
 		],
 		[
 			'inventory_number' => 'JRD163',
@@ -208,6 +212,7 @@ $schilderijen = [
 			'year' => '1967',
 			'signed' => true,
 			'material' => 'olie, linnen',
+			'sale_price_eur' => 2400,
 		],
 		// [
 		// 	'inventory_number' => 'JRD179',
@@ -232,6 +237,7 @@ $schilderijen = [
 			'year' => '1976/78',
 			'signed' => true,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2800,
 		],
 		[
 			'inventory_number' => 'JRD188',
@@ -244,6 +250,7 @@ $schilderijen = [
 			'year' => null,
 			'signed' => false,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2000,
 		],
 		[
 			'inventory_number' => 'JRD197',
@@ -328,6 +335,7 @@ $schilderijen = [
 			'year' => '1992',
 			'signed' => true,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2800,
 		],
 		[
 			'inventory_number' => 'JRD232',
@@ -376,6 +384,7 @@ $schilderijen = [
 			'year' => '1980',
 			'signed' => true,
 			'material' => 'olie, linnen',
+			'sale_price_eur' => 6000,
 		],
 		[
 			'inventory_number' => 'JRD242',
@@ -398,6 +407,7 @@ $schilderijen = [
 			'height_cm' => 114,
 			'width_cm' => 146,
 			'year' => '1980',
+			'sale_price_eur' => 6000,
 			'signed' => true,
 			'material' => 'acryl, linnen',
 		],
@@ -460,6 +470,7 @@ $schilderijen = [
 			'year' => '1983',
 			'signed' => true,
 			'material' => 'olie, linnen',
+			'sale_price_eur' => 2500,
 		],
 		[
 			'inventory_number' => 'JRD260',
@@ -472,6 +483,7 @@ $schilderijen = [
 			'year' => '1999',
 			'signed' => true,
 			'material' => 'acryl, linnen',
+			'sale_price_eur' => 2400,
 		],
 		[
 			'inventory_number' => 'JRD261',

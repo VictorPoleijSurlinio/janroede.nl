@@ -46,6 +46,7 @@
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>schilderijen">SCHILDERIJEN</a></li>
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>zeefdrukken">ZEEFDRUKKEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>werken-op-papier">WERKEN OP PAPIER</a></li>
 
 					</ul>
 				</li>

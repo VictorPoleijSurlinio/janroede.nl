@@ -123,7 +123,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 	*/ ?>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-5 mb-4 mb-lg-0">
+			<div class="col-lg-4 mb-4 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<img
 						src="<?= STATIC_URL ?>img/headers/mobile/schilderijen-header.webp"
@@ -143,7 +143,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 				</div>
 			</div>
 
-			<div class="col-lg-5">
+			<div class="col-lg-4 mb-4 mb-lg-0">
 				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
 					<img
 						src="<?= STATIC_URL ?>img/headers/mobile/zeefdrukken-header.webp"
@@ -159,6 +159,26 @@ include ABS_PATH . 'inc/navbar.inc.php';
 					<div class="mt-auto d-flex justify-content-center pt-3">
 					<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">ZEEFDRUKKEN</a>
 						<a class="btn-side-icon" href="<?= SITE_URL ?>zeefdrukken/" aria-label="Ga naar zeefdrukken"><i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="d-flex flex-column h-100 py-5 px-2 px-lg-4">
+					<img
+						src="<?= STATIC_URL ?>img/headers/mobile/werken-op-papier-header.webp"
+						alt="Werken op papier header preview"
+						decoding="async"
+						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
+						style="max-width: min(360px, 100%); width: 100%;"
+					>
+					<h3 class="text-white">Werken op papier</h3>
+					<p class="my-4">
+						<strong>Tekeningen, aquarellen en gouaches op papier — van kleine schetsen tot volwaardige composities. Intiem werk dat de veelzijdigheid van Jan Roëde toont.</strong>
+					</p>
+					<div class="mt-auto d-flex justify-content-center pt-3">
+						<a class="btn-client-rounded" href="<?= SITE_URL ?>werken-op-papier/">WERKEN OP PAPIER</a>
+						<a class="btn-side-icon" href="<?= SITE_URL ?>werken-op-papier/" aria-label="Ga naar werken op papier"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
