@@ -5,9 +5,9 @@ $title = "Jan Roëde Stichting | Kunstenaar Jan Roëde - schilderijen, tekeninge
 $description = "De Jan Roëde Stichting beheert de artistieke nalatenschap van Jan Roëde (1914-2007). Ontdek zijn schilderijen, tekeningen, gouaches en grafiek en lees meer over de stichting en haar activiteiten.";
 $nav_page = "home";
 $language =  "nl";
-$og_image = STATIC_URL . 'img/carousel/de-brief.webp';
-$lcp_preload_desktop = STATIC_URL . 'img/carousel/de-brief.webp';
-$lcp_preload_mobile = STATIC_URL . 'img/carousel/mobile/de-brief.webp';
+$og_image = STATIC_URL . 'img/carousel/zelfportret.webp';
+$lcp_preload_desktop = STATIC_URL . 'img/carousel/zelfportret.webp';
+$lcp_preload_mobile = STATIC_URL . 'img/carousel/mobile/zelfportret.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';

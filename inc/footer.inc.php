@@ -61,7 +61,10 @@ $LOAD_SITE_POPUP_IN_FOOTER = $LOAD_SITE_POPUP_IN_FOOTER ?? true;
 // Keuzes: 'sitewide' of 'home'.
 $SITE_POPUP_DISPLAY_SCOPE = $SITE_POPUP_DISPLAY_SCOPE ?? 'home';
 
-$isHomePage = (isset($page) && $page === 'home');
+$isHomePage = (
+	(isset($page) && $page === 'home') ||
+	(isset($nav_page) && $nav_page === 'home')
+);
 
 $shouldLoadPopupByScope = (
 	$SITE_POPUP_DISPLAY_SCOPE === 'sitewide' ||
@@ -69,6 +72,7 @@ $shouldLoadPopupByScope = (
 );
 
 if (!empty($LOAD_SITE_POPUP_IN_FOOTER) && $shouldLoadPopupByScope) {
+	$sitePopupUsesSessionStorage = ($SITE_POPUP_DISPLAY_SCOPE === 'sitewide');
 	include ABS_PATH . 'inc/popup.inc.php';
 }
 ?>
