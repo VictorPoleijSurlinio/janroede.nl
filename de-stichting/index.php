@@ -39,10 +39,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <table class="table table-borderless mt-3">
                     <tbody>
                         <tr>
-                            <th scope="row" class="ps-0" style="width:200px;">Vestigingsadres</th>
-                            <td><?= $COMPANY_STREET ?>, <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></td>
-                        </tr>
-                        <tr>
                             <th scope="row" class="ps-0">Website</th>
                             <td><a href="<?= $COMPANY_WEBSITE ?>"><?= $COMPANY_WEBSITE ?></a></td>
                         </tr>
@@ -61,6 +57,10 @@ include ABS_PATH . 'inc/navbar.inc.php';
                         <tr>
                             <th scope="row" class="ps-0">KvK nummer</th>
                             <td><?= $COMPANY_KVK ?></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-0" style="width:200px;">Vestigingsadres</th>
+                            <td><?= $COMPANY_STREET ?>, <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></td>
                         </tr>
                         <tr>
                             <th scope="row" class="ps-0">ANBI-status</th>

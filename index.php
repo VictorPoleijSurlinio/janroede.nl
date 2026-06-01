@@ -78,8 +78,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
 				<h1 class="text-black display-2">Jan Roëde</h1>
 				<h2 class="text-black mb-4">1914 - 2007</h2>
 				<p>
-					<strong>Jan Roëde was een veelzijdig Nederlands kunstenaar wiens werk getuigt van een diepe fascinatie voor het menselijk bestaan, de psyche en de kracht van het beeld.<br>
-						Zijn schilderijen, tekeningen, gouaches en grafiek bewegen zich tussen het figuratieve en het expressieve — intens, poëtisch en altijd herkenbaar eigenhandig.
+					<strong>Jan Roëde was een veelzijdig Nederlands kunstenaar wiens werk getuigt van een diepe fascinatie voor het menselijk bestaan en de kracht van het beeld.<br>
+						Zijn schilderijen, tekeningen en gouaches bewegen zich tussen het figuratieve en het expressieve — intens, poëtisch en altijd met een duidelijke eigen signatuur.
 					</strong>
 				</p>
 				<p class="mb-5">

@@ -117,7 +117,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
                 <div class="white-box shadow-sm h-100 text-center" data-aos="flip-left" data-aos-duration="1250" data-aos-offset="50">
                     <div>
                         <i class="fa fa-map-marker-alt secondary-color fa-2x mb-2" aria-hidden="true"></i>
-                        <h4 class="secondary-color my-2">Bezoekadres</h4>
+                        <h4 class="secondary-color my-2">Vestigingsadres</h4>
                         <a class="fw-bold" target="blank" href="https://www.google.com/maps/dir/?api=1&destination=<?= $COMPANY_STREET . "," . $COMPANY_CITY ?>">
                             <span><?= $COMPANY_NAME ?></span><br>
                             <?= $COMPANY_STREET ?><br>

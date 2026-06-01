@@ -29,7 +29,7 @@ $questions_anbi = array(
     ),
     array(
         'question' => "Hoe kan ik contact opnemen met de stichting?",
-        'answer' => "U kunt de stichting bereiken via e-mail op info@janroede.nl of telefonisch op 06-11067914. Het bezoekadres is Benoordenhoutseweg 262, 2596 BJ Den Haag.",
+        'answer' => "U kunt de stichting bereiken via e-mail op info@janroede.nl of telefonisch op 06-11067914.",
     ),
     array(
         'question' => "Waar kan ik meer lezen over de stichting en haar beleid?",
