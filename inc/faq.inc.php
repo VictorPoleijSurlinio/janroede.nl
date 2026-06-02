@@ -4,7 +4,7 @@ include __DIR__ . '/arrays/faq.inc.php';
 <section id="faq">
     <div class="container" style="overflow:hidden;">
         <div class="row">
-            <h1 class="text-center mb-3">Veelgestelde vragen</h1>
+            <h1>Veelgestelde vragen</h1>
             <div class="col-12 col-lg-6 my-3" data-aos="flip-up" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos-offset="50">
                 <h3 class="secondary-color">Algemeen</h3>
                 <div class="accordion" id="accordion-algemeen">

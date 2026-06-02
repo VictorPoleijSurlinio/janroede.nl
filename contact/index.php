@@ -85,6 +85,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
     </div>
 </div>
 
+<?php /*
 <section class="bg-light" id="contact">
     <div class="container">
         <div class="col-md-10 my-5 text-center mx-auto">
@@ -129,6 +130,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
         </div>
     </div>
 </section>
+*/ ?>
 
 <section class="primary-bg" id="contact-form">
     <div class="container">
