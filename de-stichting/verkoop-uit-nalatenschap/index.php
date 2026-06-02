@@ -13,7 +13,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
 <section class="single-header single-header--de-stichting" aria-label="Verkoop uit nalatenschap">
     <div class="single-header__content">
-        <h1>De Stichting</h1>
+        <h1>Verkoop uit nalatenschap</h1>
     </div>
 </section>
 

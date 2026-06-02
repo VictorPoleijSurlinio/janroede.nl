@@ -45,7 +45,7 @@
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/oprichting-en-doelstelling">OPRICHTING EN DOELSTELLING</a></li>
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/bestuur">BESTUUR</a></li>
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/activiteiten">ACTIVITEITEN</a></li>
-						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/verkoop">VERKOOP UIT NALATENSCHAP</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/verkoop-uit-nalatenschap">VERKOOP UIT NALATENSCHAP</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">

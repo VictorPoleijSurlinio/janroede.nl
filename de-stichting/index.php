@@ -63,7 +63,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                             <span class="jr-roede-card__icon"><i class="fa-regular fa-euro-sign"></i></span>
                             <h3>Verkoop uit nalatenschap</h3>
                             <p>Lees hoe verkoop van werken verloopt en hoe je interesse in een kunstwerk kunt doorgeven.</p>
-                            <a class="btn-client-rounded-purple" href="<?= SITE_URL ?>de-stichting/verkoop">Bekijk pagina</a>
+                            <a class="btn-client-rounded-purple" href="<?= SITE_URL ?>de-stichting/verkoop-uit-nalatenschap">Bekijk pagina</a>
                         </article>
                     </div>
                 </div>
