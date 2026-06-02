@@ -5,13 +5,13 @@ $title = "Jan Roëde | Leven";
 $description = "Leven en achtergrond van Jan Roëde.";
 $nav_page = "jan-roede";
 $language = "nl";
-$og_image = STATIC_URL . 'img/headers/de-stichting-header.webp';
+$og_image = STATIC_URL . 'img/headers/wie-was-jan-roede-header.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
 ?>
 
-<section class="single-header single-header--de-stichting" aria-label="Leven">
+<section class="single-header single-header--wie-was-jan-roede" aria-label="Leven">
     <div class="single-header__content">
         <h1>Leven</h1>
     </div>

@@ -5,13 +5,13 @@ $title = "Jan Roëde | Wie was Jan Roëde";
 $description = "Introductie op Jan Roëde met vier subpagina's: Leven, Tijdlijn, Tentoonstellingen en Publicaties.";
 $nav_page = "jan-roede";
 $language = "nl";
-$og_image = STATIC_URL . 'img/headers/de-stichting-header.webp';
+$og_image = STATIC_URL . 'img/headers/wie-was-jan-roede-header.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
 ?>
 
-<section class="single-header single-header--de-stichting" aria-label="Wie was Jan Roëde">
+<section class="single-header single-header--wie-was-jan-roede" aria-label="Wie was Jan Roëde">
     <div class="single-header__content">
         <h1>Jan Roëde</h1>
     </div>

@@ -5,13 +5,13 @@ $title = "Jan Roëde | De ontwerper en illustrator";
 $description = "Overzicht van publicaties en documenten over Jan Roëde als ontwerper en illustrator.";
 $nav_page = "jan-roede";
 $language = "nl";
-$og_image = STATIC_URL . 'img/headers/de-stichting-header.webp';
+$og_image = STATIC_URL . 'img/headers/wie-was-jan-roede-header.webp';
 
 include ABS_PATH . 'inc/head.inc.php';
 include ABS_PATH . 'inc/navbar.inc.php';
 ?>
 
-<section class="single-header single-header--de-stichting" aria-label="De ontwerper en illustrator Jan Roëde">
+<section class="single-header single-header--wie-was-jan-roede" aria-label="De ontwerper en illustrator Jan Roëde">
     <div class="single-header__content">
         <h1>De ontwerper en illustrator Jan Roëde</h1>
     </div>
