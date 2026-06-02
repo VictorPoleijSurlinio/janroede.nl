@@ -51,45 +51,10 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
         <div class="row">
             <div class="col-lg-6">
-                <!-- BESTUUR EN BASISGEGEVENS -->
-                <h2 id="bestuur-en-basisgegevens">Bestuur en basisgegevens</h2>
-                <p>Het bestuur van de stichting bestaat uit Louw van Sinderen (voorzitter), Olga van Hulsen, Dick Stapel en Huub van Wersch (secretaris-penningmeester). De bestuursleden verrichten hun werkzaamheden onbetaald.</p>
-                <table class="table table-borderless mt-3">
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="ps-0">Website</th>
-                            <td><a href="<?= $COMPANY_WEBSITE ?>"><?= $COMPANY_WEBSITE ?></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">E-mail</th>
-                            <td><a href="mailto:<?= $COMPANY_EMAIL ?>"><?= $COMPANY_EMAIL ?></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">Telefoon</th>
-                            <td><a href="tel:<?= $COMPANY_PHONE_LINK ?>"><?= $COMPANY_PHONE ?></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">Bankrekening</th>
-                            <td><?= $COMPANY_IBAN ?></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">KvK nummer</th>
-                            <td><?= $COMPANY_KVK ?></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0" style="width:200px;">Vestigingsadres</th>
-                            <td><?= $COMPANY_STREET ?>, <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">ANBI-status</th>
-                            <td>Sinds 1-1-2010; aangemerkt als culturele ANBI sinds 1-1-2012</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="ps-0">RSIN</th>
-                            <td>815163423</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- BESTUUR-->
+                <h2 id="bestuur-en-basisgegevens">Bestuur</h2>
+                <p>Het bestuur van de stichting bestaat uit Louw van Sinderen (voorzitter), Olga van Hulsen, Dick Stapel en Huub van Wersch (secretaris-penningmeester). De bestuursleden verrichten hun werkzaamheden onbetaald. </p>
+                <p>De stichting is sinds 1 januari 2010 aangemerkt als ANBI, sinds 1 januari 2012 als culturele ANBI (RSIN 815163423). De stichting is sinds haar oprichting gevestigd in Den Haag (Benoordenhoutseweg 262, 2596 BJ).</p>
             </div>
 
             <!-- BELEIDSPLAN + JAARVERSLAGEN -->
