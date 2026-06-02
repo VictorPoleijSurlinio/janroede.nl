@@ -36,9 +36,16 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 </p>
                 */ ?>
                 <h3 class="mt-4">Audio</h3>
-                <ul>
-                    <li>Henk Augustijn (Art-on-Video): <strong>Jan Roëde - een portret</strong>, gefilmd in zijn atelier in Clingendael in het voorjaar van 1993, gepubliceerd op YouTube: <a href="https://www.youtube.com/watch?v=VIY8M7kHgFQ" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=VIY8M7kHgFQ</a></li>
-                </ul>
+                <p>Henk Augustijn (Art-on-Video): <strong>Jan Roëde - een portret</strong>, gefilmd in zijn atelier in Clingendael in het voorjaar van 1993.</p>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe
+                        src="https://www.youtube.com/embed/VIY8M7kHgFQ"
+                        title="Jan Roëde - een portret"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
 
                 <h3 class="mt-4">Van de hand van Jan Roëde zelf</h3>
                 <ul>
