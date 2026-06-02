@@ -74,7 +74,18 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <section class="p-0" id="about">
 	<div class="floating-text">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-8 offset-md-2 mb-5 text-center">
+				<h1 class="text-black display-2">Benefietexpositie Jan Roëde</h1>
+				<h2 class="text-black mb-4">De Vrolijkheid: kunst die een glimlach deelt</h2>
+				<p>
+					<strong>“Het is belangrijk dat als ik iets maak, ik als eerste beschouwer zelf een glimlach krijg.”</strong>
+				</p>
+				<p class="mb-5">
+					Deze woorden van de Haagse kunstenaar Jan Roëde (1914-2007) vormen het hart van een bijzondere benefietexpositie in Pulchri Studio. Van 3 t/m 7 juni 2026 organiseert de Jan Roëde Stichting in Pulchri Studio een tentoonstelling voor een goed doel: Stichting De Vrolijkheid.
+				</p>
+				<a class="text-black" href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt/" target="_blank">LEES MEER <i class="ms-2 fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col-md-8 offset-md-2 text-center">
 				<h1 class="text-black display-2">Jan Roëde</h1>
 				<h2 class="text-black mb-4">1914 - 2007</h2>
 				<p>
@@ -89,7 +100,9 @@ include ABS_PATH . 'inc/navbar.inc.php';
 				</p>
 				<a class="text-black" href="<?= SITE_URL ?>de-stichting/">LEES MEER OVER DE STICHTING <i class="ms-2 fa-solid fa-arrow-right"></i></a>
 			</div>
+
 		</div>
+	</div>
 	</div>
 </section>
 
@@ -130,14 +143,13 @@ include ABS_PATH . 'inc/navbar.inc.php';
 						alt="Schilderijen header preview"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
-						style="max-width: min(360px, 100%); width: 100%;"
-					>
+						style="max-width: min(360px, 100%); width: 100%;">
 					<h3 class="text-white">Schilderijen</h3>
 					<p class="my-4">
 						<strong>Een overzicht van de schilderijen uit de nalatenschap van Jan Roëde. Van intieme figuurstudies tot grootse composities — werk dat raakt en blijft hangen.</strong>
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
-					<a class="btn-client-rounded" href="<?= SITE_URL ?>schilderijen/">SCHILDERIJEN</a>
+						<a class="btn-client-rounded" href="<?= SITE_URL ?>schilderijen/">SCHILDERIJEN</a>
 						<a class="btn-side-icon" href="<?= SITE_URL ?>schilderijen/" aria-label="Ga naar schilderijen"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
@@ -150,14 +162,13 @@ include ABS_PATH . 'inc/navbar.inc.php';
 						alt="Zeefdrukken header preview"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
-						style="max-width: min(360px, 100%); width: 100%;"
-					>
+						style="max-width: min(360px, 100%); width: 100%;">
 					<h3 class="text-white">Zeefdrukken</h3>
 					<p class="my-4">
 						<strong>De zeefdrukken van Jan Roëde tonen zijn grafische kracht. Gelaagd, kleurrijk en met een eigen karakter dat los staat van zijn geschilderd werk.</strong>
 					</p>
 					<div class="mt-auto d-flex justify-content-center pt-3">
-					<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">ZEEFDRUKKEN</a>
+						<a class="btn-client-rounded" href="<?= SITE_URL ?>zeefdrukken/">ZEEFDRUKKEN</a>
 						<a class="btn-side-icon" href="<?= SITE_URL ?>zeefdrukken/" aria-label="Ga naar zeefdrukken"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
@@ -170,8 +181,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 						alt="Werken op papier header preview"
 						decoding="async"
 						class="img-fluid rounded-3 shadow mb-3 mx-auto d-block"
-						style="max-width: min(360px, 100%); width: 100%;"
-					>
+						style="max-width: min(360px, 100%); width: 100%;">
 					<h3 class="text-white">Werken op papier</h3>
 					<p class="my-4">
 						<strong>Tekeningen, aquarellen en gouaches op papier — van kleine schetsen tot volwaardige composities. Intiem werk dat de veelzijdigheid van Jan Roëde toont.</strong>

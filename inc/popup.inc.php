@@ -1,7 +1,7 @@
 <?php
 // Zet $SITE_POPUP_PERMANENT op true om altijd te tonen.
 // Of gebruik start/eind om tijdsgebonden te tonen.
-$SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? true;
+$SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? false;
 $SITE_POPUP_PERMANENT = $SITE_POPUP_PERMANENT ?? true;
 $SITE_POPUP_START_AT = $SITE_POPUP_START_AT ?? '2026-06-01 00:00:00';
 $SITE_POPUP_END_AT = $SITE_POPUP_END_AT ?? '2026-06-14 23:59:59';
