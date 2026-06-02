@@ -22,7 +22,7 @@
 				<span class="text-white"><i class="fa-solid fa-university secondary-color me-1"></i>IBAN: <?= $COMPANY_IBAN ?></span><br>
 				<span class="text-white"><i class="fa-solid fa-location-dot secondary-color me-1"></i>Vestigingsadres: <?= $COMPANY_STREET ?><br> <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></span><br>
 			</div>
-			<div class="col-lg-4 text-white">
+			<div class="col-lg-4 text-white text-center">
 				<? /*
 				<h3 class="footer-heading">Openingstijden</h3>
 				<?php $today = date('l');
@@ -38,10 +38,12 @@
 			</div>
 			<div class="col-lg-4 text-lg-end">
 				<h3 class="footer-heading">Links</h3>
-				<a href="<?= SITE_URL ?>">Home</a><br>
+				<a href="<?= SITE_URL ?>wie-was-jan-roede">Wie was Jan Roëde</a><br>
 				<a href="<?= SITE_URL ?>de-stichting">De Stichting</a><br>
 				<a href="<?= SITE_URL ?>schilderijen">Schilderijen</a><br>
 				<a href="<?= SITE_URL ?>zeefdrukken">Zeefdrukken</a><br>
+				<a href="<?= SITE_URL ?>werken-op-papier">Werken op papier</a><br>
+				<a href="<?= SITE_URL ?>janroede-prijs">Jan Roede Prijs</a><br>
 				<a href="<?= SITE_URL ?>contact">Contact</a><br>
 			</div>
 

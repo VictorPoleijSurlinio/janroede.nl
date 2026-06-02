@@ -33,6 +33,7 @@
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/tijdlijn">TIJDLIJN</a></li>
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/tentoonstellingen">TENTOONSTELLINGEN</a></li>
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/publicaties">PUBLICATIES</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/de-ontwerper-en-illustrator-jan-roede">DE ONTWERPEN EN ILLUSTRATOR</a></li>
 					</ul>
 				</li>
 				<li class="nav-item">
