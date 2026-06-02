@@ -36,8 +36,17 @@
 						<li><a class="dropdown-item" href="<?= SITE_URL ?>wie-was-jan-roede/de-ontwerper-en-illustrator-jan-roede">DE ONTWERPEN EN ILLUSTRATOR</a></li>
 					</ul>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?= SITE_URL ?>de-stichting">STICHTING</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="<?= SITE_URL ?>de-stichting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span>STICHTING</span>
+						<i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/oprichting-en-doelstelling">OPRICHTING EN DOELSTELLING</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/bestuur">BESTUUR</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/activiteiten">ACTIVITEITEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>de-stichting/verkoop">VERKOOP UIT NALATENSCHAP</a></li>
+					</ul>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
