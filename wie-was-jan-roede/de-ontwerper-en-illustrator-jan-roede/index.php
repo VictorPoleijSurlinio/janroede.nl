@@ -32,7 +32,9 @@ include ABS_PATH . 'inc/navbar.inc.php';
 
                 <ul class="mt-4">
                     <li>
-                        <span>Affiches, boekomslagen en illustraties (pdf - bestand nog niet gevonden)</span>
+                        <a href="<?= SITE_URL ?>static/docs/Affiches, illustraties, boekomslagen 19-5-2026.pdf" target="_blank" rel="noopener noreferrer">
+                            Affiches, illustraties, boekomslagen 19-5-2026 (pdf)
+                        </a>
                     </li>
                     <li>
                         <a href="<?= SITE_URL ?>static/docs/Inkttekeningen%20JRS%20Je%20kunt%20niet%20alles%20begrijpen%20en%20daaromtrent.pdf" target="_blank" rel="noopener noreferrer">

@@ -20,7 +20,7 @@
 				<h3 class="footer-heading">Organisatie</h3>
 				<span class="text-white"><i class="fa-solid fa-receipt secondary-color me-1"></i>KVK: <?= $COMPANY_KVK ?></span><br>
 				<span class="text-white"><i class="fa-solid fa-university secondary-color me-1"></i>IBAN: <?= $COMPANY_IBAN ?></span><br>
-				<span class="text-white"><i class="fa-solid fa-location-dot secondary-color me-1"></i>Vestigingsadres: <?= $COMPANY_STREET ?><br> <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></span><br>
+				<!-- <span class="text-white"><i class="fa-solid fa-location-dot secondary-color me-1"></i>Vestigingsadres: <?= $COMPANY_STREET ?><br> <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></span><br> -->
 			</div>
 			<div class="col-lg-4 text-white text-center">
 				<? /*
