@@ -74,7 +74,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <section class="p-0" id="about">
 	<div class="floating-text">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 mb-5 text-center">
+			<div class="col-md-8 offset-md-2 mb-4 text-center">
 				<h1 class="text-black display-2">Benefietexpositie Jan Roëde</h1>
 				<h2 class="text-black mb-4">De Vrolijkheid: kunst die een glimlach deelt</h2>
 				<p>
