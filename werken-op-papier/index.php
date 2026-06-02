@@ -172,6 +172,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 $signed          = $item['signed'] ?? false;
                 $material        = $item['material'] ?? null;
                 $editionNote     = $item['edition_note'] ?? null;
+                $salePriceEur    = $item['sale_price_eur'] ?? null;
 
                 $fullImageUrl  = STATIC_URL . 'img/werken-op-papier/' . $imageName . '.webp';
                 $thumbImageUrl = STATIC_URL . 'img/werken-op-papier/thumbnails/' . $imageName . '.webp';
@@ -193,6 +194,9 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 }
                 if ($heightCm !== null && $widthCm !== null) {
                     $captionParts[] = $heightCm . ' × ' . $widthCm . ' cm';
+                }
+                if (is_numeric($salePriceEur)) {
+                    $captionParts[] = 'prijs: € ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
                 if ($editionNote !== null) {
                     $captionParts[] = $editionNote;

@@ -171,6 +171,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 $year = $item['year'] ?? null;
                 $signed = $item['signed'] ?? false;
                 $material = $item['material'] ?? null;
+                $salePriceEur = $item['sale_price_eur'] ?? null;
 
                 $fullImageUrl = STATIC_URL . 'img/schilderijen/' . $imageName . '.webp';
                 $thumbImageUrl = STATIC_URL . 'img/schilderijen/thumbnails/' . $imageName . '.webp';
@@ -192,6 +193,9 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 }
                 if ($heightCm !== null && $widthCm !== null) {
                     $captionParts[] = $heightCm . ' × ' . $widthCm . ' cm';
+                }
+                if (is_numeric($salePriceEur)) {
+                    $captionParts[] = 'prijs: € ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
                 if ($signed) {
                     $captionParts[] = 'gesigneerd';

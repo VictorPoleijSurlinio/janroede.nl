@@ -90,6 +90,7 @@ ksort($filterFormatOptions, SORT_NATURAL);
                 $formatLabel = $item['format_label'] ?? 'onbekend';
                 $editionNote = $item['edition_note'] ?? '';
                 $note = $item['note'] ?? '';
+                $salePriceEur = $item['sale_price_eur'] ?? null;
 
                 $formatFilter = jrSlugify($formatLabel);
 
@@ -107,6 +108,9 @@ ksort($filterFormatOptions, SORT_NATURAL);
                 }
                 if ($note !== '') {
                     $captionParts[] = $note;
+                }
+                if (is_numeric($salePriceEur)) {
+                    $captionParts[] = 'prijs: € ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
 
                 $caption = implode(' | ', $captionParts);
