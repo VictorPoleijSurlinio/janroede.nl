@@ -39,17 +39,21 @@ $lightbox-img-path: "../img/lightbox/2.10.0";
 // GENERAL
 
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   @media (max-width: 500px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
-section.less-padding-top {
-  padding-top: 50px;
-  padding-bottom: 55px;
+section.less-padding {
+  padding-top: 40px!important;
+  padding-bottom: 40px!important;
+    @media (max-width: 500px) {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
 }
 
 .intro-tekst {

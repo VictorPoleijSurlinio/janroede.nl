@@ -23,20 +23,33 @@ include ABS_PATH . 'inc/navbar.inc.php';
     </div>
 </div>
 
-<section>
-    <div class="container">
+<div class="container py-4">
+    <section class="less-padding">
+        <!-- OPRICHTING EN DOELSTELLING -->
+        <h2 id="oprichting-en-doelstelling" class="mb-3">Oprichting en doelstelling</h2>
+        <p>Jan Roëde richtte de Jan Roëde Stichting in 2005 op om zijn artistieke nalatenschap op ideële basis te laten beheren na zijn overlijden. Sinds zijn heengaan in 2007 is de stichting actief. Vanaf 2010 heeft de organisatie de officiële ANBI-status (Algemeen Nut Beogende Instelling).</p>
+        <p>De doelstelling van de Jan Roëde Stichting is tweeledig:</p>
+
+        <h3 class="mt-4">1. Beheer en promotie van de nalatenschap</h3>
+        <p>De stichting zet zich in om de nagelaten kunstwerken, waaronder schilderijen, tekeningen, gouaches en grafiek, optimaal te beheren en onder de aandacht te brengen van een kunstminnend publiek. Dit gebeurt via:</p>
+        <ul>
+            <li>Het organiseren van tentoonstellingen</li>
+            <li>Medewerking aan publicaties over Jan Roëde</li>
+            <li>Schenkingen aan musea</li>
+            <li>De verkoop van kunstwerken aan liefhebbers</li>
+        </ul>
+
+        <h3 class="mt-4">2. Stimuleren van beeldend talent</h3>
+        <p>De opbrengsten uit de verkoop maken het mogelijk om de tweede, brede maatschappelijke doelstelling te realiseren: het ondersteunen van talent in de beeldende kunst. Dit vullen wij onder andere in door:</p>
+        <ul>
+            <li><strong>De Jan Roëde Prijs:</strong> een jaarlijkse geldprijs voor een afstuderende kunstenaar aan de Koninklijke Academie van Beeldende Kunsten (KABK) in Den Haag.</li>
+            <li><strong>Maatschappelijke kunstprojecten:</strong> financiële steun aan stichting De Vrolijkheid, die met beeldend kunstenaars creatieve projecten opzet en begeleidt in asielzoekerscentra.</li>
+        </ul>
+    </section>
+
+    <section class="less-padding">
+
         <div class="row">
-            <div class="col-lg-12">
-
-                <!-- OPRICHTING EN DOELSTELLING -->
-                <h2 id="oprichting-en-doelstelling" class="mt-5">Oprichting en doelstelling</h2>
-                <p>Jan Roëde heeft de Jan Roëde Stichting in 2005 opgericht om zijn artistieke nalatenschap op ideële basis te laten beheren als hij er zelf niet meer zou zijn. De Stichting is actief geworden na zijn overlijden in 2007 en heeft sinds 2010 de status van een Algemeen Nut Beogende Instelling (ANBI).</p>
-                <p>De doelstelling van de Jan Roëde Stichting is tweeledig. Allereerst zet zij zich in om de kunstwerken die Jan heeft nagelaten (schilderijen, tekeningen, gouaches, grafiek) zo goed mogelijk te beheren en onder de aandacht te brengen van kunstminnend publiek. Dit gebeurt door tentoonstellingen te organiseren, mee te werken aan publicaties over Jan Roëde, schenkingen te doen aan musea en werk te verkopen aan kunstliefhebbers. De opbrengsten maken het mogelijk te werken aan de tweede doelstelling: het stimuleren van talent in de beeldende kunst, bijvoorbeeld door kunstenaars financieel te ondersteunen. Deze ideële doelstelling wordt breed opgevat. Niet alleen wordt jaarlijks een prijs uitgereikt aan een afstuderend kunstenaar van de Koninklijke Academie van Beeldende Kunst (KABK) in Den Haag, ook steunde Stichting de activiteiten van De Vrolijkheid, een stichting die beeldend kunstenaars inzet om kunstprojecten in asielzoekerscentra te initiëren en te begeleiden.</p>
-
-
-
-            </div>
-
             <div class="col-lg-6">
                 <!-- BESTUUR EN BASISGEGEVENS -->
                 <h2 id="bestuur-en-basisgegevens">Bestuur en basisgegevens</h2>
@@ -77,20 +90,19 @@ include ABS_PATH . 'inc/navbar.inc.php';
                         </tr>
                     </tbody>
                 </table>
-
-                </ul>
             </div>
 
             <!-- BELEIDSPLAN + JAARVERSLAGEN -->
             <div class="col-lg-6">
-                <h2 id="beleidsplan">Beleidsplan</h2>
+                <h3>Beleidsplan</h3>
                 <p>Het beleidsplan van de Jan Roëde Stichting is beschikbaar als download:</p>
                 <ul class="list-unstyled">
                     <li class="mb-2">
                         <a href="<?= STATIC_URL ?>docs/Beleidsplan Jan Roëde Stichting 2026-2029.pdf" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fa-regular fa-file-pdf me-1"></i> Download Beleidsplan (PDF)</a>
                     </li>
                 </ul>
-                <h2 id="jaarverslagen">Jaarverslagen</h2>
+
+                <h3>Jaarverslagen</h3>
                 <p>De jaarverslagen zijn beschikbaar als download:</p>
                 <ul class="list-unstyled">
                     <li class="mb-2">
@@ -103,29 +115,47 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-12">
-                <!-- ACTIVITEITEN -->
-                <h2 id="activiteiten" class="mt-5">Activiteiten</h2>
-
-                <h3 class="mt-4">Tentoonstellingen</h3>
-                <p>De Jan Roëde Stichting heeft in afgelopen jaren tentoonstellingen georganiseerd of doen organiseren in Den Haag (Pulchri Studio), Utrecht (Galerie Quintessens), Rijswijk (Museum Rijswijk), Amstelveen (Museum Jan van der Togt, nu Museum JAN), Haarlem (Teylers Museum), Groningen (Pictura), Assen (Drents Museum) en Heerenveen (Museum Belvédère).</p>
-
-                <h3 class="mt-4">Schenkingen</h3>
-                <p>Een deel van de artistieke nalatenschap is dankzij de inspanningen van Stichting ondergebracht bij enkele Nederlandse musea. Het Drents Museum in Assen, het Teylers Museum in Haarlem en Museum Belvédère in Oranjewoud (Heerenveen) hebben hun collecties met onze steun verrijkt met aanwinsten uit de nalatenschap van Jan Roëde. Het archief van Jan Roëde (tweeëneenhalve meter documentatie) hebben we ondergebracht bij het RKD, dat deze schenking goed ontsloten heeft. In incidentele gevallen zijn ook werken uit de nalatenschap geschonken aan instellingen met een maatschappelijke functie zonder winstoogmerk.</p>
-
-                <h3 class="mt-4">Publicaties</h3>
-                <p>In samenwerking met de Stichting HBKK hebben we in de serie Haags Palet een mooi boekje over het leven en werk van Jan Roëde laten verschijnen: <em>Jan Roëde – een verborgen dialoog</em> van John Sillevis (2010, ISBN 978-80-70003-26-5). Het boekje is nog altijd verkrijgbaar en wordt tijdens exposities voor een gereduceerde prijs aangeboden. Ook andere publicaties over Roëde zijn in samenwerking met onze Stichting uitgebracht, zoals <em>Tegendraads Modern – een bevrijdend alternatief voor de strenge Goed Wonen norm</em> van André Koch (2014, ISBN 978-90-5594-871-0), <em>Jan Roëde – een keuze uit het werk</em> van Wouter Welling (2016, ISBN 978-90-70884-67-3) en <em>Jan Roëde – verwondering in kleur</em> van Anne Marie Boorsma (1922, ISBN 978-90-816769-4-6).</p>
-
-                <!-- VERKOOP VAN WERKEN UIT DE NALATENSCHAP -->
-                <h2 id="verkoop" class="mt-5">Verkoop van werken uit de nalatenschap</h2>
-                <p>De Stichting ziet graag dat de kunst die Jan Roëde heeft nagelaten zijn weg vindt naar het kunstminnend publiek. Om die reden zijn wij ook actief met het verkopen van werken uit de collectie. De verkoop verloopt deels via tentoonstellingen en samenwerking met galeries en kunsthandelaars. Daarnaast is het ook mogelijk rechtstreeks via de Stichting in het bezit van een mooi werk van Jan Roëde te komen. Als een of meer op deze website getoonde werken uw belangstelling hebben gewekt, neem dan gerust via de e-mail contact met ons op. Inmiddels hebben op deze manier al aardig wat werken uit onze collectie hun weg gevonden naar liefhebbers. De opbrengsten uit onze verkoop gaan, na aftrek van onze exploitatiekosten, naar de ontwikkeling van kunstzinnig talent, zoals Jan Roëde bij de oprichting heeft beoogd.</p>
-                <a class="btn-client-rounded-purple" href="<?= SITE_URL ?>contact">Contact opnemen</a>
-            </div>
-
         </div>
-    </div>
-    </div>
-</section>
+    </section>
+
+    <section class="less-padding">
+        <!-- ACTIVITEITEN -->
+        <h2 id="activiteiten" class="mb-3">Activiteiten</h2>
+
+        <h3 class="mt-4">Tentoonstellingen</h3>
+        <p>De Jan Roëde Stichting organiseert geregeld tentoonstellingen. De eerstvolgende is een kortlopende benefietexpositie voor <a href="https://vrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Stichting De Vrolijkheid</a> in Pulchri Studio Den Haag (3 t/m 7 juni 2026): <a href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt/" target="_blank" rel="noopener noreferrer">bekijk tentoonstelling</a>.</p>
+        <p>In de afgelopen jaren heeft de Stichting tentoonstellingen georganiseerd of laten organiseren in Den Haag (<em>Pulchri Studio, RKD, WTC The Hague Art Gallery</em>), Utrecht (<em>Galerie Quintessens</em>), Rijswijk (<em>Museum Rijswijk</em>), Wassenaar (<em>Raadhuis De Paauw</em>), Amstelveen (<em>Museum Jan van der Togt, nu Museum JAN</em>), Haarlem (<em>Teylers Museum</em>), Groningen (<em>Pictura</em>), Assen (<em>Drents Museum</em>) en Heerenveen (<em>Museum Belvédère</em>). Ook is medewerking verleend aan tentoonstellingen in Zwolle (<em>De Fundatie</em>) en Kortenhoef (<em>Kunst aan de Dijk</em>).</p>
+
+        <h3 class="mt-4">Schenkingen</h3>
+        <p>Een deel van de artistieke nalatenschap is dankzij de inspanningen van Stichting ondergebracht bij enkele Nederlandse musea. Het Drents Museum in Assen, het Teylers Museum in Haarlem en Museum Belvédère in Oranjewoud (Heerenveen) hebben hun collecties met onze steun verrijkt met aanwinsten uit de nalatenschap van Jan Roëde. Het archief van Jan Roëde (tweeëneenhalve meter documentatie) is geschonken aan het RKD, dat dit archief goed ontsloten heeft. Incidenteel zijn ook werken uit de nalatenschap geschonken aan instellingen met een maatschappelijke functie zonder winstoogmerk.</p>
+
+        <h3 class="mt-4">Publicaties</h3>
+        <p>De Stichting heeft in samenwerking met de Stichting HBKK in de serie Haags Palet een mooi boekje over het leven en werk van Jan Roëde laten verschijnen: <em>Jan Roëde – een verborgen dialoog</em> van John Sillevis (2010). Het boekje is nog altijd verkrijgbaar en wordt tijdens exposities voor een gereduceerde prijs aangeboden. Ook andere publicaties over Roëde zijn in samenwerking met onze Stichting uitgebracht, zoals <em>Tegendraads Modern – een bevrijdend alternatief voor de strenge Goed Wonen norm</em> van André Koch (2014), <em>Jan Roëde – een keuze uit het werk</em> van Wouter Welling (2016) en <em>Jan Roëde – verwondering in kleur</em> van Anne Marie Boorsma (2022).</p>
+
+        <h3 class="mt-4">Jan Roëde Prijs</h3>
+        <p>Sinds 2014 reikt de Stichting jaarlijks de <a href="<?= SITE_URL ?>janroede-prijs">Jan Roëde Prijs</a> uit aan een afstuderend kunstenaar van de KABK.</p>
+    </section>
+
+    <section class="less-padding">
+        <!-- VERKOOP VAN WERKEN UIT DE NALATENSCHAP -->
+        <h2 id="verkoop" class="mb-3">Verkoop van werken uit de nalatenschap</h2>
+        <p>De Jan Roëde Stichting brengt de nagelaten kunst van Jan Roëde graag onder bij een kunstminnend publiek. Om deze reden verkopen wij actief werken uit de collectie. Inmiddels hebben al veel kunstwerken via deze weg een mooie plek gevonden bij liefhebbers thuis.</p>
+
+        <h3 class="mt-4">Hoe kunt u een werk aankopen?</h3>
+        <p>De verkoop van de kunstwerken verloopt op verschillende manieren:</p>
+        <ul>
+            <li><strong>Exposities en galeries:</strong> wij verkopen werk tijdens tijdelijke tentoonstellingen en via samenwerkingen met galeries en kunsthandelaren.</li>
+            <li><strong>Rechtstreekse verkoop:</strong> u kunt kunstwerken ook direct via de stichting aankopen.</li>
+        </ul>
+
+        <h3 class="mt-4">Heeft u interesse in een specifiek werk?</h3>
+        <p>Heeft een van de kunstwerken op deze website uw belangstelling gewekt? Neem dan gerust via e-mail contact met ons op voor meer informatie over de beschikbaarheid en de prijs. Het overzicht op deze website is overigens niet compleet. Ook voor informatie over andere werken die te koop zijn kunt u contact met ons opnemen.</p>
+        <a class="btn-client-rounded-purple" href="<?= SITE_URL ?>contact">Contact opnemen</a>
+
+        <h3 class="mt-4">Ondersteun de kunst</h3>
+        <p>Met de aankoop van een werk van Jan Roëde draagt u direct bij aan de toekomst van de kunst. De opbrengsten uit verkoop zijn, na aftrek van de exploitatiekosten, bestemd voor het stimuleren van creativiteit en kunstbeoefening. Precies zoals Jan Roëde dit bij de oprichting van de stichting voor ogen had.</p>
+    </section>
+</div>
 
 <?php
 include ABS_PATH . 'inc/footer.inc.php';
