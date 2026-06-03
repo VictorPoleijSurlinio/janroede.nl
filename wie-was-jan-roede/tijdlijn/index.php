@@ -23,7 +23,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
     </div>
 </div>
 
-<section class="bg-white" id="timeline">
+<section id="timeline">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-12">
