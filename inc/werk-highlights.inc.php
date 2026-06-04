@@ -3,6 +3,7 @@
 		<div class="row justify-content-center align-items-center g-5">
 			<?php
 			include_once ABS_PATH . 'inc/arrays/schilderijen.php';
+			$schilderijen = $schilderijen ?? ['items' => []];
 
 			// Index array by inventory_number for fast lookup
 			$schilderijenIndex = array_column($schilderijen['items'], null, 'inventory_number');
@@ -24,6 +25,7 @@
 				$heightCm   = $item['height_cm']   ?? null;
 				$widthCm    = $item['width_cm']    ?? null;
 				$signed     = $item['signed']      ?? false;
+				$salePriceEur = $item['sale_price_eur'] ?? null;
 				$imageName  = $item['image_name']  ?? $inv;
 
 				$captionParts = [$title_work];
@@ -38,6 +40,9 @@
 				}
 				if ($signed) {
 					$captionParts[] = 'gesigneerd';
+				}
+				if (is_numeric($salePriceEur)) {
+					$captionParts[] = 'prijs: € ' . number_format((float) $salePriceEur, 0, ',', '.');
 				}
 				$caption = implode(' | ', $captionParts);
 				$contactUrl = SITE_URL . 'contact/?category=schilderijen&amp;item=' . urlencode($inv) . '#contact-form';
