@@ -3,6 +3,7 @@ include __DIR__ . '/../inc/config.inc.php';
 include __DIR__ . '/../inc/arrays/faq.inc.php';
 include __DIR__ . '/../inc/arrays/schilderijen.php';
 include __DIR__ . '/../inc/arrays/zeefdrukken.php';
+include __DIR__ . '/../inc/arrays/werken-op-papier.php';
 
 // HEAD AND NAV VARIABLES
 $title = 'Contact | ' . $COMPANY_FULLNAME;
@@ -10,7 +11,7 @@ $description  = 'Neem contact op met de Jan Roëde Stichting. Interesse in een w
 $og_image = STATIC_URL . 'img/headers/contact-header.webp';
 $page = "contact";
 
-$preselectedCategory = in_array($_GET['category'] ?? '', ['schilderijen', 'zeefdrukken']) ? $_GET['category'] : '';
+$preselectedCategory = in_array($_GET['category'] ?? '', ['schilderijen', 'zeefdrukken', 'werken-op-papier']) ? $_GET['category'] : '';
 $preselectedItem = isset($_GET['item']) ? preg_replace('/[^A-Za-z0-9_\-]/', '', $_GET['item']) : '';
 
 include ABS_PATH . 'inc/head.inc.php';
@@ -19,6 +20,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 $interestOptions = [
     'schilderijen' => [],
     'zeefdrukken' => [],
+    'werken-op-papier' => [],
 ];
 
 foreach (($schilderijen['items'] ?? []) as $item) {
@@ -69,6 +71,29 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
         'label' => $label,
         'title' => $inventoryNumber,
         'subtitle' => 'Zeefdruk - ' . ucfirst($formatLabel) . ($editionNote !== '' ? ' - ' . $editionNote : ''),
+        'preview' => $thumbUrl,
+    ];
+}
+
+foreach (($werkenOpPapier['items'] ?? []) as $item) {
+    $inventoryNumber = $item['inventory_number'] ?? '';
+    $titleLabel = $item['title'] ?? 'zonder titel';
+    $imageName = $item['image_name'] ?? $inventoryNumber;
+    if ($inventoryNumber === '') {
+        continue;
+    }
+
+    $thumbUrl = STATIC_URL . 'img/werken-op-papier/thumbnails/' . $imageName . '.webp';
+    $thumbPath = ABS_PATH . 'static/img/werken-op-papier/thumbnails/' . $imageName . '.webp';
+    if (!file_exists($thumbPath)) {
+        $thumbUrl = STATIC_URL . 'img/werken-op-papier/' . $imageName . '.webp';
+    }
+
+    $interestOptions['werken-op-papier'][] = [
+        'value' => $inventoryNumber,
+        'label' => $titleLabel . ' (' . $inventoryNumber . ')',
+        'title' => $titleLabel,
+        'subtitle' => 'Werk op papier',
         'preview' => $thumbUrl,
     ];
 }
@@ -158,6 +183,7 @@ foreach (($zeefdrukken['items'] ?? []) as $item) {
                                 <option value="">Kies categorie</option>
                                 <option value="schilderijen">Schilderijen</option>
                                 <option value="zeefdrukken">Zeefdrukken</option>
+                                <option value="werken-op-papier">Werken op papier</option>
                             </select>
                         </div>
                         <div class="form-group col-6 col-md-6 ps-1 ps-md-1">

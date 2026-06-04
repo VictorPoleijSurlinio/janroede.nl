@@ -1,3 +1,22 @@
+<?php
+$currentPath = trim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH), '/');
+$siteBasePath = trim(parse_url(SITE_URL, PHP_URL_PATH), '/');
+
+if ($siteBasePath !== '' && strpos($currentPath, $siteBasePath . '/') === 0) {
+	$currentPath = substr($currentPath, strlen($siteBasePath) + 1);
+} elseif ($siteBasePath !== '' && $currentPath === $siteBasePath) {
+	$currentPath = '';
+}
+
+// Normalize direct index.php routes so section roots still match on localhost and live.
+$currentPath = preg_replace('#(?:^|/)index\.php$#i', '', $currentPath);
+$currentPath = trim((string) $currentPath, '/');
+
+$isWieWasJanRoedeGroupActive = preg_match('#^wie-was-jan-roede(?:/|$)#i', $currentPath) === 1;
+$isDeStichtingGroupActive = preg_match('#^de-stichting(?:/|$)#i', $currentPath) === 1;
+$isWerkGroupActive = preg_match('#^(werk|schilderijen|zeefdrukken|werken-op-papier)(?:/|$)#i', $currentPath) === 1;
+?>
+
 <div id="mainNavigation">
 	<div class="navbar-expand-xxl my-xxl-0 navbar-shape">
 		<div class="navbar-dark d-flex align-items-center justify-content-between">
@@ -24,7 +43,7 @@
 
 			<ul class="navbar-nav">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="<?= SITE_URL ?>wie-was-jan-roede" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle<?= $isWieWasJanRoedeGroupActive ? ' active' : '' ?>" href="<?= SITE_URL ?>wie-was-jan-roede" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						<span>WIE WAS JAN ROËDE</span>
 						<i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
 					</a>
@@ -37,7 +56,7 @@
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="<?= SITE_URL ?>de-stichting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle<?= $isDeStichtingGroupActive ? ' active' : '' ?>" href="<?= SITE_URL ?>de-stichting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						<span>STICHTING</span>
 						<i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
 					</a>
@@ -49,14 +68,14 @@
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle<?= $isWerkGroupActive ? ' active' : '' ?>" href="<?= SITE_URL ?>werk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						<span>WERK</span>
 						<i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="<?= SITE_URL ?>schilderijen">SCHILDERIJEN</a></li>
-						<li><a class="dropdown-item" href="<?= SITE_URL ?>zeefdrukken">ZEEFDRUKKEN</a></li>
-						<li><a class="dropdown-item" href="<?= SITE_URL ?>werken-op-papier">WERKEN OP PAPIER</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>werk/schilderijen">SCHILDERIJEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>werk/zeefdrukken">ZEEFDRUKKEN</a></li>
+						<li><a class="dropdown-item" href="<?= SITE_URL ?>werk/werken-op-papier">WERKEN OP PAPIER</a></li>
 
 					</ul>
 				</li>
