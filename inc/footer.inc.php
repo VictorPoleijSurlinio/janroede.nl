@@ -41,9 +41,9 @@
 				<h3 class="footer-heading">Links</h3>
 				<a href="<?= SITE_URL ?>wie-was-jan-roede">Wie was Jan Roëde</a><br>
 				<a href="<?= SITE_URL ?>de-stichting">De Stichting</a><br>
-				<a href="<?= SITE_URL ?>schilderijen">Schilderijen</a><br>
-				<a href="<?= SITE_URL ?>zeefdrukken">Zeefdrukken</a><br>
-				<a href="<?= SITE_URL ?>werken-op-papier">Werken op papier</a><br>
+				<a href="<?= SITE_URL ?>werk/schilderijen">Schilderijen</a><br>
+				<a href="<?= SITE_URL ?>werk/zeefdrukken">Zeefdrukken</a><br>
+				<a href="<?= SITE_URL ?>werk/werken-op-papier">Werken op papier</a><br>
 				<a href="<?= SITE_URL ?>janroede-prijs">Jan Roede Prijs</a><br>
 				<a href="<?= SITE_URL ?>contact">Contact</a><br>
 			</div>
