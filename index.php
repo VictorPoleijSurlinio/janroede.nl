@@ -74,17 +74,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <section class="p-0" id="about">
 	<div class="floating-text">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 mb-4 text-center">
-				<h1 class="text-black display-2">Benefietexpositie Jan Roëde</h1>
-				<h2 class="text-black mb-4">De Vrolijkheid: kunst die een glimlach deelt</h2>
-				<p>
-					<strong>“Het is belangrijk dat als ik iets maak, ik als eerste beschouwer zelf een glimlach krijg.”</strong>
-				</p>
-				<p class="mb-5">
-					Deze woorden van de Haagse kunstenaar Jan Roëde (1914-2007) vormen het hart van een bijzondere benefietexpositie in Pulchri Studio. Van 3 t/m 7 juni 2026 organiseert de Jan Roëde Stichting in Pulchri Studio een tentoonstelling voor een goed doel: Stichting De Vrolijkheid.
-				</p>
-				<a class="text-black" href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt/" target="_blank">LEES MEER <i class="ms-2 fa-solid fa-arrow-right"></i></a>
-			</div>
 			<div class="col-md-8 offset-md-2 text-center">
 				<h1 class="text-black display-2">Jan Roëde</h1>
 				<h2 class="text-black mb-4">1914 - 2007</h2>
