@@ -100,7 +100,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                 <h2 class="mb-3">Werken op papier van Jan Roede</h2>
                 <div class="mb-3"><?php $brushClass = 'jr-brushstroke--primary'; include ABS_PATH . 'inc/brushstroke.inc.php'; ?></div>
                 <p class="mb-2">
-                    De werken op papier van Jan Roede omvatten tekeningen, aquarellen en gouaches â€“ van kleine schetsjes tot grotere composities, uitgevoerd in inkt, potlood, viltstift en waterverf.
+                    De werken op papier van Jan Roede omvatten tekeningen, aquarellen en gouaches &ndash; van kleine schetsjes tot grotere composities, uitgevoerd in inkt, potlood, viltstift en waterverf.
                 </p>
                 <p class="mb-0">
                     Bent u geïnteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
@@ -193,10 +193,10 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                     $captionParts[] = $material;
                 }
                 if ($heightCm !== null && $widthCm !== null) {
-                    $captionParts[] = $heightCm . ' Ã— ' . $widthCm . ' cm';
+                    $captionParts[] = $heightCm . ' ' . "\xC3\x97" . ' ' . $widthCm . ' cm';
                 }
                 if (is_numeric($salePriceEur)) {
-                    $captionParts[] = 'prijs: â‚¬ ' . number_format((float) $salePriceEur, 0, ',', '.');
+                    $captionParts[] = 'prijs: ' . "\xE2\x82\xAC" . ' ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
                 if ($editionNote !== null) {
                     $captionParts[] = $editionNote;

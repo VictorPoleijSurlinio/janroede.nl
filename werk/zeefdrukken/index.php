@@ -110,7 +110,7 @@ ksort($filterFormatOptions, SORT_NATURAL);
                     $captionParts[] = $note;
                 }
                 if (is_numeric($salePriceEur)) {
-                    $captionParts[] = 'prijs: â‚¬ ' . number_format((float) $salePriceEur, 0, ',', '.');
+                    $captionParts[] = 'prijs: ' . "\xE2\x82\xAC" . ' ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
 
                 $caption = implode(' | ', $captionParts);

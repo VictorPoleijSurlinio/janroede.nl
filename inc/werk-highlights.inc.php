@@ -35,15 +35,15 @@
 				if ($material) {
 					$captionParts[] = $material;
 				}
-				if ($heightCm && $widthCm) {
-					$captionParts[] = $heightCm . ' × ' . $widthCm . ' cm';
-				}
-				if ($signed) {
-					$captionParts[] = 'gesigneerd';
-				}
-				if (is_numeric($salePriceEur)) {
-					$captionParts[] = 'prijs: € ' . number_format((float) $salePriceEur, 0, ',', '.');
-				}
+			    if ($heightCm !== null && $widthCm !== null) {
+                    $captionParts[] = $heightCm . ' ' . "\xC3\x97" . ' ' . $widthCm . ' cm';
+                }
+                if (is_numeric($salePriceEur)) {
+                    $captionParts[] = 'prijs: ' . "\xE2\x82\xAC" . ' ' . number_format((float) $salePriceEur, 0, ',', '.');
+                }
+                if ($signed) {
+                    $captionParts[] = 'gesigneerd';
+                }
 				$caption = implode(' | ', $captionParts);
 				$contactUrl = SITE_URL . 'contact/?category=schilderijen&amp;item=' . urlencode($inv) . '#contact-form';
 				$captionHtml = htmlspecialchars($caption, ENT_QUOTES, 'UTF-8')

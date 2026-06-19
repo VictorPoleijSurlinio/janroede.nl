@@ -192,10 +192,10 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                     $captionParts[] = $material;
                 }
                 if ($heightCm !== null && $widthCm !== null) {
-                    $captionParts[] = $heightCm . ' Ã— ' . $widthCm . ' cm';
+                    $captionParts[] = $heightCm . ' ' . "\xC3\x97" . ' ' . $widthCm . ' cm';
                 }
                 if (is_numeric($salePriceEur)) {
-                    $captionParts[] = 'prijs: â‚¬ ' . number_format((float) $salePriceEur, 0, ',', '.');
+                    $captionParts[] = 'prijs: ' . "\xE2\x82\xAC" . ' ' . number_format((float) $salePriceEur, 0, ',', '.');
                 }
                 if ($signed) {
                     $captionParts[] = 'gesigneerd';
