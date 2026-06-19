@@ -32,12 +32,12 @@ if (!empty($SITE_POPUP_ENABLED)) {
 				</div>
 				<div class="modal-body">
 					<h3 class="h4 mb-3">KUNST DIE EEN GLIMLACH DEELT</h3>
-					<p class="mb-3">De recente 5-daagse benefietexpositie van de Jan Roëde Stichting in Pulchri Studio heeft ruim € 11.500 opgeleverd voor <a href="https://devrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Stichting de Vrolijkheid</a>.</p>
+					<p class="mb-3">De recente 5-daagse benefietexpositie van de Jan Roëde Stichting in Pulchri Studio heeft ruim € 11.500 opgeleverd voor <a href="https://vrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Stichting de Vrolijkheid</a>.</p>
 					<p class="mb-3">Dit geweldige succes smaakt naar meer. Wij blijven ons daarom inzetten om via de verkoop van Jan Roëdes kunst bij te dragen aan kunstzinnige activiteiten voor jongeren in asielzoekerscentra.</p>
 					<p class="mb-0">Onze volgende stap? In augustus organiseren we een nieuwe verkoopexpositie in de grote Mesdagzaal van Pulchri Studio. Ook de netto-opbrengst van dit evenement komt weer volledig ten goede aan De Vrolijkheid.</p>
 				</div>
 				<div class="modal-footer d-flex justify-content-between">
-					<a class="btn btn-client-rounded-purple" href="https://devrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Naar De Vrolijkheid</a>
+					<a class="btn btn-client-rounded-purple" href="https://vrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Naar De Vrolijkheid</a>
 					<button type="button" class="btn btn-client-rounded" data-bs-dismiss="modal" aria-label="Sluit popup">Sluiten</button>
 				</div>
 			</div>
