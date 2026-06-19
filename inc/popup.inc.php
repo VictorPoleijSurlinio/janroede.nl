@@ -1,11 +1,11 @@
 <?php
 // Zet $SITE_POPUP_PERMANENT op true om altijd te tonen.
 // Of gebruik start/eind om tijdsgebonden te tonen.
-$SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? false;
+$SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? true;
 $SITE_POPUP_PERMANENT = $SITE_POPUP_PERMANENT ?? true;
 $SITE_POPUP_START_AT = $SITE_POPUP_START_AT ?? '2026-06-01 00:00:00';
 $SITE_POPUP_END_AT = $SITE_POPUP_END_AT ?? '2026-06-14 23:59:59';
-$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'benefietexpositie-2026-06';
+$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'actualiteit-kunst-die-een-glimlach-deelt-2026-06';
 
 $sitePopupIsActive = false;
 if (!empty($SITE_POPUP_ENABLED)) {
@@ -31,20 +31,13 @@ if (!empty($SITE_POPUP_ENABLED)) {
 					<button type="button" class="btn-close primary-color" data-bs-dismiss="modal" aria-label="Sluiten"></button>
 				</div>
 				<div class="modal-body">
-					<h3 class="h4 mb-3">Benefietexpositie Jan Roede - De Vrolijkheid: kunst die een glimlach deelt</h3>
-					<p class="mb-3">Van 3 t/m 7 juni 2026 organiseert de Jan Roede Stichting in Pulchri Studio een kortlopende benefietexpositie voor Stichting De Vrolijkheid.</p>
-					<div class="mb-3">
-						<p class="mb-1"><strong>Vanaf:</strong> woensdag 03 juni 2026</p>
-						<p class="mb-1"><strong>Tot en met:</strong> zondag 07 juni 2026</p>
-						<p class="mb-1"><strong>Waar:</strong> Klinkenberggaleries (Pulchri Studio)</p>
-					</div>
-					<p class="mb-0">
-						<a href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt/" target="_blank" rel="noopener noreferrer">Bekijk alle informatie op pulchri.nl</a>
-					</p>
-
+					<h3 class="h4 mb-3">KUNST DIE EEN GLIMLACH DEELT</h3>
+					<p class="mb-3">De recente 5-daagse benefietexpositie van de Jan Roëde Stichting in Pulchri Studio heeft ruim € 11.500 opgeleverd voor <a href="https://devrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Stichting de Vrolijkheid</a>.</p>
+					<p class="mb-3">Dit geweldige succes smaakt naar meer. Wij blijven ons daarom inzetten om via de verkoop van Jan Roëdes kunst bij te dragen aan kunstzinnige activiteiten voor jongeren in asielzoekerscentra.</p>
+					<p class="mb-0">Onze volgende stap? In augustus organiseren we een nieuwe verkoopexpositie in de grote Mesdagzaal van Pulchri Studio. Ook de netto-opbrengst van dit evenement komt weer volledig ten goede aan De Vrolijkheid.</p>
 				</div>
 				<div class="modal-footer d-flex justify-content-between">
-					<a class="btn btn-client-rounded-purple" href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt/" target="_blank" rel="noopener noreferrer">Meer info</a>
+					<a class="btn btn-client-rounded-purple" href="https://devrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Naar De Vrolijkheid</a>
 					<button type="button" class="btn btn-client-rounded" data-bs-dismiss="modal" aria-label="Sluit popup">Sluiten</button>
 				</div>
 			</div>

@@ -103,7 +103,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                     Het schilderwerk van Jan Roede omvat een breed scala aan onderwerpen: portretten, figuurstukken en abstracte composities, uitgevoerd in olie en acryl op linnen.
                 </p>
                 <p class="mb-0">
-                    Bent u geÃ¯nteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
+                    Bent u geïnteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
                 </p>
             </div>
         </div>
@@ -236,7 +236,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                         aria-label="Open schilderij <?= htmlspecialchars($displayTitle, ENT_QUOTES, 'UTF-8') ?> in lightbox"
                     >
                         <?php
-                        $altParts = ['Jan RoÃ«de â€“ ' . $displayTitle];
+                        $altParts = ['Jan Roëde“ ' . $displayTitle];
                         if ($material !== null) $altParts[] = $material;
                         if ($year !== null)     $altParts[] = $year;
                         $altText = implode(', ', $altParts);

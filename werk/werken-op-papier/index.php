@@ -103,7 +103,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                     De werken op papier van Jan Roede omvatten tekeningen, aquarellen en gouaches â€“ van kleine schetsjes tot grotere composities, uitgevoerd in inkt, potlood, viltstift en waterverf.
                 </p>
                 <p class="mb-0">
-                    Bent u geÃ¯nteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
+                    Bent u geïnteresseerd in het aanschaffen van een werk? <a class="fw-bold" href="<?= SITE_URL ?>contact/">Neem dan contact op</a>.
                 </p>
             </div>
         </div>
@@ -240,7 +240,7 @@ ksort($filterMaterialOptions, SORT_NATURAL);
                         aria-label="Open werk <?= htmlspecialchars($displayTitle, ENT_QUOTES, 'UTF-8') ?> in lightbox"
                     >
                         <?php
-                        $altParts = ['Jan RoÃ«de â€“ ' . $displayTitle];
+                        $altParts = ['Jan Roëde“ ' . $displayTitle];
                         if ($material !== null) $altParts[] = $material;
                         if ($year !== null)     $altParts[] = $year;
                         $altText = implode(', ', $altParts);
