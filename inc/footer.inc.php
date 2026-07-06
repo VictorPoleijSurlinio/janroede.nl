@@ -6,15 +6,7 @@
 		<div class="row mb-3">
 
 			<div class="col-lg-4">
-				<!-- <img src="<?= STATIC_URL ?>img/logo/logo.svg" class="img-fluid mb-3" width="200" height="59" alt="Logo"><br> -->
 				<h3 class="footer-heading">Contact</h3>
-				<? /*
-				<a target="blank" aria-label="<?= $COMPANY_STREET ?> <?= $COMPANY_ZIP ?>, <?= $COMPANY_CITY ?>" href="https://www.google.com/maps/dir/?api=1&destination=<?= $COMPANY_STREET . "," . $COMPANY_CITY ?>">
-					<i class="fa fa-map-marker-alt secondary-color me-1"></i>
-					<?= $COMPANY_STREET ?>,
-					<?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?>
-				</a><br>
-				 */ ?>
 				<a style="word-break: break-all;" href="mailto:<?= $COMPANY_EMAIL ?>" aria-label="<?= $COMPANY_EMAIL ?>"><i class="fa fa-envelope secondary-color me-1"></i> <?= $COMPANY_EMAIL ?></a><br>
 				<a href="tel:<?= $COMPANY_PHONE_LINK ?>"><i class="fa fa-phone secondary-color me-1"></i><?= $COMPANY_PHONE ?></a><br>
 				<h3 class="footer-heading">Organisatie</h3>
