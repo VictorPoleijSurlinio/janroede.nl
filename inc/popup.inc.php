@@ -5,7 +5,7 @@ $SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? true;
 $SITE_POPUP_PERMANENT = $SITE_POPUP_PERMANENT ?? true;
 $SITE_POPUP_START_AT = $SITE_POPUP_START_AT ?? '2026-06-01 00:00:00';
 $SITE_POPUP_END_AT = $SITE_POPUP_END_AT ?? '2026-06-14 23:59:59';
-$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'actualiteit-kunst-die-een-glimlach-deelt-2026-06';
+$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'actualiteit-jan-roede-prijs-2026-07';
 
 $sitePopupIsActive = false;
 if (!empty($SITE_POPUP_ENABLED)) {
@@ -31,13 +31,14 @@ if (!empty($SITE_POPUP_ENABLED)) {
 					<button type="button" class="btn-close primary-color" data-bs-dismiss="modal" aria-label="Sluiten"></button>
 				</div>
 				<div class="modal-body">
-					<h3 class="h4 mb-3">KUNST DIE EEN GLIMLACH DEELT</h3>
-					<p class="mb-3">De recente 5-daagse benefietexpositie van de Jan Roëde Stichting in Pulchri Studio heeft ruim € 11.500 opgeleverd voor <a href="https://vrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Stichting de Vrolijkheid</a>.</p>
-					<p class="mb-3">Dit geweldige succes smaakt naar meer. Wij blijven ons daarom inzetten om via de verkoop van Jan Roëdes kunst bij te dragen aan kunstzinnige activiteiten voor jongeren in asielzoekerscentra.</p>
-					<p class="mb-0">Onze volgende stap? In augustus organiseren we een nieuwe verkoopexpositie in de grote Mesdagzaal van Pulchri Studio. Ook de netto-opbrengst van dit evenement komt weer volledig ten goede aan De Vrolijkheid.</p>
+					<h3 class="h4 mb-3">JAN RO&Euml;DE PRIJS 2026</h3>
+					<p class="mb-3">Op 6 juli 2026 heeft onze stichting voor de 13e keer de Jan Ro&euml;de Prijs uitgereikt aan een afstuderend beeldend kunstenaar van de KABK.</p>
+					<p class="mb-3">Na beoordeling van 25 afstudeerprojecten heeft de jury de Iraanse kunstenaar <a href="https://graduation.kabk.nl/2026/Kimia-Khedri" target="_blank" rel="noopener noreferrer">Kimia Khedri</a> geselecteerd als winnaar van de Jan Ro&euml;de Prijs 2026.</p>
+					<p class="mb-3">De jury roemde haar project <em>Something to hold on</em> in het <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">juryrapport</a> als een monument voor weerstand en hoop in catastrofale tijden. De prijs bestaat uit een geldbedrag van € 3.000 en een oorkonde.</p>
+					<p class="mb-0"><a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">Lees het juryrapport</a>.</p>
 				</div>
 				<div class="modal-footer d-flex justify-content-between">
-					<a class="btn btn-client-rounded-purple" href="https://vrolijkheid.nl/" target="_blank" rel="noopener noreferrer">Naar De Vrolijkheid</a>
+					<a class="btn btn-client-rounded-purple" href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">Naar juryrapport</a>
 					<button type="button" class="btn btn-client-rounded" data-bs-dismiss="modal" aria-label="Sluit popup">Sluiten</button>
 				</div>
 			</div>

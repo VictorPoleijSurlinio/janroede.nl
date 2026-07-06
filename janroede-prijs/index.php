@@ -33,7 +33,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <p>De prijs bestaat uit een geldbedrag (nu € 3.000) en een officiele oorkonde.</p>
 
                 <h3 class="mt-4">Jaarlijkse uitreiking</h3>
-                <p>Deze stimuleringsprijs wordt ieder jaar uitgereikt aan een talentvolle beeldend kunstenaar die afstudeert aan de KABK. Sinds de oprichting in 2014 heeft de Jan Roëde Stichting de prijs al twaalf keer met trots mogen overhandigen aan een nieuwe generatie kunstenaars.</p>
+                <p>Deze stimuleringsprijs wordt ieder jaar uitgereikt aan een talentvolle beeldend kunstenaar die afstudeert aan de KABK. Sinds de oprichting in 2014 heeft de Jan Roëde Stichting de prijs al dertien keer met trots mogen overhandigen aan een nieuwe generatie kunstenaars.</p>
 
                 <ul>
                     <li>2014 Vincent Both <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2014.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
@@ -48,6 +48,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     <li>2023 Jemima de Jonge <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2023.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                     <li>2024 Hara Athanasopoulou <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2024.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                     <li>2025 Otso Prunnila <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2025.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
+                    <li>2026 <a href="https://graduation.kabk.nl/2026/Kimia-Khedri" target="_blank" rel="noopener noreferrer">Kimia Khedri</a> <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                 </ul>
 
                 <p>In enkele jaren heeft de Stichting naast de Jan Roëde Prijs ook extra aanmoedigingsprijzen uitgereikt aan afstuderende kunstenaars van de KABK.</p>
