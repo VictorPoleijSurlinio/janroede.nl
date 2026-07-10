@@ -48,7 +48,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     <li>2023 Jemima de Jonge <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2023.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                     <li>2024 Hara Athanasopoulou <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2024.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                     <li>2025 Otso Prunnila <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2025.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
-                    <li>2026 <a href="https://graduation.kabk.nl/2026/Kimia-Khedri" target="_blank" rel="noopener noreferrer">Kimia Khedri</a> <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
+                    <li>2026 <a href="https://graduation.kabk.nl/2026/Kimia-Khedri" target="_blank" rel="noopener noreferrer">Kimia Khedri</a> <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf?1" target="_blank" rel="noopener noreferrer">(bekijk juryrapport)</a></li>
                 </ul>
 
                 <p>In enkele jaren heeft de Stichting naast de Jan Roëde Prijs ook extra aanmoedigingsprijzen uitgereikt aan afstuderende kunstenaars van de KABK.</p>

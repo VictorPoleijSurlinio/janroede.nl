@@ -13,21 +13,9 @@
 				<span class="text-white"><i class="fa-solid fa-receipt secondary-color me-1"></i>KVK: <?= $COMPANY_KVK ?></span><br>
 				<span class="text-white"><i class="fa-solid fa-university secondary-color me-1"></i>IBAN: <?= $COMPANY_IBAN ?></span><br>
 				<span class="text-white"><i class="fa-solid fa-id-card secondary-color me-1"></i>RSIN: 815163423</span><br>
-				<!-- <span class="text-white"><i class="fa-solid fa-location-dot secondary-color me-1"></i>Vestigingsadres: <?= $COMPANY_STREET ?><br> <?= $COMPANY_ZIP ?> <?= $COMPANY_CITY ?></span><br> -->
 			</div>
 			<div class="col-lg-4 text-white text-center">
-				<? /*
-				<h3 class="footer-heading">Openingstijden</h3>
-				<?php $today = date('l');
-				$dayMap = ['Monday' => 'Maandag', 'Tuesday' => 'Dinsdag', 'Wednesday' => 'Woensdag', 'Thursday' => 'Donderdag', 'Friday' => 'Vrijdag', 'Saturday' => 'Zaterdag', 'Sunday' => 'Zondag'];
-				$todayNl = $dayMap[$today] ?? ''; ?>
-				<?php foreach ($COMPANY_OPENING_HOURS ?? [] as $day => $hours): ?>
-					<div class="d-flex justify-content-between<?= $day === $todayNl ? ' fw-bold' : '' ?>">
-						<span><?= htmlspecialchars($day, ENT_QUOTES, 'UTF-8') ?></span>
-						<span><?= htmlspecialchars($hours, ENT_QUOTES, 'UTF-8') ?></span>
-					</div>
-				<?php endforeach; ?>
-				*/ ?>
+			
 			</div>
 			<div class="col-lg-4 text-lg-end">
 				<h3 class="footer-heading">Links</h3>
