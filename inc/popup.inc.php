@@ -3,9 +3,10 @@
 // Of gebruik start/eind om tijdsgebonden te tonen.
 $SITE_POPUP_ENABLED = $SITE_POPUP_ENABLED ?? true;
 $SITE_POPUP_PERMANENT = $SITE_POPUP_PERMANENT ?? true;
-$SITE_POPUP_START_AT = $SITE_POPUP_START_AT ?? '2026-06-01 00:00:00';
-$SITE_POPUP_END_AT = $SITE_POPUP_END_AT ?? '2026-06-14 23:59:59';
-$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'actualiteit-jan-roede-prijs-2026-07';
+$SITE_POPUP_PERMANENT = $SITE_POPUP_PERMANENT ?? false;
+$SITE_POPUP_START_AT = $SITE_POPUP_START_AT ?? '2026-06-29 00:00:00';
+$SITE_POPUP_END_AT = $SITE_POPUP_END_AT ?? '2026-08-23 23:59:59';
+$SITE_POPUP_KEY = $SITE_POPUP_KEY ?? 'benefietexpositie-vrolijkheid-2026-07';
 
 $sitePopupIsActive = false;
 if (!empty($SITE_POPUP_ENABLED)) {
@@ -31,14 +32,14 @@ if (!empty($SITE_POPUP_ENABLED)) {
 					<button type="button" class="btn-close primary-color" data-bs-dismiss="modal" aria-label="Sluiten"></button>
 				</div>
 				<div class="modal-body">
-					<h3 class="h4 mb-3">JAN RO&Euml;DE PRIJS 2026</h3>
-					<p class="mb-3">Op 6 juli 2026 heeft onze stichting voor de 13e keer de Jan Ro&euml;de Prijs uitgereikt aan een afstuderend beeldend kunstenaar van de KABK.</p>
-					<p class="mb-3">Na beoordeling van 25 afstudeerprojecten heeft de jury de Iraanse kunstenaar <a href="https://graduation.kabk.nl/2026/Kimia-Khedri" target="_blank" rel="noopener noreferrer">Kimia Khedri</a> geselecteerd als winnaar van de Jan Ro&euml;de Prijs 2026.</p>
-					<p class="mb-3">De jury roemde haar project <em>Something to hold on</em> in het <a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">juryrapport</a> als een monument voor weerstand en hoop in catastrofale tijden. De prijs bestaat uit een geldbedrag van € 3.000 en een oorkonde.</p>
-					<p class="mb-0"><a href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">Lees het juryrapport</a>.</p>
+					<h3 class="h4 mb-3">Benefietexpositie voor de Vrolijkheid: Kunst die een glimlach deelt</h3>
+					<p class="mb-3">Van 29 juni t/m 23 augustus organiseert de Jan Ro&euml;de Stichting opnieuw een benefiettentoonstelling voor Stichting de Vrolijkheid, dit keer in de Mesdagzaal van Pulchri Studio.</p>
+					<p class="mb-3">Wij tonen wederom een mooie selectie van schilderijen en werken op papier die voor schappelijke prijzen te koop worden aangeboden. De netto-opbrengsten komen volledig ten goede aan de activiteiten van de Vrolijkheid.</p>
+					<p class="mb-3">De tentoonstelling wordt op 1 augustus om 17.00 uur officieel geopend door Cheeta Bruin, kunsthistoricus, lid van de RvT van de Vrolijkheid en projectleider tentoonstellingen van het Van Gogh Museum.</p>
+					<p class="mb-0">Wij hopen u daar te begroeten, of op een ander moment tijdens de looptijd van de expositie.</p>
 				</div>
 				<div class="modal-footer d-flex justify-content-between">
-					<a class="btn btn-client-rounded-purple" href="<?= STATIC_URL ?>docs/jan-roede-prijs/juryrapport-jan-roede-prijs-2026.pdf" target="_blank" rel="noopener noreferrer">Naar juryrapport</a>
+					<a class="btn btn-client-rounded-purple" href="https://www.pulchri.nl/nl/tentoonstellingen/benefietexpositie-jan-roede-de-vrolijkheid-kunst-die-een-glimlach-deelt-1/" target="_blank" rel="noopener noreferrer">Naar Pulchri Studio</a>
 					<button type="button" class="btn btn-client-rounded" data-bs-dismiss="modal" aria-label="Sluit popup">Sluiten</button>
 				</div>
 			</div>
