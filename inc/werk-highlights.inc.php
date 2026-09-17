@@ -9,11 +9,11 @@
 			$schilderijenIndex = array_column($schilderijen['items'], null, 'inventory_number');
 
 			$highlights = [
-				['inventory_number' => 'JRD235', 'rotate' => '-6deg'],
+				['inventory_number' => 'S42', 'rotate' => '-6deg'],
 				['inventory_number' => 'JRD232', 'rotate' => '-2deg'],
 				['inventory_number' => 'JRD246', 'rotate' => '2deg'],
 				['inventory_number' => 'JRD242', 'rotate' => '5deg'],
-				['inventory_number' => 'JRD252', 'rotate' => '-3deg'],
+				['inventory_number' => 'S54', 'rotate' => '-3deg'],
 			];
 			foreach ($highlights as $h):
 				$inv  = $h['inventory_number'];

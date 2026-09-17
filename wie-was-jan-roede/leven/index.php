@@ -50,6 +50,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                 <h2>Een eigen koers: De keuze tegen Cobra</h2>
                 <p>Hoewel zijn werk in die tijd verwantschap toonde met Cobra (beïnvloed door Klee, Miró en Picasso), sloeg hij een uitnodiging om zich bij deze groep aan te sluiten af. Het fanatieke idealisme en het schrijven van pamfletten pasten niet bij hem. Wel bleef hij exposeren bij <em>Vrije Beelden</em> en nam hij in 1950 deel aan de grote tentoonstelling <em>Nieuwe bewegingen in de beeldende kunst</em> in het Stedelijk Museum.</p>
 
+                <p><a class="text-decoration-underline fw-bold" style="color: #5b247a;" href="https://www.janroede.nl/static/docs/kaart-appel.jpg">Bekijk hier de kaart van Karel Appel aan Jaap Nanninga</a>, waarin Appel voorstelde om Jan Roëde ook bij de groep te betrekken.</p>
+
                 <h2>Terug in Den Haag en artistieke evolutie</h2>
                 <p>In 1948 vestigde Roëde zich weer in Den Haag en ontwikkelde hij zich tot een verrassende colorist met een unieke, eigen stijl. Speels en met een glimlach schilderde hij eenvoudige mens- en dierfiguren in niet-naturalistische kleuren. Vanaf de tweede helft van de jaren 60 werd zijn kleurgebruik feller en egaler.</p>
                 <p>Roëde was tot het einde van zijn leven actief lid van Pulchri Studio en van de Haagse Kunstkring. In 1968 won hij de prestigieuze Jacob Hartogprijs.</p>

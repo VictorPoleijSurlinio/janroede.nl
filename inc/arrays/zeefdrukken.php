@@ -11,7 +11,6 @@ $zeefdrukken = [
 		],
 		'notes' => [
 			'Nummer is het inventarisnummer en correspondeert met de naam van het fotobestand.',
-			'Z11 is beschikbaar als medium (1 exemplaar).',
 			'Voor Z43 is nog geen formaat opgegeven.',
 		],
 	],
@@ -38,17 +37,18 @@ $zeefdrukken = [
 			'sale_price_eur' => 250,
 			'editions_available' => 2,
 		],
-		[
-			'inventory_number' => 'Z07',
-			'image_name' => 'Z07',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-			'year' => '1996',
-			'height_cm' => 50,
-			'width_cm' => 65,
-			'sale_price_eur' => 250,
-			'editions_available' => 1,
-		],
+		// Verkocht in augustus 2026; niet meer tonen.
+		// [
+		// 	'inventory_number' => 'Z07',
+		// 	'image_name' => 'Z07',
+		// 	'format_code' => 'M',
+		// 	'format_label' => 'medium',
+		// 	'year' => '1996',
+		// 	'height_cm' => 50,
+		// 	'width_cm' => 65,
+		// 	'sale_price_eur' => 250,
+		// 	'editions_available' => 1,
+		// ],
 		[
 			'inventory_number' => 'Z09',
 			'image_name' => 'Z09',
@@ -60,21 +60,23 @@ $zeefdrukken = [
 			'sale_price_eur' => 250,
 			'editions_available' => 1,
 		],
-		[
-			'inventory_number' => 'Z10',
-			'image_name' => 'Z10',
-			'format_code' => 'G',
-			'format_label' => 'groot',
-		],
-		[
-			'inventory_number' => 'Z11',
-			'image_name' => 'Z11',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-			'edition_note' => '1 exemplaar unicum',
-			'sale_price_eur' => 250,
-			'editions_available' => 1,
-		],
+		// Verkocht in augustus 2026; niet meer tonen.
+		// [
+		// 	'inventory_number' => 'Z10',
+		// 	'image_name' => 'Z10',
+		// 	'format_code' => 'G',
+		// 	'format_label' => 'groot',
+		// ],
+		// Verkocht in augustus 2026; niet meer tonen.
+		// [
+		// 	'inventory_number' => 'Z11',
+		// 	'image_name' => 'Z11',
+		// 	'format_code' => 'M',
+		// 	'format_label' => 'medium',
+		// 	'edition_note' => '1 exemplaar unicum',
+		// 	'sale_price_eur' => 250,
+		// 	'editions_available' => 1,
+		// ],
 		[
 			'inventory_number' => 'Z12',
 			'image_name' => 'Z12',

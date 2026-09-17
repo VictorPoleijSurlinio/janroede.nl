@@ -35,7 +35,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     </a>
                 </p>
                 */ ?>
-                <h3 class="mt-4">Audio</h3>
+                <h3 class="mt-4">Video</h3>
                 <p>Henk Augustijn (Art-on-Video): <strong>Jan Roëde - een portret</strong>, gefilmd in zijn atelier in Clingendael in het voorjaar van 1993.</p>
                 <div class="ratio ratio-16x9 mb-3">
                     <iframe

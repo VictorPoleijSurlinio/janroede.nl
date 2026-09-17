@@ -16,7 +16,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-indicators mx-auto">
 		<?php
-		$slideCount = 7; // Set the number of slides here
+		$slideCount = 6; // Set the number of slides here
 		for ($i = 0; $i < $slideCount; $i++):
 			$active = $i === 0 ? 'active' : '';
 			$current = $i === 0 ? 'aria-current="true"' : '';
@@ -30,12 +30,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
 			<picture>
 				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/zelfportret.webp">
 				<img src="<?= STATIC_URL ?>img/carousel/zelfportret.webp" class="d-block w-100 img-fluid" alt="Zelfportret" loading="eager" fetchpriority="high">
-			</picture>
-		</div>
-		<div class="carousel-item">
-			<picture>
-				<source media="(max-width: 768px)" srcset="<?= STATIC_URL ?>img/carousel/mobile/de-brief.webp">
-				<img src="<?= STATIC_URL ?>img/carousel/de-brief.webp" class="d-block w-100 img-fluid" alt="De brief" loading="lazy">
 			</picture>
 		</div>
 		<div class="carousel-item">
