@@ -28,13 +28,6 @@ include ABS_PATH . 'inc/navbar.inc.php';
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <h2>Publicaties (chronologisch)</h2>
-                <?/*
-                <p>
-                    <a href="<?= SITE_URL ?>static/docs/Lijst%20van%20publicaties%20van%20en%20over%20Jan%20Ro%C3%ABde%20(versie%2021-4-2026).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">
-                        <i class="fa-regular fa-file-pdf me-1"></i>Open PDF: Lijst van publicaties van en over Jan Roëde
-                    </a>
-                </p>
-                */ ?>
                 <h3 class="mt-4">Video</h3>
                 <p>Henk Augustijn (Art-on-Video): <strong>Jan Roëde - een portret</strong>, gefilmd in zijn atelier in Clingendael in het voorjaar van 1993.</p>
                 <div class="ratio ratio-16x9 mb-3">
