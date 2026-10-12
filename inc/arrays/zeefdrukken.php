@@ -2,7 +2,7 @@
 
 $zeefdrukken = [
 	'meta' => [
-		'count' => 25,
+		'count' => 21,
 		'size_categories' => [
 			'G' => 'groot',
 			'M' => 'medium',
@@ -49,17 +49,6 @@ $zeefdrukken = [
 		// 	'sale_price_eur' => 250,
 		// 	'editions_available' => 1,
 		// ],
-		[
-			'inventory_number' => 'Z09',
-			'image_name' => 'Z09',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-			'year' => '1993',
-			'height_cm' => 50,
-			'width_cm' => 65,
-			'sale_price_eur' => 250,
-			'editions_available' => 1,
-		],
 		// Verkocht in augustus 2026; niet meer tonen.
 		// [
 		// 	'inventory_number' => 'Z10',
@@ -137,18 +126,6 @@ $zeefdrukken = [
 			'editions_available' => 4,
 		],
 		[
-			'inventory_number' => 'Z20',
-			'image_name' => 'Z20',
-			'title' => 'Les amoureux',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-			'year' => '1952-1996',
-			'height_cm' => 50,
-			'width_cm' => 65,
-			'sale_price_eur' => 125,
-			'editions_available' => 1,
-		],
-		[
 			'inventory_number' => 'Z21',
 			'image_name' => 'Z21',
 			'format_code' => 'M',
@@ -157,18 +134,6 @@ $zeefdrukken = [
 		[
 			'inventory_number' => 'Z23',
 			'image_name' => 'Z23',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-		],
-		[
-			'inventory_number' => 'Z24',
-			'image_name' => 'Z24',
-			'format_code' => 'M',
-			'format_label' => 'medium',
-		],
-		[
-			'inventory_number' => 'Z25',
-			'image_name' => 'Z25',
 			'format_code' => 'M',
 			'format_label' => 'medium',
 		],
