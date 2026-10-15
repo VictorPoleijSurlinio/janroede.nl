@@ -101,7 +101,8 @@ include ABS_PATH . 'inc/navbar.inc.php';
                     <li><strong>2019</strong>: Pulchri Studio, Den Haag <em>Een feest voor het oog</em>.</li>
                     <li><strong>2022</strong>: WTC The Hague Art Gallery, Den Haag <em>Twee kunstenaars</em> (met Mathieu Ficheroux); Kunst aan de Dijk, Kortenhoef <em>Verwondering in kleur</em>.</li>
                     <li><strong>2022</strong>: Galerie Quintessens, Utrecht <em>Rondom Cobra</em> (met Lotti van der Gaag).</li>
-                    <li><strong>2025/2026</strong>: Museum Belvédère, Oranjewoud <em>In speelse tekens</em>; Pulchri Studio, Den Haag <em>Kunst die een glimlach deelt</em> (benefiettentoonstellingen voor Stichting De Vrolijkheid).</li>
+                    <li><strong>2025</strong>: Museum Belvédère, Oranjewoud <em>In speelse tekens</em>.</li>
+                    <li><strong>2026</strong>: Pulchri Studio, Den Haag <em>Kunst die een glimlach deelt</em>, Kunstbeurs Art The Hague, Den Haag <em>De Vrolijkheid &amp; Jan Roëde</em>.</li>
                 </ul>
             </div>
         </div>

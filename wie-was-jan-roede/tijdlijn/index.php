@@ -124,7 +124,7 @@ include ABS_PATH . 'inc/navbar.inc.php';
                             <div class="number">1945</div>
                         </div>
                         <div class="content" data-aos="fade-in" data-aos-duration="900" data-aos-offset="50">
-                            <p>Exposeert met Sinemus en Will Leewens bij kunsthandel Martinus Liernur in Den Haag (opening op 22 december door Willem Schröfer).</p>
+                            <p>Exposeert met Sinemus en Will Leewens bij kunsthandel Martinus Liernur in Den Haag (opening op 22 december door Willem Schrofer).</p>
                         </div>
                     </div>
 
